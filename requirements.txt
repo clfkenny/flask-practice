@@ -7,3 +7,4 @@ MarkupSafe==1.0
 Werkzeug==0.14.1
 SQLAlchemy==1.0.11
 Flask-SQLAlchemy==2.1
+flask_wtf==0.14.2
