@@ -4,6 +4,8 @@
     <title>Kenny's Web Apps</title>
 
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="{{ "/static/img/favicon.ico"}}">
 
@@ -23,5 +25,13 @@
     {% block content %}
     {% endblock %}
     
+      <footer>
+          <ul>
+              <li><a href="mailto:lov.kenny1996@gmail.com"><i class="material-icons" style="font-size:22px">email</i></a></li>
+              <li><a href="https://github.com/clfkenny"><i class="fa fa-github" style="font-size:20px"></i> </a></li>
+        <li><a href="https://www.linkedin.com/in/kenny-lov/"><i class="fa fa-linkedin-square" style="font-size:20px"></i></a></li>
+        </ul>
+      </footer>
+
   </body>
 </html>
