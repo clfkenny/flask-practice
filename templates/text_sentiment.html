@@ -5,7 +5,8 @@
     <div class="container">
       
       <div class="section-content">
-        <h2>Please enter a sentence:</h2>
+        <h2> Text Sentiment Analyzer</h2>
+        <h3> Please enter a sentence: </h3>
 
         {% from "_formhelpers.html" import render_field %}
         <form method=post action="/results">
@@ -14,7 +15,7 @@
   {{ render_field(form.moviereview, cols='70', rows='15') }}
   </div>
   <div>
-    <input type=submit value='Submit review' name='submit_btn'>
+    <input type=submit value='Submit Text' name='submit_btn'>
   </div>
 
       </div>

@@ -34,7 +34,7 @@ def classify(document):
 @app.route("/")
 def index():
     form = ReviewForm(request.form)
-    return render_template("index.html", form = form)
+    return render_template("text_sentiment.html", form = form)
 
 
 @app.route('/results', methods=['POST'])
@@ -47,7 +47,7 @@ def results():
                                 content=review,
                                 prediction=y,
                                 probability=round(proba*100, 2))
-    return render_template('index.html', form=form)
+    return render_template('text_sentiment.html', form=form)
 
 
 # @app.route("/about")
