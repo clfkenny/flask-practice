@@ -34,7 +34,12 @@ def classify(document):
 @app.route("/")
 def index():
     form = ReviewForm(request.form)
-    return render_template("text_sentiment.html", form = form)
+    return render_template("index.html", form = form)
+
+@app.route("/text_sentiment")
+def text_sentiment():
+    form = ReviewForm(request.form)
+    return render_template('text_sentiment.html', form = form)
 
 
 @app.route('/results', methods=['POST'])
