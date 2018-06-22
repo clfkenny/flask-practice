@@ -57,6 +57,9 @@ a {
   width: 600px;
 }
 
+textarea{
+  font-size:15px;
+}
 
 form div:nth-child(2){
   padding: 20px 0px;
