@@ -5,6 +5,7 @@ import pickle
 import sqlite3
 import os
 import numpy as np
+import sklearn
 
 
 app = Flask(__name__)
