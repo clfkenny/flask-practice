@@ -8,20 +8,20 @@
 
       
     <h2>Text Sentiment Analyzer </h2>
-	<h3>Your movie review:</h3>
+	<h3>Your text submission:</h3>
 	<div>{{ content }}</div>
 
 	<h3>Prediction:</h3>
-	<div>This movie review is <strong>{{ prediction }}</strong>
+	<div>This text submission is <strong>{{ prediction }}</strong>
 	 (probability: {{ probability }}%).</div>
 
 	<div id='button'>
-		  <form action="/">
+		  <form action="/text_sentiment">
 	    	<input type=submit value='Try Again' name = 'again_btn'>
 		  </form>
 	</div>
 
-    	<script src="static/js/script.js"></script>
+    	<script src="static/js/text_sentiment.js"></script>
   </body>
     </div>
   </main>

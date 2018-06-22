@@ -3,6 +3,6 @@ from wtforms import StringField, PasswordField, SubmitField, Form, TextAreaField
 from wtforms.validators import DataRequired, Email, Length
 
 class ReviewForm(Form):
-    moviereview = TextAreaField('',
+    text_review = TextAreaField('',
                                 [validators.DataRequired(),
                                 validators.length(min=15)])
