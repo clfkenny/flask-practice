@@ -57,7 +57,12 @@ a {
   width: 600px;
 }
 
-.btn-primary {
+
+form div:nth-child(2){
+  padding: 20px 0px;
+}
+
+input[name="submit_btn"]{
   background: #4285f4;
   border: 1px solid #1266f1;
   color: #ffffff;

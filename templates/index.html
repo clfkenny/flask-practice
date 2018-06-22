@@ -5,15 +5,26 @@
     <div class="container">
       
       <div class="section-content">
-        <h2>Discover places near you.</h2>
-        <a href="{{ url_for('signup') }}" class="btn-primary">Sign up</a>
-        <a href="{{ url_for('about') }}" class="btn-secondary">Learn more</a> 
+        <h2>Please enter a sentence:</h2>
+
+        {% from "_formhelpers.html" import render_field %}
+        <form method=post action="/results">
+
+  <div>
+  {{ render_field(form.moviereview, cols='70', rows='15') }}
+  </div>
+  <div>
+    <input type=submit value='Submit review' name='submit_btn'>
+  </div>
+
+<!--         <a href="{{ url_for('signup') }}" class="btn-primary">Sign up</a>
+        <a href="{{ url_for('about') }}" class="btn-secondary">Learn more</a>  -->
       </div>
 
-      <div class="section-device">
+<!--       <div class="section-device">
         <img src="static/img/device.png">
       </div>
-      
+       -->
       <div class="clearfix"></div>
 
     </div>

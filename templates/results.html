@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+  <main class="hero-section">
+    <div class="container">
+      
+    <h1>Home</h1>
+	<h3>Your movie review:</h3>
+	<div>{{ content }}</div>
+
+	<h3>Prediction:</h3>
+	<div>This movie review is <strong>{{ prediction }}</strong>
+	 (probability: {{ probability }}%).</div>
+
+	<div id='button'>
+		  <form action="/">
+	    	<input type=submit value='Submit another review'>
+		  </form>
+	</div>
+
+  </body>
+    </div>
+  </main>
+
+{% endblock %}
+
+
