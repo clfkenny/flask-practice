@@ -111,7 +111,7 @@ input[name="again_btn"]{
  */
 
 header {
-  background-color: #fff;
+  background-color: var(--main-accent-color);
   padding: 25px 0;
 }
 
@@ -124,7 +124,7 @@ header {
 }
 
 .title, .title:visited {
-  color: #3a3a3a;
+  color: var(--main-bg-color);
 }
 
 .main-nav {
@@ -195,6 +195,16 @@ footer a{
   color: var(--main-accent-color)
 }
 
+footer a:hover{
+  color:black;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  border-bottom: 1px solid transparent;    
+  text-decoration: none;
+  color:var(--main-accent-color);
+}
+
 nav ul, footer ul {
     padding: 0px;
     list-style: none;
@@ -209,4 +219,10 @@ i.material-icons{
   position: relative;
   /* Adjust these values accordingly */
   top: 4px;
+}
+
+
+/*index page*/
+ul li a{ /*color of app titles */
+  color: var(--main-accent-color);
 }
