@@ -89,6 +89,7 @@ input[name="again_btn"]{
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  border-radius: 7px;
 }
 
 .btn-secondary {
@@ -187,6 +188,7 @@ div h2{    /*title*/
 /*footer*/
 
 footer {
+    border-top: .8px solid var(--main-accent-color);
     font-size: .9em;
     text-align: center;
 }
