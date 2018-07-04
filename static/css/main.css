@@ -77,7 +77,8 @@ form div:nth-child(2){
 }
 
 input[name="submit_btn"],
-input[name="again_btn"]{
+input[name="again_btn"],
+.submitButton{
   background: #4285f4;
   border: 1px solid #1266f1;
   color: #ffffff;
@@ -186,12 +187,13 @@ div h2{    /*title*/
 
 
 /*footer*/
-
 footer {
     border-top: .8px solid var(--main-accent-color);
     font-size: .9em;
     text-align: center;
+
 }
+
 
 footer a{
   color: var(--main-accent-color)
@@ -228,3 +230,10 @@ i.material-icons{
 ul li a{ /*color of app titles */
   color: var(--main-accent-color);
 }
+
+
+/*digit classifier */
+#controls{
+  padding: 30px 0px;
+}
+

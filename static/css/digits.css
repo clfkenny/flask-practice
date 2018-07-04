@@ -1,0 +1,14 @@
+#controls{
+  padding: 30px 0px;
+}
+
+div#interact{
+  width: 50%;
+  float:left;
+  overflow:hidden;
+}
+
+main{
+  margin: 0 auto;
+  width:65%;
+}

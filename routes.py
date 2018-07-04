@@ -1,26 +1,49 @@
 from flask import Flask, render_template, request, session, redirect, url_for
-# from models import db, User
-from forms import ReviewForm
-import pickle
-import sqlite3
-import os
+
+from sentiment_form import ReviewForm
+from load_models import load_sentiment_model
+
 import numpy as np
 import sklearn
 
 
+###
+from flask import Flask, render_template,request
+#scientific computing library for saving, reading, and resizing images
+from scipy.misc import imsave, imread, imresize
+#for matrix math
+import numpy as np
+#for importing our keras model
+import keras.models
+#for regular expressions, saves time dealing with string data
+import re
+import base64
+#system level operations (like loading files)
+import sys 
+#for reading operating system data
+import os
+#tell our app where our saved model is
+sys.path.append(os.path.abspath("model"))
+from load import * 
+
+global model, graph
+#initialize these variables
+model, graph = init()
+
+def convertImage(imgData1):
+    imgstr = re.search(b'base64,(.*)',imgData1).group(1)
+    #print(imgstr)
+    with open('output.png','wb') as output:
+        output.write(base64.b64decode(imgstr))
+    
+###
+
+
 app = Flask(__name__)
 
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://localhost/learningflask'
-# db.init_app(app)
 
-# app.secret_key = "development-key"
-cur_dir = os.path.dirname(__file__)
-clf = pickle.load(open(os.path.join(cur_dir,
-                 'movieclassifier/pkl_objects',
-                 'classifier.pkl'), 'rb'))
-vect = pickle.load(open(os.path.join(cur_dir,
-                 'movieclassifier/pkl_objects',
-                 'vect.pkl'), 'rb'))
+
+clf, vect = load_sentiment_model()
 
 def classify(document):
     label = {0: 'negative', 1: 'positive'}
@@ -33,8 +56,8 @@ def classify(document):
 
 @app.route("/")
 def index():
-    form = ReviewForm(request.form)
-    return render_template("index.html", form = form)
+    #form = ReviewForm(request.form)
+    return render_template("index.html")
 
 @app.route("/text_sentiment")
 def text_sentiment():
@@ -55,66 +78,41 @@ def results():
     return render_template('text_sentiment.html', form=form)
 
 
-# @app.route("/about")
-# def about():
-#   return render_template("about.html")
+@app.route('/digits')
+def digit_classifiy():
+    return render_template('digits.html')
 
-# @app.route("/signup", methods=["GET", "POST"])
-# def signup():
-#   if 'email' in session:
-#     return redirect(url_for('home'))
-
-#   form = SignupForm()
-
-#   if request.method == "POST":
-#     if form.validate() == False:
-#       return render_template('signup.html', form=form)
-#     else:
-#       newuser = User(form.first_name.data, form.last_name.data, form.email.data, form.password.data)
-#       db.session.add(newuser)
-#       db.session.commit()
-
-#       session['email'] = newuser.email
-#       return redirect(url_for('home'))
-
-#   elif request.method == "GET":
-#     return render_template('signup.html', form=form)
-
-# @app.route("/login", methods=["GET", "POST"])
-# def login():
-#   if 'email' in session:
-#     return redirect(url_for('home'))
-
-#   form = LoginForm()
-
-#   if request.method == "POST":
-#     if form.validate() == False:
-#       return render_template("login.html", form=form)
-#     else:
-#       email = form.email.data 
-#       password = form.password.data 
-
-#       user = User.query.filter_by(email=email).first()
-#       if user is not None and user.check_password(password):
-#         session['email'] = form.email.data 
-#         return redirect(url_for('home'))
-#       else:
-#         return redirect(url_for('login'))
-
-#   elif request.method == 'GET':
-#     return render_template('login.html', form=form)
-
-# @app.route("/logout")
-# def logout():
-#   session.pop('email', None)
-#   return redirect(url_for('index'))
-
-# @app.route("/home", methods=["GET", "POST"])
-# def home():
-#   if 'email' not in session:
-#     return redirect(url_for('login'))
-
-#   return render_template("home.html")
+@app.route('/predict/',methods=['GET','POST'])
+def predict():
+    #whenever the predict method is called, we're going
+    #to input the user drawn character as an image into the model
+    #perform inference, and return the classification
+    #get the raw data format of the image
+    imgData = request.get_data()
+    #encode it into a suitable format
+    convertImage(imgData)
+    print("debug")
+    #read the image into memory
+    x = imread('output.png',mode='L')
+    #compute a bit-wise inversion so black becomes white and vice versa
+    x = np.invert(x)
+    #make it the right size
+    x = imresize(x,(28,28))
+    #imshow(x)
+    #convert to a 4D tensor to feed into our model
+    x = x.reshape(1,28,28,1)
+    print ("debug2")
+    #in our computation graph
+    with graph.as_default():
+        #perform the prediction
+        out = model.predict(x)
+        print(out)
+        print(np.argmax(out,axis=1))
+        print("debug3")
+        #convert the response to a string
+        response = np.array_str(np.argmax(out,axis=1))
+        return response 
+    
 
 if __name__ == "__main__":
     app.run(debug=True)
