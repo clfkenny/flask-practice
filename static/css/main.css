@@ -1,6 +1,7 @@
 /* colors */
 :root {
     --main-bg-color: whitesmoke; 
+    --main-bg-color2: #c1c1c1;
     --main-nav-txt-color: black;
     --main-txt-color: black;
     --main-accent-color: #4285f4;
@@ -107,6 +108,16 @@ input[name="again_btn"],
   text-transform: uppercase;
 }
 
+/*background color gradient*/
+body:nth-child(2) {
+    min-height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background: linear-gradient(var(--main-bg-color), var(--main-bg-color2)) fixed;
+    background-repeat:no-repeat;
+}
 
 /* 
  * Header

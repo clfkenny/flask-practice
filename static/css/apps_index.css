@@ -14,14 +14,20 @@ form div{
   text-align:center;
   transition: all 0.3s ease-in-out;
   overflow:hidden;
+  border-radius:8px;
 }
 
 form div:hover{
-  height: 95px;
+  height: 105px;
   box-shadow:2px 2px 5px var(--main-accent-color);
 }
 
 form div b{
+  color:black;
+  transition: all 0.3s ease-in-out;
+}
+
+form div:hover b{
   color: var(--main-accent-color);
 }
 
