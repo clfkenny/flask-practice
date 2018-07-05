@@ -1,6 +1,7 @@
 {% extends "layout.html" %}
 
 {% block content %}
+
   <main class="hero-section">
     <div class="container">
       
@@ -15,10 +16,26 @@
   {{ render_field(form.text_review, cols='60', rows='10') }}
   </div>
   <div>
-    <input type=submit value='Analyze' name='submit_btn'>
+    <input type=submit value='Analyze' name='submit_btn' onclick = "showPred()">
   </div>
 </form>
       </div>
+
+
+
+    <div class="container">
+  <h3>Your text submission:</h3>
+  <div class = "input_text">{{ content }}</div>
+
+  <h3>Prediction:</h3>
+  <div class = "pred_hide">This text submission is <strong>{{ prediction }}</strong>
+   (probability: {{ probability }}%).</div>
+
+
+      <script src="static/js/text_sentiment.js"></script>
+
+    </div>
+    <br> <br> <br>
 
 <!--       <div class="section-device">
         <img src="static/img/device.png">

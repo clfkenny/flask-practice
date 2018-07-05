@@ -11,3 +11,18 @@ function changeColor(result) {
 }
 
 changeColor(result);
+
+function showPred(){
+	var pred = document.querySelector("div.pred_hide");
+	pred.style.display = "block";
+}
+
+function hidePred(){
+	var pred = document.querySelector("div.pred_hide");
+	var input = document.querySelector("div.input_text");
+	if(input.innerText == ""){
+		pred.style.display = "none";
+	}
+}
+
+hidePred()

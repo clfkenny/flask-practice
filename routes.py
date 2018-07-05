@@ -71,10 +71,10 @@ def results():
     if request.method == 'POST' and form.validate():
         review = request.form['text_review']
         y, proba = classify(review)
-        return render_template('results.html',
+        return render_template('text_sentiment.html',
                                 content=review,
                                 prediction=y,
-                                probability=round(proba*100, 2))
+                                probability=round(proba*100, 2), form = form)
     return render_template('text_sentiment.html', form=form)
 
 
