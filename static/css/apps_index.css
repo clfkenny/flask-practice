@@ -40,8 +40,7 @@ form div#text_sentiment{
   background-image: url("sentiment.png");
   background-repeat: no-repeat;
   background-size: 100px;
-  background-position: 25% 22%;
-  background-attachment: fixed;
+  background-position: 20% 10px%;
 }
 
 .container{
