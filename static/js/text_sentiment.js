@@ -14,7 +14,13 @@ changeColor(result);
 
 function showPred(){
 	var pred = document.querySelector("div.pred_hide");
-	pred.style.display = "block";
+	var input = document.querySelector("div.input_text");
+	if(input.innerText !=""){
+		pred.style.display = "block";
+	}
+	else{
+		pred.style.display = "none";
+	}
 }
 
 function hidePred(){

@@ -8,7 +8,7 @@
 
 form div{
   background:var(--main-bg-color);
-  height:30px;
+  height:20px;
   padding:20px 20px;
   box-shadow:2px 2px 5px grey;
   text-align:center;
@@ -33,4 +33,18 @@ form div:hover b{
 
 form div p{
   color:black;
+}
+
+
+form div#text_sentiment{
+  background-image: url("sentiment.png");
+  background-repeat: no-repeat;
+  background-size: 100px;
+  background-position: 25% 22%;
+  background-attachment: fixed;
+}
+
+.container{
+	margin: 0 auto;
+	width:80%;
 }
