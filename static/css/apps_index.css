@@ -1,8 +1,14 @@
 :root {
     --main-bg-color: whitesmoke; 
-    --main-nav-txt-color: black;
+    --main-nav-txt-color: whitesmoke;
     --main-txt-color: black;
     --main-accent-color: #4285f4;
+}
+
+
+h2{
+    animation: move 1s;
+    -webkit-animation: move 1s;
 }
 
 
@@ -19,7 +25,7 @@ form div{
 
 form div:hover{
   height: 105px;
-  box-shadow:2px 2px 5px var(--main-accent-color);
+  box-shadow:2px 2px 20px var(--main-accent-color);
 }
 
 form div b{

@@ -12,14 +12,15 @@
   </head>
   <body>
     <header>
-      <div class="container">
-        <a href="/">
-  <h1 class = "title">
-    Kenny's Web Apps
-  </h1>
-</a>
-        <!-- <h1 class="title">Kenny's Web App</h1> -->
-      </div>
+      <nav>
+        <img id = "logo" src = "{{ url_for('static', filename='logo2_white.png') }}"> </img>
+          <ul>
+              <li><a href="https://clfkenny.github.io">Home</a></li>
+              <li><a href="https://clfkenny.github.io/about">About</a></li>
+              <li><a href="https://clfkenny.github.io/projects">Blog</a></li>
+              <li><a href = "https://clfkenny.herokuapp.com">Projects</a></li>
+          </ul>
+      
     </header>
     
     {% block content %}
