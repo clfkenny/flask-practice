@@ -12,3 +12,21 @@ main{
   margin: 0 auto;
   width:65%;
 }
+
+.div_graph{
+	margin:0 auto;
+	width:65%;
+}
+
+
+img.graph {
+	width:700px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+
+hr{
+	width:90%;
+}

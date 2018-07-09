@@ -13,7 +13,6 @@ h2{
 
 
 form div{
-  background:var(--main-bg-color);
   height:20px;
   padding:20px 20px;
   box-shadow:2px 2px 5px grey;
@@ -43,10 +42,17 @@ form div p{
 
 
 form div#text_sentiment{
-  background-image: url("sentiment.png");
-  background-repeat: no-repeat;
-  background-size: 100px;
-  background-position: 10% 5px;
+  background-image: url("sentiment.png"), linear-gradient(to bottom right,whitesmoke,whitesmoke);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 100px, 100%;
+  background-position: 10% 5px, 0% 0%;
+}
+
+form div#digits{
+  background-image: url("digits.png"), linear-gradient(to bottom right,whitesmoke,whitesmoke);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 100px, 100%;
+  background-position: 10% 5px, 0% 0%;
 }
 
 

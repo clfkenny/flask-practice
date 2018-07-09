@@ -1,0 +1,3927 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   height="803.27594"
+   width="450.99179"
+   version="1.1"
+   style="font-size:20px;display:block"
+   class="style-scope tf-graph-scene"
+   id="svg"
+   sodipodi:docname="digits_cnn2.svg"
+   inkscape:version="0.92.3 (3ce5693, 2018-03-11)">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1680"
+     inkscape:window-height="995"
+     id="namedview625"
+     showgrid="false"
+     inkscape:zoom="0.58759385"
+     inkscape:cx="71.949208"
+     inkscape:cy="444.04579"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata1176">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs88"
+     class="style-scope tf-graph-scene">
+    <path
+       style="font-size:20px"
+       class="style-scope tf-graph-scene"
+       d="M 0,0 10,5 0,10 C 3,7 3,3 0,0"
+       id="reference-arrowhead-path"
+       inkscape:connector-curvature="0" />
+    <marker
+       style="font-size:20px;fill:#ffb74d"
+       markerUnits="userSpaceOnUse"
+       orient="auto-start-reverse"
+       refY="5"
+       refX="2"
+       markerHeight="5"
+       markerWidth="5"
+       viewBox="0 0 10 10"
+       id="reference-arrowhead-small"
+       class="reference-arrowhead style-scope tf-graph-scene">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         id="use3"
+         style="font-size:20px;fill:#ffb74d"
+         class="style-scope tf-graph-scene"
+         xlink:href="#reference-arrowhead-path" />
+    </marker>
+    <marker
+       style="font-size:20px;fill:#ffb74d"
+       markerUnits="userSpaceOnUse"
+       orient="auto-start-reverse"
+       refY="5"
+       refX="2"
+       markerHeight="13"
+       markerWidth="13"
+       viewBox="0 0 10 10"
+       id="reference-arrowhead-medium"
+       class="reference-arrowhead style-scope tf-graph-scene">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         id="use6"
+         style="font-size:20px;fill:#ffb74d"
+         class="style-scope tf-graph-scene"
+         xlink:href="#reference-arrowhead-path" />
+    </marker>
+    <marker
+       style="font-size:20px;fill:#ffb74d"
+       markerUnits="userSpaceOnUse"
+       orient="auto-start-reverse"
+       refY="5"
+       refX="2"
+       markerHeight="16"
+       markerWidth="16"
+       viewBox="0 0 10 10"
+       id="reference-arrowhead-large"
+       class="reference-arrowhead style-scope tf-graph-scene">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         id="use9"
+         style="font-size:20px;fill:#ffb74d"
+         class="style-scope tf-graph-scene"
+         xlink:href="#reference-arrowhead-path" />
+    </marker>
+    <marker
+       style="font-size:20px;fill:#ffb74d"
+       markerUnits="userSpaceOnUse"
+       orient="auto-start-reverse"
+       refY="5"
+       refX="2"
+       markerHeight="20"
+       markerWidth="20"
+       viewBox="0 0 10 10"
+       id="reference-arrowhead-xlarge"
+       class="reference-arrowhead style-scope tf-graph-scene">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         id="use12"
+         style="font-size:20px;fill:#ffb74d"
+         class="style-scope tf-graph-scene"
+         xlink:href="#reference-arrowhead-path" />
+    </marker>
+    <path
+       style="font-size:20px"
+       class="style-scope tf-graph-scene"
+       d="M 0,0 10,5 0,10 C 3,7 3,3 0,0"
+       id="dataflow-arrowhead-path"
+       inkscape:connector-curvature="0" />
+    <marker
+       style="font-size:20px;fill:#bbbbbb"
+       markerUnits="userSpaceOnUse"
+       orient="auto-start-reverse"
+       refY="5"
+       refX="2"
+       markerHeight="5"
+       markerWidth="5"
+       viewBox="0 0 10 10"
+       id="dataflow-arrowhead-small"
+       class="dataflow-arrowhead style-scope tf-graph-scene">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         id="use16"
+         style="font-size:20px;fill:#bbbbbb"
+         class="style-scope tf-graph-scene"
+         xlink:href="#dataflow-arrowhead-path" />
+    </marker>
+    <marker
+       style="font-size:20px;fill:#bbbbbb"
+       markerUnits="userSpaceOnUse"
+       orient="auto-start-reverse"
+       refY="5"
+       refX="2"
+       markerHeight="13"
+       markerWidth="13"
+       viewBox="0 0 10 10"
+       id="dataflow-arrowhead-medium"
+       class="dataflow-arrowhead style-scope tf-graph-scene">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         id="use19"
+         style="font-size:20px;fill:#bbbbbb"
+         class="style-scope tf-graph-scene"
+         xlink:href="#dataflow-arrowhead-path" />
+    </marker>
+    <marker
+       style="font-size:20px;fill:#bbbbbb"
+       markerUnits="userSpaceOnUse"
+       orient="auto-start-reverse"
+       refY="5"
+       refX="2"
+       markerHeight="16"
+       markerWidth="16"
+       viewBox="0 0 10 10"
+       id="dataflow-arrowhead-large"
+       class="dataflow-arrowhead style-scope tf-graph-scene">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         id="use22"
+         style="font-size:20px;fill:#bbbbbb"
+         class="style-scope tf-graph-scene"
+         xlink:href="#dataflow-arrowhead-path" />
+    </marker>
+    <marker
+       style="font-size:20px;fill:#bbbbbb"
+       markerUnits="userSpaceOnUse"
+       orient="auto-start-reverse"
+       refY="5"
+       refX="2"
+       markerHeight="20"
+       markerWidth="20"
+       viewBox="0 0 10 10"
+       id="dataflow-arrowhead-xlarge"
+       class="dataflow-arrowhead style-scope tf-graph-scene">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         id="use25"
+         style="font-size:20px;fill:#bbbbbb"
+         class="style-scope tf-graph-scene"
+         xlink:href="#dataflow-arrowhead-path" />
+    </marker>
+    <marker
+       style="font-size:20px;fill:#aaaaaa"
+       class="style-scope tf-graph-scene"
+       orient="auto"
+       refY="2.5"
+       refX="5"
+       markerHeight="5"
+       markerWidth="5"
+       id="annotation-arrowhead">
+      <path
+         id="path28"
+         style="font-size:20px;fill:#aaaaaa"
+         class="style-scope tf-graph-scene"
+         d="M 0,0 5,2.5 0,5 V 0"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       style="font-size:20px;fill:#e0d4b3"
+       class="style-scope tf-graph-scene"
+       orient="auto"
+       refY="2.5"
+       refX="5"
+       markerHeight="5"
+       markerWidth="5"
+       id="annotation-arrowhead-faded">
+      <path
+         id="path31"
+         style="font-size:20px;fill:#e0d4b3"
+         class="style-scope tf-graph-scene"
+         d="M 0,0 5,2.5 0,5 V 0"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       style="font-size:20px;fill:#aaaaaa"
+       class="style-scope tf-graph-scene"
+       orient="auto"
+       refY="2.5"
+       refX="0"
+       markerHeight="5"
+       markerWidth="5"
+       id="ref-annotation-arrowhead">
+      <path
+         id="path34"
+         style="font-size:20px;fill:#aaaaaa"
+         class="style-scope tf-graph-scene"
+         d="M 5,0 0,2.5 5,5 V 0"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       style="font-size:20px;fill:#e0d4b3"
+       class="style-scope tf-graph-scene"
+       orient="auto"
+       refY="2.5"
+       refX="0"
+       markerHeight="5"
+       markerWidth="5"
+       id="ref-annotation-arrowhead-faded">
+      <path
+         id="path37"
+         style="font-size:20px;fill:#e0d4b3"
+         class="style-scope tf-graph-scene"
+         d="M 5,0 0,2.5 5,5 V 0"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <ellipse
+       cy="0"
+       cx="0"
+       style="font-size:20px"
+       class="style-scope tf-graph-scene"
+       fill="inherit"
+       stroke="inherit"
+       ry="3"
+       rx="7.5"
+       id="op-node-stamp" />
+    <ellipse
+       cy="0"
+       cx="0"
+       style="font-size:20px"
+       class="style-scope tf-graph-scene"
+       fill="inherit"
+       stroke="inherit"
+       ry="2"
+       rx="5"
+       id="op-node-annotation-stamp" />
+    <g
+       style="font-size:20px"
+       class="style-scope tf-graph-scene"
+       id="op-series-vertical-stamp">
+      <use
+         height="100%"
+         width="100%"
+         id="use42"
+         style="font-size:20px"
+         class="style-scope tf-graph-scene"
+         y="9"
+         x="8"
+         xlink:href="#op-node-stamp" />
+      <use
+         height="100%"
+         width="100%"
+         id="use44"
+         style="font-size:20px"
+         class="style-scope tf-graph-scene"
+         y="6"
+         x="8"
+         xlink:href="#op-node-stamp" />
+      <use
+         height="100%"
+         width="100%"
+         id="use46"
+         style="font-size:20px"
+         class="style-scope tf-graph-scene"
+         y="3"
+         x="8"
+         xlink:href="#op-node-stamp" />
+    </g>
+    <g
+       style="font-size:20px"
+       class="style-scope tf-graph-scene"
+       id="op-series-horizontal-stamp">
+      <use
+         height="100%"
+         width="100%"
+         id="use49"
+         style="font-size:20px"
+         class="style-scope tf-graph-scene"
+         y="4"
+         x="16"
+         xlink:href="#op-node-stamp" />
+      <use
+         height="100%"
+         width="100%"
+         id="use51"
+         style="font-size:20px"
+         class="style-scope tf-graph-scene"
+         y="4"
+         x="12"
+         xlink:href="#op-node-stamp" />
+      <use
+         height="100%"
+         width="100%"
+         id="use53"
+         style="font-size:20px"
+         class="style-scope tf-graph-scene"
+         y="4"
+         x="8"
+         xlink:href="#op-node-stamp" />
+    </g>
+    <g
+       style="font-size:20px"
+       class="style-scope tf-graph-scene"
+       id="op-series-annotation-stamp">
+      <use
+         height="100%"
+         width="100%"
+         id="use56"
+         style="font-size:20px"
+         class="style-scope tf-graph-scene"
+         y="2"
+         x="9"
+         xlink:href="#op-node-annotation-stamp" />
+      <use
+         height="100%"
+         width="100%"
+         id="use58"
+         style="font-size:20px"
+         class="style-scope tf-graph-scene"
+         y="2"
+         x="7"
+         xlink:href="#op-node-annotation-stamp" />
+      <use
+         height="100%"
+         width="100%"
+         id="use60"
+         style="font-size:20px"
+         class="style-scope tf-graph-scene"
+         y="2"
+         x="5"
+         xlink:href="#op-node-annotation-stamp" />
+    </g>
+    <svg
+       version="1.1"
+       style="font-size:20px;fill:#848484"
+       class="style-scope tf-graph-scene"
+       width="12"
+       viewBox="0 0 24 24"
+       height="12"
+       id="summary-icon">
+      <path
+         id="path63"
+         style="font-size:20px;fill:#848484"
+         class="style-scope tf-graph-scene"
+         d="M 19,3 H 5 C 3.9,3 3,3.9 3,5 v 14 c 0,1.1 0.9,2 2,2 h 14 c 1.1,0 2,-0.9 2,-2 V 5 C 21,3.9 20.1,3 19,3 Z M 9,17 H 7 v -7 h 2 z m 4,0 H 11 V 7 h 2 z m 4,0 h -2 v -4 h 2 z"
+         inkscape:connector-curvature="0" />
+    </svg>
+    <g
+       style="font-size:20px"
+       class="style-scope tf-graph-scene"
+       id="linearGradients" />
+    <pattern
+       class="style-scope tf-graph-scene"
+       patternUnits="userSpaceOnUse"
+       height="5"
+       width="5"
+       patternTransform="rotate(45 0 0)"
+       id="rectHatch">
+      <line
+         id="line67"
+         class="style-scope tf-graph-scene"
+         style="border-bottom-color:rgb(224, 212, 179);border-left-color:rgb(224, 212, 179);border-right-color:rgb(224, 212, 179);border-top-color:rgb(224, 212, 179);color:rgb(224, 212, 179);font-size:20px;height:auto;outline-color:rgb(224, 212, 179);overflow-x:visible;overflow-y:visible;text-decoration:none solid rgb(224, 212, 179);text-decoration-color:rgb(224, 212, 179);width:auto;column-rule-color:rgb(224, 212, 179);perspective-origin:0px 0px;-webkit-tap-highlight-color:rgba(0, 0, 0, 0);-webkit-text-emphasis-color:rgb(224, 212, 179);-webkit-text-fill-color:rgb(224, 212, 179);-webkit-text-stroke-color:rgb(224, 212, 179);transform-origin:0px 0px;fill:rgb(255, 255, 255);stroke:rgb(224, 212, 179);caret-color:rgb(224, 212, 179);"
+         y2="5"
+         x2="0"
+         y1="0"
+         x1="0" />
+    </pattern>
+    <pattern
+       class="style-scope tf-graph-scene"
+       patternUnits="userSpaceOnUse"
+       height="2"
+       width="2"
+       patternTransform="rotate(45 0 0)"
+       id="ellipseHatch">
+      <line
+         id="line70"
+         class="style-scope tf-graph-scene"
+         style="border-bottom-color:rgb(224, 212, 179);border-left-color:rgb(224, 212, 179);border-right-color:rgb(224, 212, 179);border-top-color:rgb(224, 212, 179);color:rgb(224, 212, 179);font-size:20px;height:auto;outline-color:rgb(224, 212, 179);overflow-x:visible;overflow-y:visible;text-decoration:none solid rgb(224, 212, 179);text-decoration-color:rgb(224, 212, 179);width:auto;column-rule-color:rgb(224, 212, 179);perspective-origin:0px 0px;-webkit-tap-highlight-color:rgba(0, 0, 0, 0);-webkit-text-emphasis-color:rgb(224, 212, 179);-webkit-text-fill-color:rgb(224, 212, 179);-webkit-text-stroke-color:rgb(224, 212, 179);transform-origin:0px 0px;fill:rgb(255, 255, 255);stroke:rgb(224, 212, 179);caret-color:rgb(224, 212, 179);"
+         y2="2"
+         x2="0"
+         y1="0"
+         x1="0" />
+    </pattern>
+    <filter
+       style="font-size:20px"
+       class="style-scope tf-graph-scene"
+       height="1.8"
+       width="1.8"
+       y="-0.40000001"
+       x="-0.40000001"
+       id="health-pill-shadow">
+      <feGaussianBlur
+         id="feGaussianBlur73"
+         style="font-size:20px"
+         class="style-scope tf-graph-scene"
+         stdDeviation="0.8"
+         in="SourceAlpha" />
+      <feOffset
+         id="feOffset75"
+         style="font-size:20px"
+         class="style-scope tf-graph-scene"
+         result="offsetblur"
+         dy="0"
+         dx="0" />
+      <feFlood
+         id="feFlood77"
+         style="font-size:20px"
+         class="style-scope tf-graph-scene"
+         flood-color="#000000" />
+      <feComposite
+         id="feComposite79"
+         style="font-size:20px"
+         class="style-scope tf-graph-scene"
+         operator="in"
+         in2="offsetblur" />
+      <feMerge
+         id="feMerge85"
+         style="font-size:20px"
+         class="style-scope tf-graph-scene">
+        <feMergeNode
+           id="feMergeNode81"
+           style="font-size:20px;height:auto;overflow-x:visible;overflow-y:visible;width:auto;perspective-origin:50% 50%;-webkit-tap-highlight-color:rgba(0, 0, 0, 0);transform-origin:0px 0px;"
+           class="style-scope tf-graph-scene" />
+        <feMergeNode
+           id="feMergeNode83"
+           style="font-size:20px;height:auto;overflow-x:visible;overflow-y:visible;width:auto;perspective-origin:50% 50%;-webkit-tap-highlight-color:rgba(0, 0, 0, 0);transform-origin:0px 0px;"
+           class="style-scope tf-graph-scene"
+           in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath5283">
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.58950186"
+         id="rect5285"
+         width="276.89621"
+         height="495.60413"
+         x="10.56438"
+         y="14.483764" />
+    </clipPath>
+  </defs>
+  <g
+     style="font-size:20px"
+     transform="matrix(1.6963475,0,0,1.6963475,-36.641272,-33.078776)"
+     class="style-scope tf-graph-scene"
+     id="root"
+     clip-path="url(#clipPath5283)">
+    <g
+       id="g1170"
+       style="font-size:20px;opacity:1"
+       class="scene">
+      <g
+         id="g821"
+         style="font-size:20px"
+         transform="translate(0,20)"
+         class="core">
+        <g
+           id="g211"
+           style="font-size:20px"
+           class="edges">
+          <g
+             id="g97"
+             style="font-size:20px"
+             data-edge="conv2d_1_input--conv2d_1"
+             class="edge">
+            <path
+               style="font-size:20px;fill:none;stroke:#bbbbbb;stroke-width:1.45929003px;stroke-linecap:round;marker-end:url(#dataflow-arrowhead-small)"
+               d="M 100,466.53266 V 445.38943"
+               class="edgeline"
+               id="path_conv2d_1_input--conv2d_1"
+               inkscape:connector-curvature="0" />
+            <text
+               id="text95"
+               style="font-size:3.5px;white-space:nowrap;display:block;fill:#666666">
+              <textPath
+                 id="textPath93"
+                 style="font-size:3.5px;dominant-baseline:central;text-anchor:middle;white-space:nowrap;fill:#666666"
+                 dominant-baseline="central"
+                 startOffset="50%"
+                 xlink:href="#path_conv2d_1_input--conv2d_1">?×28×28×1</textPath>
+            </text>
+          </g>
+          <g
+             id="g104"
+             style="font-size:20px"
+             data-edge="conv2d_1--max_pooling2d_1"
+             class="edge">
+            <path
+               style="font-size:20px;fill:none;stroke:#bbbbbb;stroke-width:3.84530997px;stroke-linecap:round;marker-end:url(#dataflow-arrowhead-medium)"
+               d="M 100,423.67588 V 408.93265"
+               class="edgeline"
+               id="path_conv2d_1--max_pooling2d_1"
+               inkscape:connector-curvature="0" />
+            <text
+               id="text102"
+               style="font-size:3.5px;white-space:nowrap;display:block;fill:#666666">
+              <textPath
+                 id="textPath100"
+                 style="font-size:3.5px;dominant-baseline:central;text-anchor:middle;white-space:nowrap;fill:#666666"
+                 dominant-baseline="central"
+                 startOffset="50%"
+                 xlink:href="#path_conv2d_1--max_pooling2d_1">?×24×24×128</textPath>
+            </text>
+          </g>
+          <g
+             id="g111"
+             style="font-size:20px"
+             data-edge="keras_learning_phase--dropout_1"
+             class="edge">
+            <path
+               style="font-size:20px;fill:none;stroke:#bbbbbb;stroke-width:0.77568102px;stroke-linecap:round;marker-end:url(#dataflow-arrowhead-small)"
+               d="M 60.306642,388.03266 85.172554,361.45364"
+               class="edgeline"
+               id="path_keras_learning_phase--dropout_1"
+               inkscape:connector-curvature="0" />
+            <text
+               id="text109"
+               style="font-size:3.5px;white-space:nowrap;display:block;fill:#666666">
+              <textPath
+                 id="textPath107"
+                 style="font-size:3.5px;dominant-baseline:central;text-anchor:middle;white-space:nowrap;fill:#666666"
+                 dominant-baseline="central"
+                 startOffset="50%"
+                 xlink:href="#path_keras_learning_phase--dropout_1">2 tensors</textPath>
+            </text>
+          </g>
+          <g
+             id="g118"
+             style="font-size:20px"
+             data-edge="max_pooling2d_1--dropout_1"
+             class="edge">
+            <path
+               style="font-size:20px;fill:none;stroke:#bbbbbb;stroke-width:3.24330997px;stroke-linecap:round;marker-end:url(#dataflow-arrowhead-small)"
+               d="m 109.375,383.53266 2.60417,-2.08333 c 2.60416,-2.08333 7.8125,-6.25 8.31204,-10.00242 0.49954,-3.75243 -3.70971,-7.0906 -5.81433,-8.75969 l -2.10463,-1.66909"
+               class="edgeline"
+               id="path_max_pooling2d_1--dropout_1"
+               inkscape:connector-curvature="0" />
+            <text
+               id="text116"
+               style="font-size:3.5px;white-space:nowrap;display:block;fill:#666666">
+              <textPath
+                 id="textPath114"
+                 style="font-size:3.5px;dominant-baseline:central;text-anchor:middle;white-space:nowrap;fill:#666666"
+                 dominant-baseline="central"
+                 startOffset="50%"
+                 xlink:href="#path_max_pooling2d_1--dropout_1">2 tensors</textPath>
+            </text>
+          </g>
+          <g
+             id="g125"
+             style="font-size:20px"
+             data-edge="dropout_1--conv2d_2"
+             class="edge">
+            <path
+               style="font-size:20px;fill:none;stroke:#bbbbbb;stroke-width:2.75436997px;stroke-linecap:round;marker-end:url(#dataflow-arrowhead-small)"
+               d="M 97.5,339.91457 V 318.77136"
+               class="edgeline"
+               id="path_dropout_1--conv2d_2"
+               inkscape:connector-curvature="0" />
+            <text
+               id="text123"
+               style="font-size:3.5px;white-space:nowrap;display:block;fill:#666666">
+              <textPath
+                 id="textPath121"
+                 style="font-size:3.5px;dominant-baseline:central;text-anchor:middle;white-space:nowrap;fill:#666666"
+                 dominant-baseline="central"
+                 startOffset="50%"
+                 xlink:href="#path_dropout_1--conv2d_2">?×12×12×128</textPath>
+            </text>
+          </g>
+          <g
+             id="g132"
+             style="font-size:20px"
+             data-edge="conv2d_2--max_pooling2d_2"
+             class="edge">
+            <path
+               style="font-size:20px;fill:none;stroke:#bbbbbb;stroke-width:1.88995004px;stroke-linecap:round;marker-end:url(#dataflow-arrowhead-small)"
+               d="M 97.5,297.05779 V 275.91458"
+               class="edgeline"
+               id="path_conv2d_2--max_pooling2d_2"
+               inkscape:connector-curvature="0" />
+            <text
+               id="text130"
+               style="font-size:3.5px;white-space:nowrap;display:block;fill:#666666">
+              <textPath
+                 id="textPath128"
+                 style="font-size:3.5px;dominant-baseline:central;text-anchor:middle;white-space:nowrap;fill:#666666"
+                 dominant-baseline="central"
+                 startOffset="50%"
+                 xlink:href="#path_conv2d_2--max_pooling2d_2">?×10×10×32</textPath>
+            </text>
+          </g>
+          <g
+             id="g139"
+             style="font-size:20px"
+             data-edge="keras_learning_phase--dropout_2"
+             class="edge">
+            <path
+               style="font-size:20px;fill:none;stroke:#bbbbbb;stroke-width:0.77568102px;stroke-linecap:round;marker-end:url(#dataflow-arrowhead-small)"
+               d="m 53.375,388.03266 -3.895833,-2.83333 c -3.895834,-2.83333 -11.6875,-8.5 -15.583334,-14.96817 C 30,363.76298 30,356.4933 30,349.22362 c 0,-7.26968 0,-14.53937 0,-21.75754 0,-7.21817 0,-14.38484 0,-21.55151 0,-7.16666 0,-14.33333 0,-21.25 0,-6.91666 0,-13.58333 0,-20.25 0,-6.66666 0,-13.33333 1.777703,-18.29909 1.777703,-4.96575 5.333109,-8.2306 7.110812,-9.86302 l 1.777703,-1.63242"
+               class="edgeline"
+               id="path_keras_learning_phase--dropout_2"
+               inkscape:connector-curvature="0" />
+            <text
+               id="text137"
+               style="font-size:3.5px;white-space:nowrap;display:block;fill:#666666">
+              <textPath
+                 id="textPath135"
+                 style="font-size:3.5px;dominant-baseline:central;text-anchor:middle;white-space:nowrap;fill:#666666"
+                 dominant-baseline="central"
+                 startOffset="50%"
+                 xlink:href="#path_keras_learning_phase--dropout_2">2 tensors</textPath>
+            </text>
+          </g>
+          <g
+             id="g146"
+             style="font-size:20px"
+             data-edge="max_pooling2d_2--dropout_2"
+             class="edge">
+            <path
+               style="font-size:20px;fill:none;stroke:#bbbbbb;stroke-width:1.65506005px;stroke-linecap:round;marker-end:url(#dataflow-arrowhead-small)"
+               d="m 106.875,256.91457 2.60417,-2.08333 c 2.60416,-2.08333 7.8125,-6.25 4.4847,-10.21509 -3.32779,-3.96508 -15.191709,-7.72859 -21.123669,-9.61034 l -5.93196,-1.88176"
+               class="edgeline"
+               id="path_max_pooling2d_2--dropout_2"
+               inkscape:connector-curvature="0" />
+            <text
+               id="text144"
+               style="font-size:3.5px;white-space:nowrap;display:block;fill:#666666">
+              <textPath
+                 id="textPath142"
+                 style="font-size:3.5px;dominant-baseline:central;text-anchor:middle;white-space:nowrap;fill:#666666"
+                 dominant-baseline="central"
+                 startOffset="50%"
+                 xlink:href="#path_max_pooling2d_2--dropout_2">2 tensors</textPath>
+            </text>
+          </g>
+          <g
+             id="g153"
+             style="font-size:20px"
+             data-edge="dropout_2--flatten_1"
+             class="edge">
+            <path
+               style="font-size:20px;fill:none;stroke:#bbbbbb;stroke-width:1.65543997px;stroke-linecap:round;marker-end:url(#dataflow-arrowhead-small)"
+               d="m 53.75,213.29648 v -21"
+               class="edgeline"
+               id="path_dropout_2--flatten_1"
+               inkscape:connector-curvature="0" />
+            <text
+               id="text151"
+               style="font-size:3.5px;white-space:nowrap;display:block;fill:#666666">
+              <textPath
+                 id="textPath149"
+                 style="font-size:3.5px;dominant-baseline:central;text-anchor:middle;white-space:nowrap;fill:#666666"
+                 dominant-baseline="central"
+                 startOffset="50%"
+                 xlink:href="#path_dropout_2--flatten_1">2 tensors</textPath>
+            </text>
+          </g>
+          <g
+             id="g160"
+             style="font-size:20px"
+             data-edge="flatten_1--dense_1"
+             class="edge">
+            <path
+               style="font-size:20px;fill:none;stroke:#bbbbbb;stroke-width:0.75px;stroke-linecap:round;marker-end:url(#dataflow-arrowhead-small)"
+               d="M 53.75,172.39196 V 151.24875"
+               class="edgeline"
+               id="path_flatten_1--dense_1"
+               inkscape:connector-curvature="0" />
+            <text
+               id="text158"
+               style="font-size:3.5px;white-space:nowrap;display:block;fill:#666666">
+              <textPath
+                 id="textPath156"
+                 style="font-size:3.5px;dominant-baseline:central;text-anchor:middle;white-space:nowrap;fill:#666666"
+                 dominant-baseline="central"
+                 startOffset="50%"
+                 xlink:href="#path_flatten_1--dense_1">?×?</textPath>
+            </text>
+          </g>
+          <g
+             id="g167"
+             style="font-size:20px"
+             data-edge="dense_1--dense_2"
+             class="edge">
+            <path
+               style="font-size:20px;fill:none;stroke:#bbbbbb;stroke-width:1.11521006px;stroke-linecap:round;marker-end:url(#dataflow-arrowhead-small)"
+               d="M 53.75,129.53518 V 108.24874"
+               class="edgeline"
+               id="path_dense_1--dense_2"
+               inkscape:connector-curvature="0" />
+            <text
+               id="text165"
+               style="font-size:3.5px;white-space:nowrap;display:block;fill:#666666">
+              <textPath
+                 id="textPath163"
+                 style="font-size:3.5px;dominant-baseline:central;text-anchor:middle;white-space:nowrap;fill:#666666"
+                 dominant-baseline="central"
+                 startOffset="50%"
+                 xlink:href="#path_dense_1--dense_2">?×128</textPath>
+            </text>
+          </g>
+          <g
+             id="g174"
+             style="font-size:20px"
+             data-edge="dense_2--dense_3"
+             class="edge">
+            <path
+               style="font-size:20px;fill:none;stroke:#bbbbbb;stroke-width:0.99816602px;stroke-linecap:round;marker-end:url(#dataflow-arrowhead-small)"
+               d="M 53.75,86.535176 V 65.248749"
+               class="edgeline"
+               id="path_dense_2--dense_3"
+               inkscape:connector-curvature="0" />
+            <text
+               id="text172"
+               style="font-size:3.5px;white-space:nowrap;display:block;fill:#666666">
+              <textPath
+                 id="textPath170"
+                 style="font-size:3.5px;dominant-baseline:central;text-anchor:middle;white-space:nowrap;fill:#666666"
+                 dominant-baseline="central"
+                 startOffset="50%"
+                 xlink:href="#path_dense_2--dense_3">?×50</textPath>
+            </text>
+          </g>
+          <g
+             id="g181"
+             style="font-size:20px"
+             data-edge="dense_3--loss"
+             class="edge">
+            <path
+               style="font-size:20px;fill:none;stroke:#bbbbbb;stroke-width:0.91181803px;stroke-linecap:round;marker-end:url(#dataflow-arrowhead-small)"
+               d="m 82.071111,43.535176 6.738148,-2.107203 c 6.738149,-2.107202 20.214441,-6.321608 32.823311,-10.308824 12.60886,-3.987217 24.35029,-7.747244 30.221,-9.627258 l 5.87072,-1.880014"
+               class="edgeline"
+               id="path_dense_3--loss"
+               inkscape:connector-curvature="0" />
+            <text
+               id="text179"
+               style="font-size:3.5px;white-space:nowrap;display:block;fill:#666666">
+              <textPath
+                 id="textPath177"
+                 style="font-size:3.5px;dominant-baseline:central;text-anchor:middle;white-space:nowrap;fill:#666666"
+                 dominant-baseline="central"
+                 startOffset="50%"
+                 xlink:href="#path_dense_3--loss">2 tensors</textPath>
+            </text>
+          </g>
+          <g
+             id="g188"
+             style="font-size:20px"
+             data-edge="dense_3_target--loss"
+             class="edge">
+            <path
+               style="font-size:20px;fill:none;stroke:#bbbbbb;stroke-width:0.75px;stroke-linecap:round;marker-end:url(#dataflow-arrowhead-small)"
+               d="m 153.75,49.599752 8.375,-3.117965 c 8.375,-3.117966 25.125,-9.353896 32.53654,-13.992091 7.41154,-4.638194 5.48463,-7.678652 4.52117,-9.198881 l -0.96346,-1.520229"
+               class="edgeline"
+               id="path_dense_3_target--loss"
+               inkscape:connector-curvature="0" />
+            <text
+               id="text186"
+               style="font-size:3.5px;white-space:nowrap;display:block;fill:#666666">
+              <textPath
+                 id="textPath184"
+                 style="font-size:3.5px;dominant-baseline:central;text-anchor:middle;white-space:nowrap;fill:#666666"
+                 dominant-baseline="central"
+                 startOffset="50%"
+                 xlink:href="#path_dense_3_target--loss">?×?</textPath>
+            </text>
+          </g>
+          <g
+             id="g195"
+             style="font-size:20px"
+             data-edge="dense_3_sample_weights--loss"
+             class="edge">
+            <path
+               style="font-size:20px;fill:none;stroke:#bbbbbb;stroke-width:0.77568102px;stroke-linecap:round;marker-end:url(#dataflow-arrowhead-small)"
+               d="m 219.80814,49.39196 3.65698,-3.083334 c 3.65697,-3.083333 10.97093,-9.25 10.29704,-14.157842 -0.67388,-4.907843 -9.33561,-8.556861 -13.66647,-10.38137 l -4.33086,-1.82451"
+               class="edgeline"
+               id="path_dense_3_sample_weights--loss"
+               inkscape:connector-curvature="0" />
+            <text
+               id="text193"
+               style="font-size:3.5px;white-space:nowrap;display:block;fill:#666666">
+              <textPath
+                 id="textPath191"
+                 style="font-size:3.5px;dominant-baseline:central;text-anchor:middle;white-space:nowrap;fill:#666666"
+                 dominant-baseline="central"
+                 startOffset="50%"
+                 xlink:href="#path_dense_3_sample_weights--loss">2 tensors</textPath>
+            </text>
+          </g>
+          <g
+             id="g202"
+             style="font-size:20px"
+             data-edge="dense_3_target--metrics"
+             class="edge">
+            <path
+               style="font-size:20px;fill:none;stroke:#bbbbbb;stroke-width:0.75px;stroke-linecap:round;marker-end:url(#dataflow-arrowhead-small)"
+               d="m 143.63372,49.39196 -2.68895,-3.083334 c -2.68896,-3.083333 -8.06686,-9.25 -17.90263,-14.435803 -9.83578,-5.185804 -24.12941,-9.390745 -31.276228,-11.493215 l -7.146817,-2.10247"
+               class="edgeline"
+               id="path_dense_3_target--metrics"
+               inkscape:connector-curvature="0" />
+            <text
+               id="text200"
+               style="font-size:3.5px;white-space:nowrap;display:block;fill:#666666">
+              <textPath
+                 id="textPath198"
+                 style="font-size:3.5px;dominant-baseline:central;text-anchor:middle;white-space:nowrap;fill:#666666"
+                 dominant-baseline="central"
+                 startOffset="50%"
+                 xlink:href="#path_dense_3_target--metrics">?×?</textPath>
+            </text>
+          </g>
+          <g
+             id="g209"
+             style="font-size:20px"
+             data-edge="dense_3--metrics"
+             class="edge">
+            <path
+               style="font-size:20px;fill:none;stroke:#bbbbbb;stroke-width:0.860578px;stroke-linecap:round;marker-end:url(#dataflow-arrowhead-small)"
+               d="m 63.018727,43.535176 2.205212,-2.107203 c 2.205213,-2.107202 6.615637,-6.321608 6.925243,-10.256678 0.309607,-3.935071 -3.481605,-7.590806 -5.377211,-9.418674 l -1.895605,-1.827868"
+               class="edgeline"
+               id="path_dense_3--metrics"
+               inkscape:connector-curvature="0" />
+            <text
+               id="text207"
+               style="font-size:3.5px;white-space:nowrap;display:block;fill:#666666">
+              <textPath
+                 id="textPath205"
+                 style="font-size:3.5px;dominant-baseline:central;text-anchor:middle;white-space:nowrap;fill:#666666"
+                 dominant-baseline="central"
+                 startOffset="50%"
+                 xlink:href="#path_dense_3--metrics">?×10</textPath>
+            </text>
+          </g>
+        </g>
+        <g
+           id="g819"
+           style="font-size:20px"
+           class="nodes">
+          <g
+             id="g236"
+             style="font-size:20px"
+             class="node op"
+             data-name="keras_learning_phase">
+            <g
+               id="g224"
+               style="font-size:20px"
+               class="in-annotations">
+              <g
+                 id="g222"
+                 style="font-size:20px"
+                 class="annotation constant op"
+                 data-name="keras_learning_phase/input">
+                <path
+                   style="font-size:20px;fill:none;stroke:#aaaaaa;stroke-width:0.75px;marker-end:url(#annotation-arrowhead)"
+                   d="M 40,391.03266 H 50"
+                   class="annotation-edge"
+                   id="path_undefined--undefined"
+                   inkscape:connector-curvature="0" />
+                <text
+                   id="text214"
+                   style="font-size:5px;text-anchor:end;white-space:nowrap;display:block"
+                   y="391.03265"
+                   x="34"
+                   dy="0.34999999em"
+                   class="annotation-label">input</text>
+                <g
+                   id="g220"
+                   style="font-size:20px"
+                   class="annotation-node">
+                  <circle
+                     r="2"
+                     id="ellipse216"
+                     style="font-size:20px;fill:#ffffff;stroke:#b3b3b3"
+                     cy="391.03265"
+                     cx="38"
+                     class="nodecolortarget" />
+                  <title
+                     id="title218"
+                     class="undefined">keras_learning_phase/input</title>
+                </g>
+              </g>
+            </g>
+            <g
+               id="g226"
+               style="font-size:20px"
+               class="out-annotations" />
+            <g
+               id="g230"
+               style="font-size:20px"
+               class="nodeshape">
+              <ellipse
+                 id="ellipse228"
+                 style="font-size:20px;fill:#ffffff;stroke:#b3b3b3"
+                 ry="3"
+                 rx="7.5"
+                 cy="391.03265"
+                 cx="57.5"
+                 class="nodecolortarget" />
+            </g>
+            <text
+               id="text234"
+               style="font-size:6px;text-anchor:middle;white-space:nowrap;display:block;fill:#444444"
+               y="383.03265"
+               x="57.5"
+               dy="0.34999999em"
+               class="nodelabel">keras_lea...<title
+   id="title232">keras_learning_phase</title>
+</text>
+          </g>
+          <g
+             id="g261"
+             style="font-size:20px"
+             class="node op"
+             data-name="conv2d_1_input">
+            <g
+               id="g238"
+               style="font-size:20px"
+               class="in-annotations" />
+            <g
+               id="g251"
+               style="font-size:20px"
+               class="out-annotations">
+              <g
+                 id="g249"
+                 style="font-size:20px"
+                 class="annotation shortcut meta extract"
+                 data-name="training">
+                <path
+                   style="font-size:20px;fill:none;stroke:#aaaaaa;stroke-width:0.75px;marker-end:url(#annotation-arrowhead)"
+                   d="m 107.5,469.53266 h 10"
+                   class="annotation-edge"
+                   id="path_conv2d_1_input--training"
+                   inkscape:connector-curvature="0" />
+                <text
+                   id="text241"
+                   style="font-size:5px;text-anchor:start;white-space:nowrap;display:block"
+                   y="469.53265"
+                   x="131.5"
+                   dy="0.34999999em"
+                   class="annotation-label">training</text>
+                <g
+                   id="g247"
+                   style="font-size:20px"
+                   class="annotation-node">
+                  <rect
+                     id="rect243"
+                     height="4"
+                     width="12"
+                     y="467.53265"
+                     x="117.5"
+                     style="font-size:20px;fill:#eeeeee;stroke:#a7a7a7;stroke-width:0.5px;stroke-dasharray:1"
+                     ry="1"
+                     rx="1"
+                     class="nodecolortarget" />
+                  <title
+                     id="title245"
+                     class="undefined">training</title>
+                </g>
+              </g>
+            </g>
+            <g
+               id="g255"
+               style="font-size:20px"
+               class="nodeshape">
+              <ellipse
+                 id="ellipse253"
+                 style="font-size:20px;fill:#ffffff;stroke:#b3b3b3"
+                 ry="3"
+                 rx="7.5"
+                 cy="469.53265"
+                 cx="100"
+                 class="nodecolortarget" />
+            </g>
+            <text
+               id="text259"
+               style="font-size:6px;text-anchor:middle;white-space:nowrap;display:block;fill:#444444"
+               y="461.53265"
+               x="100"
+               dy="0.34999999em"
+               class="nodelabel">conv2d_...<title
+   id="title257">conv2d_1_input</title>
+</text>
+          </g>
+          <g
+             id="g318"
+             style="font-size:20px"
+             class="node meta"
+             data-name="conv2d_1">
+            <g
+               id="g263"
+               style="font-size:20px"
+               class="in-annotations" />
+            <g
+               id="g302"
+               style="font-size:20px"
+               class="out-annotations">
+              <g
+                 id="g274"
+                 style="font-size:20px"
+                 class="annotation shortcut op extract"
+                 data-name="init">
+                <path
+                   style="font-size:20px;fill:none;stroke:#aaaaaa;stroke-width:0.75px;stroke-dasharray:1;marker-end:url(#annotation-arrowhead)"
+                   d="m 130,428.67588 10,-3.14322"
+                   class="annotation-edge annotation-control-edge"
+                   id="path_conv2d_1--init"
+                   inkscape:connector-curvature="0" />
+                <text
+                   id="text266"
+                   style="font-size:5px;text-anchor:start;white-space:nowrap;display:block"
+                   y="425.53265"
+                   x="152"
+                   dy="0.34999999em"
+                   class="annotation-label">init</text>
+                <g
+                   id="g272"
+                   style="font-size:20px"
+                   class="annotation-node">
+                  <ellipse
+                     id="ellipse268"
+                     style="font-size:20px;fill:#ffffff;stroke:#b3b3b3;stroke-width:0.5px;stroke-dasharray:1"
+                     ry="2"
+                     rx="5"
+                     cy="425.53265"
+                     cx="145"
+                     class="nodecolortarget" />
+                  <title
+                     id="title270"
+                     class="undefined">init</title>
+                </g>
+              </g>
+              <g
+                 id="g285"
+                 style="font-size:20px"
+                 class="annotation shortcut meta extract"
+                 data-name="training">
+                <path
+                   style="font-size:20px;fill:none;stroke:#aaaaaa;stroke-width:0.75px;marker-start:url(#ref-annotation-arrowhead);marker-end:url(#annotation-arrowhead)"
+                   d="m 130,432.53266 h 10"
+                   class="annotation-edge refline"
+                   id="path_conv2d_1--training"
+                   inkscape:connector-curvature="0" />
+                <text
+                   id="text277"
+                   style="font-size:5px;text-anchor:start;white-space:nowrap;display:block"
+                   y="432.53265"
+                   x="154"
+                   dy="0.34999999em"
+                   class="annotation-label">training</text>
+                <g
+                   id="g283"
+                   style="font-size:20px"
+                   class="annotation-node">
+                  <rect
+                     id="rect279"
+                     style="font-size:20px;fill:#eeeeee;stroke:#a7a7a7;stroke-width:0.5px;stroke-dasharray:1"
+                     height="4"
+                     width="12"
+                     y="430.53265"
+                     x="140"
+                     ry="1"
+                     rx="1"
+                     class="nodecolortarget" />
+                  <title
+                     id="title281"
+                     class="undefined">training</title>
+                </g>
+              </g>
+              <g
+                 id="g300"
+                 style="font-size:20px"
+                 class="annotation shortcut series extract"
+                 data-name="IsVariableInitialized[0-44]">
+                <path
+                   style="font-size:20px;fill:none;stroke:#aaaaaa;stroke-width:0.75px;marker-end:url(#annotation-arrowhead)"
+                   d="m 130,436.38945 10,3.14321"
+                   class="annotation-edge"
+                   id="path_conv2d_1--IsVariableInitialized[0-44]"
+                   inkscape:connector-curvature="0" />
+                <text
+                   id="text290"
+                   style="font-size:5px;text-anchor:start;white-space:nowrap;display:block"
+                   y="439.53265"
+                   x="156"
+                   dy="0.34999999em"
+                   class="annotation-label">IsVariableI...<title
+   id="title288">IsVariableInitialized[0-44]</title>
+</text>
+                <g
+                   id="g298"
+                   style="font-size:20px"
+                   class="annotation-node">
+                  <use
+                     id="use292"
+                     style="font-size:20px;fill:#ffffff;stroke:#b3b3b3;stroke-width:0.5px;stroke-dasharray:1"
+                     height="4"
+                     width="14"
+                     y="437.53265"
+                     x="140"
+                     xlink:href="#op-series-annotation-stamp"
+                     class="nodecolortarget" />
+                  <rect
+                     id="rect294"
+                     style="font-size:20px;display:none;stroke-width:0.5px;stroke-dasharray:1"
+                     height="4"
+                     width="14"
+                     y="437.53265"
+                     x="140"
+                     class="nodecolortarget" />
+                  <title
+                     id="title296"
+                     class="undefined">IsVariableInitialized[0-44]</title>
+                </g>
+              </g>
+            </g>
+            <g
+               id="g314"
+               style="font-size:20px"
+               class="nodeshape">
+              <rect
+                 id="rect304"
+                 style="font-size:20px;fill:#c5e2b6;stroke:#8a9e7f"
+                 height="17.713568"
+                 width="60"
+                 y="423.67587"
+                 x="70"
+                 ry="5"
+                 rx="5"
+                 class="nodecolortarget" />
+              <g
+                 id="g312"
+                 style="font-size:20px;opacity:0.01000001"
+                 class="buttoncontainer">
+                <circle
+                   r="0"
+                   cy="0"
+                   cx="0"
+                   id="circle306"
+                   style="font-size:20px;fill:#e7811d"
+                   class="buttoncircle" />
+                <path
+                   id="path308"
+                   style="font-size:20px;stroke:#ffffff"
+                   transform="translate(124,429.67587)"
+                   d="M 0,-2.2 V 2.2 M -2.2,0 h 4.4"
+                   class="expandbutton"
+                   inkscape:connector-curvature="0" />
+                <path
+                   id="path310"
+                   style="font-size:20px;display:none;stroke:#ffffff"
+                   transform="translate(124,429.67587)"
+                   d="M -2.2,0 H 2.2"
+                   class="collapsebutton"
+                   inkscape:connector-curvature="0" />
+              </g>
+            </g>
+            <text
+               id="text316"
+               style="font-size:9px;text-anchor:middle;white-space:nowrap;display:block;fill:#444444"
+               y="432.53265"
+               x="100"
+               pointer-events="none"
+               font-size="9px"
+               dy="0.34999999em"
+               class="nodelabel">conv2d_1</text>
+          </g>
+          <g
+             id="g351"
+             style="font-size:20px"
+             class="node meta"
+             data-name="max_pooling2d_1">
+            <g
+               id="g320"
+               style="font-size:20px"
+               class="in-annotations" />
+            <g
+               id="g333"
+               style="font-size:20px"
+               class="out-annotations">
+              <g
+                 id="g331"
+                 style="font-size:20px"
+                 class="annotation shortcut meta extract"
+                 data-name="training">
+                <path
+                   style="font-size:20px;fill:none;stroke:#aaaaaa;stroke-width:0.75px;marker-end:url(#annotation-arrowhead)"
+                   d="m 130,391.03266 h 10"
+                   class="annotation-edge"
+                   id="path_max_pooling2d_1--training"
+                   inkscape:connector-curvature="0" />
+                <text
+                   id="text323"
+                   style="font-size:5px;text-anchor:start;white-space:nowrap;display:block"
+                   y="391.03265"
+                   x="154"
+                   dy="0.34999999em"
+                   class="annotation-label">training</text>
+                <g
+                   id="g329"
+                   style="font-size:20px"
+                   class="annotation-node">
+                  <rect
+                     id="rect325"
+                     height="4"
+                     width="12"
+                     y="389.03265"
+                     x="140"
+                     style="font-size:20px;fill:#eeeeee;stroke:#a7a7a7;stroke-width:0.5px;stroke-dasharray:1"
+                     ry="1"
+                     rx="1"
+                     class="nodecolortarget" />
+                  <title
+                     id="title327"
+                     class="undefined">training</title>
+                </g>
+              </g>
+            </g>
+            <g
+               id="g345"
+               style="font-size:20px"
+               class="nodeshape">
+              <rect
+                 id="rect335"
+                 style="font-size:20px;fill:#bbc6dd;stroke:#838b9b"
+                 height="15"
+                 width="60"
+                 y="383.53265"
+                 x="70"
+                 ry="5"
+                 rx="5"
+                 class="nodecolortarget" />
+              <g
+                 id="g343"
+                 style="font-size:20px;opacity:0.01000001"
+                 class="buttoncontainer">
+                <circle
+                   r="0"
+                   cy="0"
+                   cx="0"
+                   id="circle337"
+                   style="font-size:20px;fill:#e7811d"
+                   class="buttoncircle" />
+                <path
+                   id="path339"
+                   style="font-size:20px;stroke:#ffffff"
+                   transform="translate(124,389.53265)"
+                   d="M 0,-2.2 V 2.2 M -2.2,0 h 4.4"
+                   class="expandbutton"
+                   inkscape:connector-curvature="0" />
+                <path
+                   id="path341"
+                   style="font-size:20px;display:none;stroke:#ffffff"
+                   transform="translate(124,389.53265)"
+                   d="M -2.2,0 H 2.2"
+                   class="collapsebutton"
+                   inkscape:connector-curvature="0" />
+              </g>
+            </g>
+            <text
+               id="text349"
+               style="font-size:7.28570986px;text-anchor:middle;white-space:nowrap;display:block;fill:#444444"
+               y="391.03265"
+               x="100"
+               pointer-events="none"
+               font-size="7.285714285714286px"
+               dy="0.34999999em"
+               class="nodelabel">max_pooling2...<title
+   id="title347">max_pooling2d_1</title>
+</text>
+          </g>
+          <g
+             id="g382"
+             style="font-size:20px"
+             class="node meta"
+             data-name="dropout_1">
+            <g
+               id="g353"
+               style="font-size:20px"
+               class="in-annotations" />
+            <g
+               id="g366"
+               style="font-size:20px"
+               class="out-annotations">
+              <g
+                 id="g364"
+                 style="font-size:20px"
+                 class="annotation shortcut meta extract"
+                 data-name="training">
+                <path
+                   style="font-size:20px;fill:none;stroke:#aaaaaa;stroke-width:0.75px;marker-end:url(#annotation-arrowhead)"
+                   d="m 127.5,349.22362 h 10"
+                   class="annotation-edge"
+                   id="path_dropout_1--training"
+                   inkscape:connector-curvature="0" />
+                <text
+                   id="text356"
+                   style="font-size:5px;text-anchor:start;white-space:nowrap;display:block"
+                   y="349.22363"
+                   x="151.5"
+                   dy="0.34999999em"
+                   class="annotation-label">training</text>
+                <g
+                   id="g362"
+                   style="font-size:20px"
+                   class="annotation-node">
+                  <rect
+                     id="rect358"
+                     height="4"
+                     width="12"
+                     y="347.22363"
+                     x="137.5"
+                     style="font-size:20px;fill:#eeeeee;stroke:#a7a7a7;stroke-width:0.5px;stroke-dasharray:1"
+                     ry="1"
+                     rx="1"
+                     class="nodecolortarget" />
+                  <title
+                     id="title360"
+                     class="undefined">training</title>
+                </g>
+              </g>
+            </g>
+            <g
+               id="g378"
+               style="font-size:20px"
+               class="nodeshape">
+              <rect
+                 id="rect368"
+                 style="font-size:20px;fill:#efd8a9;stroke:#a79776"
+                 height="18.61809"
+                 width="60"
+                 y="339.91458"
+                 x="67.5"
+                 ry="5"
+                 rx="5"
+                 class="nodecolortarget" />
+              <g
+                 id="g376"
+                 style="font-size:20px;opacity:0.01000001"
+                 class="buttoncontainer">
+                <circle
+                   r="0"
+                   cy="0"
+                   cx="0"
+                   id="circle370"
+                   style="font-size:20px;fill:#e7811d"
+                   class="buttoncircle" />
+                <path
+                   id="path372"
+                   style="font-size:20px;stroke:#ffffff"
+                   transform="translate(121.5,345.91458)"
+                   d="M 0,-2.2 V 2.2 M -2.2,0 h 4.4"
+                   class="expandbutton"
+                   inkscape:connector-curvature="0" />
+                <path
+                   id="path374"
+                   style="font-size:20px;display:none;stroke:#ffffff"
+                   transform="translate(121.5,345.91458)"
+                   d="M -2.2,0 H 2.2"
+                   class="collapsebutton"
+                   inkscape:connector-curvature="0" />
+              </g>
+            </g>
+            <text
+               id="text380"
+               style="font-size:9px;text-anchor:middle;white-space:nowrap;display:block;fill:#444444"
+               y="349.22363"
+               x="97.5"
+               pointer-events="none"
+               font-size="9px"
+               dy="0.34999999em"
+               class="nodelabel">dropout_1</text>
+          </g>
+          <g
+             id="g439"
+             style="font-size:20px"
+             class="node meta"
+             data-name="conv2d_2">
+            <g
+               id="g384"
+               style="font-size:20px"
+               class="in-annotations" />
+            <g
+               id="g423"
+               style="font-size:20px"
+               class="out-annotations">
+              <g
+                 id="g395"
+                 style="font-size:20px"
+                 class="annotation shortcut op extract"
+                 data-name="init">
+                <path
+                   style="font-size:20px;fill:none;stroke:#aaaaaa;stroke-width:0.75px;stroke-dasharray:1;marker-end:url(#annotation-arrowhead)"
+                   d="m 127.5,302.05779 10,-3.14322"
+                   class="annotation-edge annotation-control-edge"
+                   id="path_conv2d_2--init"
+                   inkscape:connector-curvature="0" />
+                <text
+                   id="text387"
+                   style="font-size:5px;text-anchor:start;white-space:nowrap;display:block"
+                   y="298.91458"
+                   x="149.5"
+                   dy="0.34999999em"
+                   class="annotation-label">init</text>
+                <g
+                   id="g393"
+                   style="font-size:20px"
+                   class="annotation-node">
+                  <ellipse
+                     id="ellipse389"
+                     style="font-size:20px;fill:#ffffff;stroke:#b3b3b3;stroke-width:0.5px;stroke-dasharray:1"
+                     ry="2"
+                     rx="5"
+                     cy="298.91458"
+                     cx="142.5"
+                     class="nodecolortarget" />
+                  <title
+                     id="title391"
+                     class="undefined">init</title>
+                </g>
+              </g>
+              <g
+                 id="g406"
+                 style="font-size:20px"
+                 class="annotation shortcut meta extract"
+                 data-name="training">
+                <path
+                   style="font-size:20px;fill:none;stroke:#aaaaaa;stroke-width:0.75px;marker-start:url(#ref-annotation-arrowhead);marker-end:url(#annotation-arrowhead)"
+                   d="m 127.5,305.91457 h 10"
+                   class="annotation-edge refline"
+                   id="path_conv2d_2--training"
+                   inkscape:connector-curvature="0" />
+                <text
+                   id="text398"
+                   style="font-size:5px;text-anchor:start;white-space:nowrap;display:block"
+                   y="305.91458"
+                   x="151.5"
+                   dy="0.34999999em"
+                   class="annotation-label">training</text>
+                <g
+                   id="g404"
+                   style="font-size:20px"
+                   class="annotation-node">
+                  <rect
+                     id="rect400"
+                     style="font-size:20px;fill:#eeeeee;stroke:#a7a7a7;stroke-width:0.5px;stroke-dasharray:1"
+                     height="4"
+                     width="12"
+                     y="303.91458"
+                     x="137.5"
+                     ry="1"
+                     rx="1"
+                     class="nodecolortarget" />
+                  <title
+                     id="title402"
+                     class="undefined">training</title>
+                </g>
+              </g>
+              <g
+                 id="g421"
+                 style="font-size:20px"
+                 class="annotation shortcut series extract"
+                 data-name="IsVariableInitialized[0-44]">
+                <path
+                   style="font-size:20px;fill:none;stroke:#aaaaaa;stroke-width:0.75px;marker-end:url(#annotation-arrowhead)"
+                   d="m 127.5,309.77136 10,3.14321"
+                   class="annotation-edge"
+                   id="path_conv2d_2--IsVariableInitialized[0-44]"
+                   inkscape:connector-curvature="0" />
+                <text
+                   id="text411"
+                   style="font-size:5px;text-anchor:start;white-space:nowrap;display:block"
+                   y="312.91458"
+                   x="153.5"
+                   dy="0.34999999em"
+                   class="annotation-label">IsVariableI...<title
+   id="title409">IsVariableInitialized[0-44]</title>
+</text>
+                <g
+                   id="g419"
+                   style="font-size:20px"
+                   class="annotation-node">
+                  <use
+                     id="use413"
+                     style="font-size:20px;fill:#ffffff;stroke:#b3b3b3;stroke-width:0.5px;stroke-dasharray:1"
+                     height="4"
+                     width="14"
+                     y="310.91458"
+                     x="137.5"
+                     xlink:href="#op-series-annotation-stamp"
+                     class="nodecolortarget" />
+                  <rect
+                     id="rect415"
+                     style="font-size:20px;display:none;stroke-width:0.5px;stroke-dasharray:1"
+                     height="4"
+                     width="14"
+                     y="310.91458"
+                     x="137.5"
+                     class="nodecolortarget" />
+                  <title
+                     id="title417"
+                     class="undefined">IsVariableInitialized[0-44]</title>
+                </g>
+              </g>
+            </g>
+            <g
+               id="g435"
+               style="font-size:20px"
+               class="nodeshape">
+              <rect
+                 id="rect425"
+                 style="font-size:20px;fill:#c5e2b6;stroke:#8a9e7f"
+                 height="17.713568"
+                 width="60"
+                 y="297.0578"
+                 x="67.5"
+                 ry="5"
+                 rx="5"
+                 class="nodecolortarget" />
+              <g
+                 id="g433"
+                 style="font-size:20px;opacity:0.01000001"
+                 class="buttoncontainer">
+                <circle
+                   r="0"
+                   cy="0"
+                   cx="0"
+                   id="circle427"
+                   style="font-size:20px;fill:#e7811d"
+                   class="buttoncircle" />
+                <path
+                   id="path429"
+                   style="font-size:20px;stroke:#ffffff"
+                   transform="translate(121.5,303.0578)"
+                   d="M 0,-2.2 V 2.2 M -2.2,0 h 4.4"
+                   class="expandbutton"
+                   inkscape:connector-curvature="0" />
+                <path
+                   id="path431"
+                   style="font-size:20px;display:none;stroke:#ffffff"
+                   transform="translate(121.5,303.0578)"
+                   d="M -2.2,0 H 2.2"
+                   class="collapsebutton"
+                   inkscape:connector-curvature="0" />
+              </g>
+            </g>
+            <text
+               id="text437"
+               style="font-size:9px;text-anchor:middle;white-space:nowrap;display:block;fill:#444444"
+               y="305.91458"
+               x="97.5"
+               pointer-events="none"
+               font-size="9px"
+               dy="0.34999999em"
+               class="nodelabel">conv2d_2</text>
+          </g>
+          <g
+             id="g472"
+             style="font-size:20px"
+             class="node meta"
+             data-name="max_pooling2d_2">
+            <g
+               id="g441"
+               style="font-size:20px"
+               class="in-annotations" />
+            <g
+               id="g454"
+               style="font-size:20px"
+               class="out-annotations">
+              <g
+                 id="g452"
+                 style="font-size:20px"
+                 class="annotation shortcut meta extract"
+                 data-name="training">
+                <path
+                   style="font-size:20px;fill:none;stroke:#aaaaaa;stroke-width:0.75px;marker-end:url(#annotation-arrowhead)"
+                   d="m 127.5,264.41457 h 10"
+                   class="annotation-edge"
+                   id="path_max_pooling2d_2--training"
+                   inkscape:connector-curvature="0" />
+                <text
+                   id="text444"
+                   style="font-size:5px;text-anchor:start;white-space:nowrap;display:block"
+                   y="264.41458"
+                   x="151.5"
+                   dy="0.34999999em"
+                   class="annotation-label">training</text>
+                <g
+                   id="g450"
+                   style="font-size:20px"
+                   class="annotation-node">
+                  <rect
+                     id="rect446"
+                     height="4"
+                     width="12"
+                     y="262.41458"
+                     x="137.5"
+                     style="font-size:20px;fill:#eeeeee;stroke:#a7a7a7;stroke-width:0.5px;stroke-dasharray:1"
+                     ry="1"
+                     rx="1"
+                     class="nodecolortarget" />
+                  <title
+                     id="title448"
+                     class="undefined">training</title>
+                </g>
+              </g>
+            </g>
+            <g
+               id="g466"
+               style="font-size:20px"
+               class="nodeshape">
+              <rect
+                 id="rect456"
+                 style="font-size:20px;fill:#bbc6dd;stroke:#838b9b"
+                 height="15"
+                 width="60"
+                 y="256.91458"
+                 x="67.5"
+                 ry="5"
+                 rx="5"
+                 class="nodecolortarget" />
+              <g
+                 id="g464"
+                 style="font-size:20px;opacity:0.01000001"
+                 class="buttoncontainer">
+                <circle
+                   r="0"
+                   cy="0"
+                   cx="0"
+                   id="circle458"
+                   style="font-size:20px;fill:#e7811d"
+                   class="buttoncircle" />
+                <path
+                   id="path460"
+                   style="font-size:20px;stroke:#ffffff"
+                   transform="translate(121.5,262.91458)"
+                   d="M 0,-2.2 V 2.2 M -2.2,0 h 4.4"
+                   class="expandbutton"
+                   inkscape:connector-curvature="0" />
+                <path
+                   id="path462"
+                   style="font-size:20px;display:none;stroke:#ffffff"
+                   transform="translate(121.5,262.91458)"
+                   d="M -2.2,0 H 2.2"
+                   class="collapsebutton"
+                   inkscape:connector-curvature="0" />
+              </g>
+            </g>
+            <text
+               id="text470"
+               style="font-size:7.28570986px;text-anchor:middle;white-space:nowrap;display:block;fill:#444444"
+               y="264.41458"
+               x="97.5"
+               pointer-events="none"
+               font-size="7.285714285714286px"
+               dy="0.34999999em"
+               class="nodelabel">max_pooling2...<title
+   id="title468">max_pooling2d_2</title>
+</text>
+          </g>
+          <g
+             id="g503"
+             style="font-size:20px"
+             class="node meta"
+             data-name="dropout_2">
+            <g
+               id="g474"
+               style="font-size:20px"
+               class="in-annotations" />
+            <g
+               id="g487"
+               style="font-size:20px"
+               class="out-annotations">
+              <g
+                 id="g485"
+                 style="font-size:20px"
+                 class="annotation shortcut meta extract"
+                 data-name="training">
+                <path
+                   style="font-size:20px;fill:none;stroke:#aaaaaa;stroke-width:0.75px;marker-end:url(#annotation-arrowhead)"
+                   d="m 83.75,222.60553 h 10"
+                   class="annotation-edge"
+                   id="path_dropout_2--training"
+                   inkscape:connector-curvature="0" />
+                <text
+                   id="text477"
+                   style="font-size:5px;text-anchor:start;white-space:nowrap;display:block"
+                   y="222.60553"
+                   x="107.75"
+                   dy="0.34999999em"
+                   class="annotation-label">training</text>
+                <g
+                   id="g483"
+                   style="font-size:20px"
+                   class="annotation-node">
+                  <rect
+                     id="rect479"
+                     height="4"
+                     width="12"
+                     y="220.60553"
+                     x="93.75"
+                     style="font-size:20px;fill:#eeeeee;stroke:#a7a7a7;stroke-width:0.5px;stroke-dasharray:1"
+                     ry="1"
+                     rx="1"
+                     class="nodecolortarget" />
+                  <title
+                     id="title481"
+                     class="undefined">training</title>
+                </g>
+              </g>
+            </g>
+            <g
+               id="g499"
+               style="font-size:20px"
+               class="nodeshape">
+              <rect
+                 id="rect489"
+                 style="font-size:20px;fill:#efd8a9;stroke:#a79776"
+                 height="18.61809"
+                 width="60"
+                 y="213.29648"
+                 x="23.75"
+                 ry="5"
+                 rx="5"
+                 class="nodecolortarget" />
+              <g
+                 id="g497"
+                 style="font-size:20px;opacity:0.01000001"
+                 class="buttoncontainer">
+                <circle
+                   r="0"
+                   cy="0"
+                   cx="0"
+                   id="circle491"
+                   style="font-size:20px;fill:#e7811d"
+                   class="buttoncircle" />
+                <path
+                   id="path493"
+                   style="font-size:20px;stroke:#ffffff"
+                   transform="translate(77.75,219.29648)"
+                   d="M 0,-2.2 V 2.2 M -2.2,0 h 4.4"
+                   class="expandbutton"
+                   inkscape:connector-curvature="0" />
+                <path
+                   id="path495"
+                   style="font-size:20px;display:none;stroke:#ffffff"
+                   transform="translate(77.75,219.29648)"
+                   d="M -2.2,0 H 2.2"
+                   class="collapsebutton"
+                   inkscape:connector-curvature="0" />
+              </g>
+            </g>
+            <text
+               id="text501"
+               style="font-size:9px;text-anchor:middle;white-space:nowrap;display:block;fill:#444444"
+               y="222.60553"
+               x="53.75"
+               pointer-events="none"
+               font-size="9px"
+               dy="0.34999999em"
+               class="nodelabel">dropout_2</text>
+          </g>
+          <g
+             id="g534"
+             style="font-size:20px"
+             class="node meta"
+             data-name="flatten_1">
+            <g
+               id="g505"
+               style="font-size:20px"
+               class="in-annotations" />
+            <g
+               id="g518"
+               style="font-size:20px"
+               class="out-annotations">
+              <g
+                 id="g516"
+                 style="font-size:20px"
+                 class="annotation shortcut meta extract"
+                 data-name="training">
+                <path
+                   style="font-size:20px;fill:none;stroke:#aaaaaa;stroke-width:0.75px;marker-end:url(#annotation-arrowhead)"
+                   d="m 83.75,180.34422 h 10"
+                   class="annotation-edge"
+                   id="path_flatten_1--training"
+                   inkscape:connector-curvature="0" />
+                <text
+                   id="text508"
+                   style="font-size:5px;text-anchor:start;white-space:nowrap;display:block"
+                   y="180.34422"
+                   x="107.75"
+                   dy="0.34999999em"
+                   class="annotation-label">training</text>
+                <g
+                   id="g514"
+                   style="font-size:20px"
+                   class="annotation-node">
+                  <rect
+                     id="rect510"
+                     height="4"
+                     width="12"
+                     y="178.34422"
+                     x="93.75"
+                     style="font-size:20px;fill:#eeeeee;stroke:#a7a7a7;stroke-width:0.5px;stroke-dasharray:1"
+                     ry="1"
+                     rx="1"
+                     class="nodecolortarget" />
+                  <title
+                     id="title512"
+                     class="undefined">training</title>
+                </g>
+              </g>
+            </g>
+            <g
+               id="g530"
+               style="font-size:20px"
+               class="nodeshape">
+              <rect
+                 id="rect520"
+                 style="font-size:20px;fill:#eeeeee;stroke:#a7a7a7"
+                 height="15.904523"
+                 width="60"
+                 y="172.39195"
+                 x="23.75"
+                 ry="5"
+                 rx="5"
+                 class="nodecolortarget" />
+              <g
+                 id="g528"
+                 style="font-size:20px;opacity:0.01000001"
+                 class="buttoncontainer">
+                <circle
+                   r="0"
+                   cy="0"
+                   cx="0"
+                   id="circle522"
+                   style="font-size:20px;fill:#e7811d"
+                   class="buttoncircle" />
+                <path
+                   id="path524"
+                   style="font-size:20px;stroke:#ffffff"
+                   transform="translate(77.75,178.39195)"
+                   d="M 0,-2.2 V 2.2 M -2.2,0 h 4.4"
+                   class="expandbutton"
+                   inkscape:connector-curvature="0" />
+                <path
+                   id="path526"
+                   style="font-size:20px;display:none;stroke:#ffffff"
+                   transform="translate(77.75,178.39195)"
+                   d="M -2.2,0 H 2.2"
+                   class="collapsebutton"
+                   inkscape:connector-curvature="0" />
+              </g>
+            </g>
+            <text
+               id="text532"
+               style="font-size:9px;text-anchor:middle;white-space:nowrap;display:block;fill:#444444"
+               y="180.34422"
+               x="53.75"
+               pointer-events="none"
+               font-size="9px"
+               dy="0.34999999em"
+               class="nodelabel">flatten_1</text>
+          </g>
+          <g
+             id="g591"
+             style="font-size:20px"
+             class="node meta"
+             data-name="dense_1">
+            <g
+               id="g536"
+               style="font-size:20px"
+               class="in-annotations" />
+            <g
+               id="g575"
+               style="font-size:20px"
+               class="out-annotations">
+              <g
+                 id="g547"
+                 style="font-size:20px"
+                 class="annotation shortcut op extract"
+                 data-name="init">
+                <path
+                   style="font-size:20px;fill:none;stroke:#aaaaaa;stroke-width:0.75px;stroke-dasharray:1;marker-end:url(#annotation-arrowhead)"
+                   d="m 83.75,134.53518 10,-3.14322"
+                   class="annotation-edge annotation-control-edge"
+                   id="path_dense_1--init"
+                   inkscape:connector-curvature="0" />
+                <text
+                   id="text539"
+                   style="font-size:5px;text-anchor:start;white-space:nowrap;display:block"
+                   y="131.39195"
+                   x="105.75"
+                   dy="0.34999999em"
+                   class="annotation-label">init</text>
+                <g
+                   id="g545"
+                   style="font-size:20px"
+                   class="annotation-node">
+                  <ellipse
+                     id="ellipse541"
+                     style="font-size:20px;fill:#ffffff;stroke:#b3b3b3;stroke-width:0.5px;stroke-dasharray:1"
+                     ry="2"
+                     rx="5"
+                     cy="131.39195"
+                     cx="98.75"
+                     class="nodecolortarget" />
+                  <title
+                     id="title543"
+                     class="undefined">init</title>
+                </g>
+              </g>
+              <g
+                 id="g558"
+                 style="font-size:20px"
+                 class="annotation shortcut meta extract"
+                 data-name="training">
+                <path
+                   style="font-size:20px;fill:none;stroke:#aaaaaa;stroke-width:0.75px;marker-start:url(#ref-annotation-arrowhead);marker-end:url(#annotation-arrowhead)"
+                   d="m 83.75,138.39196 h 10"
+                   class="annotation-edge refline"
+                   id="path_dense_1--training"
+                   inkscape:connector-curvature="0" />
+                <text
+                   id="text550"
+                   style="font-size:5px;text-anchor:start;white-space:nowrap;display:block"
+                   y="138.39195"
+                   x="107.75"
+                   dy="0.34999999em"
+                   class="annotation-label">training</text>
+                <g
+                   id="g556"
+                   style="font-size:20px"
+                   class="annotation-node">
+                  <rect
+                     id="rect552"
+                     style="font-size:20px;fill:#eeeeee;stroke:#a7a7a7;stroke-width:0.5px;stroke-dasharray:1"
+                     height="4"
+                     width="12"
+                     y="136.39195"
+                     x="93.75"
+                     ry="1"
+                     rx="1"
+                     class="nodecolortarget" />
+                  <title
+                     id="title554"
+                     class="undefined">training</title>
+                </g>
+              </g>
+              <g
+                 id="g573"
+                 style="font-size:20px"
+                 class="annotation shortcut series extract"
+                 data-name="IsVariableInitialized[0-44]">
+                <path
+                   style="font-size:20px;fill:none;stroke:#aaaaaa;stroke-width:0.75px;marker-end:url(#annotation-arrowhead)"
+                   d="m 83.75,142.24874 10,3.14322"
+                   class="annotation-edge"
+                   id="path_dense_1--IsVariableInitialized[0-44]"
+                   inkscape:connector-curvature="0" />
+                <text
+                   id="text563"
+                   style="font-size:5px;text-anchor:start;white-space:nowrap;display:block"
+                   y="145.39195"
+                   x="109.75"
+                   dy="0.34999999em"
+                   class="annotation-label">IsVariableI...<title
+   id="title561">IsVariableInitialized[0-44]</title>
+</text>
+                <g
+                   id="g571"
+                   style="font-size:20px"
+                   class="annotation-node">
+                  <use
+                     id="use565"
+                     style="font-size:20px;fill:#ffffff;stroke:#b3b3b3;stroke-width:0.5px;stroke-dasharray:1"
+                     height="4"
+                     width="14"
+                     y="143.39195"
+                     x="93.75"
+                     xlink:href="#op-series-annotation-stamp"
+                     class="nodecolortarget" />
+                  <rect
+                     id="rect567"
+                     style="font-size:20px;display:none;stroke-width:0.5px;stroke-dasharray:1"
+                     height="4"
+                     width="14"
+                     y="143.39195"
+                     x="93.75"
+                     class="nodecolortarget" />
+                  <title
+                     id="title569"
+                     class="undefined">IsVariableInitialized[0-44]</title>
+                </g>
+              </g>
+            </g>
+            <g
+               id="g587"
+               style="font-size:20px"
+               class="nodeshape">
+              <rect
+                 id="rect577"
+                 style="font-size:20px;fill:#bddbdb;stroke:#849999"
+                 height="17.713568"
+                 width="60"
+                 y="129.53517"
+                 x="23.75"
+                 ry="5"
+                 rx="5"
+                 class="nodecolortarget" />
+              <g
+                 id="g585"
+                 style="font-size:20px;opacity:0.01000001"
+                 class="buttoncontainer">
+                <circle
+                   r="0"
+                   cy="0"
+                   cx="0"
+                   id="circle579"
+                   style="font-size:20px;fill:#e7811d"
+                   class="buttoncircle" />
+                <path
+                   id="path581"
+                   style="font-size:20px;stroke:#ffffff"
+                   transform="translate(77.75,135.53517)"
+                   d="M 0,-2.2 V 2.2 M -2.2,0 h 4.4"
+                   class="expandbutton"
+                   inkscape:connector-curvature="0" />
+                <path
+                   id="path583"
+                   style="font-size:20px;display:none;stroke:#ffffff"
+                   transform="translate(77.75,135.53517)"
+                   d="M -2.2,0 H 2.2"
+                   class="collapsebutton"
+                   inkscape:connector-curvature="0" />
+              </g>
+            </g>
+            <text
+               id="text589"
+               style="font-size:9px;text-anchor:middle;white-space:nowrap;display:block;fill:#444444"
+               y="138.39195"
+               x="53.75"
+               pointer-events="none"
+               font-size="9px"
+               dy="0.34999999em"
+               class="nodelabel">dense_1</text>
+          </g>
+          <g
+             id="g648"
+             style="font-size:20px"
+             class="node meta"
+             data-name="dense_2">
+            <g
+               id="g593"
+               style="font-size:20px"
+               class="in-annotations" />
+            <g
+               id="g632"
+               style="font-size:20px"
+               class="out-annotations">
+              <g
+                 id="g604"
+                 style="font-size:20px"
+                 class="annotation shortcut op extract"
+                 data-name="init">
+                <path
+                   style="font-size:20px;fill:none;stroke:#aaaaaa;stroke-width:0.75px;stroke-dasharray:1;marker-end:url(#annotation-arrowhead)"
+                   d="m 83.75,91.535176 10,-3.143216"
+                   class="annotation-edge annotation-control-edge"
+                   id="path_dense_2--init"
+                   inkscape:connector-curvature="0" />
+                <text
+                   id="text596"
+                   style="font-size:5px;text-anchor:start;white-space:nowrap;display:block"
+                   y="88.39196"
+                   x="105.75"
+                   dy="0.34999999em"
+                   class="annotation-label">init</text>
+                <g
+                   id="g602"
+                   style="font-size:20px"
+                   class="annotation-node">
+                  <ellipse
+                     id="ellipse598"
+                     style="font-size:20px;fill:#ffffff;stroke:#b3b3b3;stroke-width:0.5px;stroke-dasharray:1"
+                     ry="2"
+                     rx="5"
+                     cy="88.39196"
+                     cx="98.75"
+                     class="nodecolortarget" />
+                  <title
+                     id="title600"
+                     class="undefined">init</title>
+                </g>
+              </g>
+              <g
+                 id="g615"
+                 style="font-size:20px"
+                 class="annotation shortcut meta extract"
+                 data-name="training">
+                <path
+                   style="font-size:20px;fill:none;stroke:#aaaaaa;stroke-width:0.75px;marker-start:url(#ref-annotation-arrowhead);marker-end:url(#annotation-arrowhead)"
+                   d="m 83.75,95.39196 h 10"
+                   class="annotation-edge refline"
+                   id="path_dense_2--training"
+                   inkscape:connector-curvature="0" />
+                <text
+                   id="text607"
+                   style="font-size:5px;text-anchor:start;white-space:nowrap;display:block"
+                   y="95.39196"
+                   x="107.75"
+                   dy="0.34999999em"
+                   class="annotation-label">training</text>
+                <g
+                   id="g613"
+                   style="font-size:20px"
+                   class="annotation-node">
+                  <rect
+                     id="rect609"
+                     style="font-size:20px;fill:#eeeeee;stroke:#a7a7a7;stroke-width:0.5px;stroke-dasharray:1"
+                     height="4"
+                     width="12"
+                     y="93.39196"
+                     x="93.75"
+                     ry="1"
+                     rx="1"
+                     class="nodecolortarget" />
+                  <title
+                     id="title611"
+                     class="undefined">training</title>
+                </g>
+              </g>
+              <g
+                 id="g630"
+                 style="font-size:20px"
+                 class="annotation shortcut series extract"
+                 data-name="IsVariableInitialized[0-44]">
+                <path
+                   style="font-size:20px;fill:none;stroke:#aaaaaa;stroke-width:0.75px;marker-end:url(#annotation-arrowhead)"
+                   d="m 83.75,99.248744 10,3.143216"
+                   class="annotation-edge"
+                   id="path_dense_2--IsVariableInitialized[0-44]"
+                   inkscape:connector-curvature="0" />
+                <text
+                   id="text620"
+                   style="font-size:5px;text-anchor:start;white-space:nowrap;display:block"
+                   y="102.39196"
+                   x="109.75"
+                   dy="0.34999999em"
+                   class="annotation-label">IsVariableI...<title
+   id="title618">IsVariableInitialized[0-44]</title>
+</text>
+                <g
+                   id="g628"
+                   style="font-size:20px"
+                   class="annotation-node">
+                  <use
+                     id="use622"
+                     style="font-size:20px;fill:#ffffff;stroke:#b3b3b3;stroke-width:0.5px;stroke-dasharray:1"
+                     height="4"
+                     width="14"
+                     y="100.39196"
+                     x="93.75"
+                     xlink:href="#op-series-annotation-stamp"
+                     class="nodecolortarget" />
+                  <rect
+                     id="rect624"
+                     style="font-size:20px;display:none;stroke-width:0.5px;stroke-dasharray:1"
+                     height="4"
+                     width="14"
+                     y="100.39196"
+                     x="93.75"
+                     class="nodecolortarget" />
+                  <title
+                     id="title626"
+                     class="undefined">IsVariableInitialized[0-44]</title>
+                </g>
+              </g>
+            </g>
+            <g
+               id="g644"
+               style="font-size:20px"
+               class="nodeshape">
+              <rect
+                 id="rect634"
+                 style="font-size:20px;fill:#bddbdb;stroke:#849999"
+                 height="17.713568"
+                 width="60"
+                 y="86.535179"
+                 x="23.75"
+                 ry="5"
+                 rx="5"
+                 class="nodecolortarget" />
+              <g
+                 id="g642"
+                 style="font-size:20px;opacity:0.01000001"
+                 class="buttoncontainer">
+                <circle
+                   r="0"
+                   cy="0"
+                   cx="0"
+                   id="circle636"
+                   style="font-size:20px;fill:#e7811d"
+                   class="buttoncircle" />
+                <path
+                   id="path638"
+                   style="font-size:20px;stroke:#ffffff"
+                   transform="translate(77.75,92.535179)"
+                   d="M 0,-2.2 V 2.2 M -2.2,0 h 4.4"
+                   class="expandbutton"
+                   inkscape:connector-curvature="0" />
+                <path
+                   id="path640"
+                   style="font-size:20px;display:none;stroke:#ffffff"
+                   transform="translate(77.75,92.535179)"
+                   d="M -2.2,0 H 2.2"
+                   class="collapsebutton"
+                   inkscape:connector-curvature="0" />
+              </g>
+            </g>
+            <text
+               id="text646"
+               style="font-size:9px;text-anchor:middle;white-space:nowrap;display:block;fill:#444444"
+               y="95.39196"
+               x="53.75"
+               pointer-events="none"
+               font-size="9px"
+               dy="0.34999999em"
+               class="nodelabel">dense_2</text>
+          </g>
+          <g
+             id="g705"
+             style="font-size:20px"
+             class="node meta"
+             data-name="dense_3">
+            <g
+               id="g650"
+               style="font-size:20px"
+               class="in-annotations" />
+            <g
+               id="g689"
+               style="font-size:20px"
+               class="out-annotations">
+              <g
+                 id="g661"
+                 style="font-size:20px"
+                 class="annotation shortcut op extract"
+                 data-name="init">
+                <path
+                   style="font-size:20px;fill:none;stroke:#aaaaaa;stroke-width:0.75px;stroke-dasharray:1;marker-end:url(#annotation-arrowhead)"
+                   d="m 83.75,48.535176 10,-3.143216"
+                   class="annotation-edge annotation-control-edge"
+                   id="path_dense_3--init"
+                   inkscape:connector-curvature="0" />
+                <text
+                   id="text653"
+                   style="font-size:5px;text-anchor:start;white-space:nowrap;display:block"
+                   y="45.39196"
+                   x="105.75"
+                   dy="0.34999999em"
+                   class="annotation-label">init</text>
+                <g
+                   id="g659"
+                   style="font-size:20px"
+                   class="annotation-node">
+                  <ellipse
+                     id="ellipse655"
+                     style="font-size:20px;fill:#ffffff;stroke:#b3b3b3;stroke-width:0.5px;stroke-dasharray:1"
+                     ry="2"
+                     rx="5"
+                     cy="45.39196"
+                     cx="98.75"
+                     class="nodecolortarget" />
+                  <title
+                     id="title657"
+                     class="undefined">init</title>
+                </g>
+              </g>
+              <g
+                 id="g672"
+                 style="font-size:20px"
+                 class="annotation shortcut meta extract"
+                 data-name="training">
+                <path
+                   style="font-size:20px;fill:none;stroke:#aaaaaa;stroke-width:0.75px;marker-start:url(#ref-annotation-arrowhead);marker-end:url(#annotation-arrowhead)"
+                   d="m 83.75,52.39196 h 10"
+                   class="annotation-edge refline"
+                   id="path_dense_3--training"
+                   inkscape:connector-curvature="0" />
+                <text
+                   id="text664"
+                   style="font-size:5px;text-anchor:start;white-space:nowrap;display:block"
+                   y="52.39196"
+                   x="107.75"
+                   dy="0.34999999em"
+                   class="annotation-label">training</text>
+                <g
+                   id="g670"
+                   style="font-size:20px"
+                   class="annotation-node">
+                  <rect
+                     id="rect666"
+                     style="font-size:20px;fill:#eeeeee;stroke:#a7a7a7;stroke-width:0.5px;stroke-dasharray:1"
+                     height="4"
+                     width="12"
+                     y="50.39196"
+                     x="93.75"
+                     ry="1"
+                     rx="1"
+                     class="nodecolortarget" />
+                  <title
+                     id="title668"
+                     class="undefined">training</title>
+                </g>
+              </g>
+              <g
+                 id="g687"
+                 style="font-size:20px"
+                 class="annotation shortcut series extract"
+                 data-name="IsVariableInitialized[0-44]">
+                <path
+                   style="font-size:20px;fill:none;stroke:#aaaaaa;stroke-width:0.75px;marker-end:url(#annotation-arrowhead)"
+                   d="m 83.75,56.248744 10,3.143216"
+                   class="annotation-edge"
+                   id="path_dense_3--IsVariableInitialized[0-44]"
+                   inkscape:connector-curvature="0" />
+                <text
+                   id="text677"
+                   style="font-size:5px;text-anchor:start;white-space:nowrap;display:block"
+                   y="59.39196"
+                   x="109.75"
+                   dy="0.34999999em"
+                   class="annotation-label">IsVariableI...<title
+   id="title675">IsVariableInitialized[0-44]</title>
+</text>
+                <g
+                   id="g685"
+                   style="font-size:20px"
+                   class="annotation-node">
+                  <use
+                     id="use679"
+                     style="font-size:20px;fill:#ffffff;stroke:#b3b3b3;stroke-width:0.5px;stroke-dasharray:1"
+                     height="4"
+                     width="14"
+                     y="57.39196"
+                     x="93.75"
+                     xlink:href="#op-series-annotation-stamp"
+                     class="nodecolortarget" />
+                  <rect
+                     id="rect681"
+                     style="font-size:20px;display:none;stroke-width:0.5px;stroke-dasharray:1"
+                     height="4"
+                     width="14"
+                     y="57.39196"
+                     x="93.75"
+                     class="nodecolortarget" />
+                  <title
+                     id="title683"
+                     class="undefined">IsVariableInitialized[0-44]</title>
+                </g>
+              </g>
+            </g>
+            <g
+               id="g701"
+               style="font-size:20px"
+               class="nodeshape">
+              <rect
+                 id="rect691"
+                 style="font-size:20px;fill:#eeeeee;stroke:#a7a7a7"
+                 height="17.713568"
+                 width="60"
+                 y="43.535175"
+                 x="23.75"
+                 ry="5"
+                 rx="5"
+                 class="nodecolortarget" />
+              <g
+                 id="g699"
+                 style="font-size:20px;opacity:0.01000001"
+                 class="buttoncontainer">
+                <circle
+                   r="0"
+                   cy="0"
+                   cx="0"
+                   id="circle693"
+                   style="font-size:20px;fill:#e7811d"
+                   class="buttoncircle" />
+                <path
+                   id="path695"
+                   style="font-size:20px;stroke:#ffffff"
+                   transform="translate(77.75,49.535175)"
+                   d="M 0,-2.2 V 2.2 M -2.2,0 h 4.4"
+                   class="expandbutton"
+                   inkscape:connector-curvature="0" />
+                <path
+                   id="path697"
+                   style="font-size:20px;display:none;stroke:#ffffff"
+                   transform="translate(77.75,49.535175)"
+                   d="M -2.2,0 H 2.2"
+                   class="collapsebutton"
+                   inkscape:connector-curvature="0" />
+              </g>
+            </g>
+            <text
+               id="text703"
+               style="font-size:9px;text-anchor:middle;white-space:nowrap;display:block;fill:#444444"
+               y="52.39196"
+               x="53.75"
+               pointer-events="none"
+               font-size="9px"
+               dy="0.34999999em"
+               class="nodelabel">dense_3</text>
+          </g>
+          <g
+             id="g730"
+             style="font-size:20px"
+             class="node op"
+             data-name="dense_3_target">
+            <g
+               id="g707"
+               style="font-size:20px"
+               class="in-annotations" />
+            <g
+               id="g720"
+               style="font-size:20px"
+               class="out-annotations">
+              <g
+                 id="g718"
+                 style="font-size:20px"
+                 class="annotation shortcut meta extract"
+                 data-name="training">
+                <path
+                   style="font-size:20px;fill:none;stroke:#aaaaaa;stroke-width:0.75px;marker-end:url(#annotation-arrowhead)"
+                   d="m 153.75,52.39196 h 10"
+                   class="annotation-edge"
+                   id="path_dense_3_target--training"
+                   inkscape:connector-curvature="0" />
+                <text
+                   id="text710"
+                   style="font-size:5px;text-anchor:start;white-space:nowrap;display:block"
+                   y="52.39196"
+                   x="177.75"
+                   dy="0.34999999em"
+                   class="annotation-label">training</text>
+                <g
+                   id="g716"
+                   style="font-size:20px"
+                   class="annotation-node">
+                  <rect
+                     id="rect712"
+                     height="4"
+                     width="12"
+                     y="50.39196"
+                     x="163.75"
+                     style="font-size:20px;fill:#eeeeee;stroke:#a7a7a7;stroke-width:0.5px;stroke-dasharray:1"
+                     ry="1"
+                     rx="1"
+                     class="nodecolortarget" />
+                  <title
+                     id="title714"
+                     class="undefined">training</title>
+                </g>
+              </g>
+            </g>
+            <g
+               id="g724"
+               style="font-size:20px"
+               class="nodeshape">
+              <ellipse
+                 id="ellipse722"
+                 style="font-size:20px;fill:#ffffff;stroke:#b3b3b3"
+                 ry="3"
+                 rx="7.5"
+                 cy="52.39196"
+                 cx="146.25"
+                 class="nodecolortarget" />
+            </g>
+            <text
+               id="text728"
+               style="font-size:6px;text-anchor:middle;white-space:nowrap;display:block;fill:#444444"
+               y="44.39196"
+               x="146.25"
+               dy="0.34999999em"
+               class="nodelabel">dense_3_...<title
+   id="title726">dense_3_target</title>
+</text>
+          </g>
+          <g
+             id="g755"
+             style="font-size:20px"
+             class="node op"
+             data-name="dense_3_sample_weights">
+            <g
+               id="g732"
+               style="font-size:20px"
+               class="in-annotations" />
+            <g
+               id="g745"
+               style="font-size:20px"
+               class="out-annotations">
+              <g
+                 id="g743"
+                 style="font-size:20px"
+                 class="annotation shortcut meta extract"
+                 data-name="training">
+                <path
+                   style="font-size:20px;fill:none;stroke:#aaaaaa;stroke-width:0.75px;marker-end:url(#annotation-arrowhead)"
+                   d="m 223.75,52.39196 h 10"
+                   class="annotation-edge"
+                   id="path_dense_3_sample_weights--training"
+                   inkscape:connector-curvature="0" />
+                <text
+                   id="text735"
+                   style="font-size:5px;text-anchor:start;white-space:nowrap;display:block"
+                   y="52.39196"
+                   x="247.75"
+                   dy="0.34999999em"
+                   class="annotation-label">training</text>
+                <g
+                   id="g741"
+                   style="font-size:20px"
+                   class="annotation-node">
+                  <rect
+                     id="rect737"
+                     height="4"
+                     width="12"
+                     y="50.39196"
+                     x="233.75"
+                     style="font-size:20px;fill:#eeeeee;stroke:#a7a7a7;stroke-width:0.5px;stroke-dasharray:1"
+                     ry="1"
+                     rx="1"
+                     class="nodecolortarget" />
+                  <title
+                     id="title739"
+                     class="undefined">training</title>
+                </g>
+              </g>
+            </g>
+            <g
+               id="g749"
+               style="font-size:20px"
+               class="nodeshape">
+              <ellipse
+                 id="ellipse747"
+                 style="font-size:20px;fill:#ffffff;stroke:#b3b3b3"
+                 ry="3"
+                 rx="7.5"
+                 cy="52.39196"
+                 cx="216.25"
+                 class="nodecolortarget" />
+            </g>
+            <text
+               id="text753"
+               style="font-size:6px;text-anchor:middle;white-space:nowrap;display:block;fill:#444444"
+               y="44.39196"
+               x="216.25"
+               dy="0.34999999em"
+               class="nodelabel">dense_3_...<title
+   id="title751">dense_3_sample_weights</title>
+</text>
+          </g>
+          <g
+             id="g786"
+             style="font-size:20px"
+             class="node meta"
+             data-name="loss">
+            <g
+               id="g757"
+               style="font-size:20px"
+               class="in-annotations" />
+            <g
+               id="g770"
+               style="font-size:20px"
+               class="out-annotations">
+              <g
+                 id="g768"
+                 style="font-size:20px"
+                 class="annotation shortcut meta extract"
+                 data-name="training">
+                <path
+                   style="font-size:20px;fill:none;stroke:#aaaaaa;stroke-width:0.75px;marker-end:url(#annotation-arrowhead)"
+                   d="m 220.25,9.1959799 h 10"
+                   class="annotation-edge"
+                   id="path_loss--training"
+                   inkscape:connector-curvature="0" />
+                <text
+                   id="text760"
+                   style="font-size:5px;text-anchor:start;white-space:nowrap;display:block"
+                   y="9.1959801"
+                   x="244.25"
+                   dy="0.34999999em"
+                   class="annotation-label">training</text>
+                <g
+                   id="g766"
+                   style="font-size:20px"
+                   class="annotation-node">
+                  <rect
+                     id="rect762"
+                     height="4"
+                     width="12"
+                     y="7.1959801"
+                     x="230.25"
+                     style="font-size:20px;fill:#eeeeee;stroke:#a7a7a7;stroke-width:0.5px;stroke-dasharray:1"
+                     ry="1"
+                     rx="1"
+                     class="nodecolortarget" />
+                  <title
+                     id="title764"
+                     class="undefined">training</title>
+                </g>
+              </g>
+            </g>
+            <g
+               id="g782"
+               style="font-size:20px"
+               class="nodeshape">
+              <rect
+                 id="rect772"
+                 style="font-size:20px;fill:#eeeeee;stroke:#a7a7a7"
+                 height="18.39196"
+                 width="60"
+                 y="0"
+                 x="160.25"
+                 ry="5"
+                 rx="5"
+                 class="nodecolortarget" />
+              <g
+                 id="g780"
+                 style="font-size:20px;opacity:0.01000001"
+                 class="buttoncontainer">
+                <circle
+                   r="0"
+                   cy="0"
+                   cx="0"
+                   id="circle774"
+                   style="font-size:20px;fill:#e7811d"
+                   class="buttoncircle" />
+                <path
+                   id="path776"
+                   style="font-size:20px;stroke:#ffffff"
+                   transform="translate(214.25,6)"
+                   d="M 0,-2.2 V 2.2 M -2.2,0 h 4.4"
+                   class="expandbutton"
+                   inkscape:connector-curvature="0" />
+                <path
+                   id="path778"
+                   style="font-size:20px;display:none;stroke:#ffffff"
+                   transform="translate(214.25,6)"
+                   d="M -2.2,0 H 2.2"
+                   class="collapsebutton"
+                   inkscape:connector-curvature="0" />
+              </g>
+            </g>
+            <text
+               id="text784"
+               style="font-size:9px;text-anchor:middle;white-space:nowrap;display:block;fill:#444444"
+               y="9.1959801"
+               x="190.25"
+               pointer-events="none"
+               font-size="9px"
+               dy="0.34999999em"
+               class="nodelabel">loss</text>
+          </g>
+          <g
+             id="g817"
+             style="font-size:20px"
+             class="node meta"
+             data-name="metrics">
+            <g
+               id="g788"
+               style="font-size:20px"
+               class="in-annotations" />
+            <g
+               id="g801"
+               style="font-size:20px"
+               class="out-annotations">
+              <g
+                 id="g799"
+                 style="font-size:20px"
+                 class="annotation shortcut meta extract"
+                 data-name="training">
+                <path
+                   style="font-size:20px;fill:none;stroke:#aaaaaa;stroke-width:0.75px;stroke-dasharray:1;marker-end:url(#annotation-arrowhead)"
+                   d="m 83.75,9.1959799 h 10"
+                   class="annotation-edge annotation-control-edge"
+                   id="path_metrics--training"
+                   inkscape:connector-curvature="0" />
+                <text
+                   id="text791"
+                   style="font-size:5px;text-anchor:start;white-space:nowrap;display:block"
+                   y="9.1959801"
+                   x="107.75"
+                   dy="0.34999999em"
+                   class="annotation-label">training</text>
+                <g
+                   id="g797"
+                   style="font-size:20px"
+                   class="annotation-node">
+                  <rect
+                     id="rect793"
+                     height="4"
+                     width="12"
+                     y="7.1959801"
+                     x="93.75"
+                     style="font-size:20px;fill:#eeeeee;stroke:#a7a7a7;stroke-width:0.5px;stroke-dasharray:1"
+                     ry="1"
+                     rx="1"
+                     class="nodecolortarget" />
+                  <title
+                     id="title795"
+                     class="undefined">training</title>
+                </g>
+              </g>
+            </g>
+            <g
+               id="g813"
+               style="font-size:20px"
+               class="nodeshape">
+              <rect
+                 id="rect803"
+                 style="font-size:20px;fill:#eeeeee;stroke:#a7a7a7"
+                 height="15.904523"
+                 width="60"
+                 y="1.2437186"
+                 x="23.75"
+                 ry="5"
+                 rx="5"
+                 class="nodecolortarget" />
+              <g
+                 id="g811"
+                 style="font-size:20px;opacity:0.01000001"
+                 class="buttoncontainer">
+                <circle
+                   r="0"
+                   cy="0"
+                   cx="0"
+                   id="circle805"
+                   style="font-size:20px;fill:#e7811d"
+                   class="buttoncircle" />
+                <path
+                   id="path807"
+                   style="font-size:20px;stroke:#ffffff"
+                   transform="translate(77.75,7.2437186)"
+                   d="M 0,-2.2 V 2.2 M -2.2,0 h 4.4"
+                   class="expandbutton"
+                   inkscape:connector-curvature="0" />
+                <path
+                   id="path809"
+                   style="font-size:20px;display:none;stroke:#ffffff"
+                   transform="translate(77.75,7.2437186)"
+                   d="M -2.2,0 H 2.2"
+                   class="collapsebutton"
+                   inkscape:connector-curvature="0" />
+              </g>
+            </g>
+            <text
+               id="text815"
+               style="font-size:9px;text-anchor:middle;white-space:nowrap;display:block;fill:#444444"
+               y="9.1959801"
+               x="53.75"
+               pointer-events="none"
+               font-size="9px"
+               dy="0.34999999em"
+               class="nodelabel">metrics</text>
+          </g>
+        </g>
+      </g>
+      <g
+         id="g1086"
+         style="font-size:20px"
+         transform="translate(529.75,20)"
+         class="in-extract">
+        <g
+           id="g1084"
+           style="font-size:20px"
+           class="nodes">
+          <g
+             id="g937"
+             style="font-size:20px"
+             class="node meta extract"
+             data-name="training">
+            <g
+               id="g893"
+               style="font-size:20px"
+               class="in-annotations">
+              <g
+                 id="g833"
+                 style="font-size:20px"
+                 class="annotation shortcut meta"
+                 data-name="loss">
+                <path
+                   d="m -40,14.5 10,-2"
+                   style="font-size:20px;fill:none;stroke:#aaaaaa;stroke-width:0.75px;marker-end:url(#annotation-arrowhead)"
+                   class="annotation-edge"
+                   id="path823"
+                   inkscape:connector-curvature="0" />
+                <text
+                   id="text825"
+                   style="font-size:5px;text-anchor:end;white-space:nowrap;display:block"
+                   y="14.5"
+                   x="-54"
+                   dy="0.34999999em"
+                   class="annotation-label">loss</text>
+                <g
+                   id="g831"
+                   style="font-size:20px"
+                   class="annotation-node">
+                  <rect
+                     id="rect827"
+                     height="4"
+                     width="12"
+                     y="12.5"
+                     x="-52"
+                     style="font-size:20px;fill:#eeeeee;stroke:#a7a7a7;stroke-width:0.5px;stroke-dasharray:1"
+                     ry="1"
+                     rx="1"
+                     class="nodecolortarget" />
+                  <title
+                     id="title829"
+                     class="undefined">loss</title>
+                </g>
+              </g>
+              <g
+                 id="g847"
+                 style="font-size:20px"
+                 class="annotation shortcut op"
+                 data-name="dense_3_sample_weights">
+                <path
+                   d="m -40,21.5 10,-2"
+                   style="font-size:20px;fill:none;stroke:#aaaaaa;stroke-width:0.75px;marker-end:url(#annotation-arrowhead)"
+                   class="annotation-edge"
+                   id="path835"
+                   inkscape:connector-curvature="0" />
+                <text
+                   id="text839"
+                   style="font-size:5px;text-anchor:end;white-space:nowrap;display:block"
+                   y="21.5"
+                   x="-52"
+                   dy="0.34999999em"
+                   class="annotation-label">dense_3_s...<title
+   id="title837">dense_3_sample_weights</title>
+</text>
+                <g
+                   id="g845"
+                   style="font-size:20px"
+                   class="annotation-node">
+                  <ellipse
+                     id="ellipse841"
+                     style="font-size:20px;fill:#ffffff;stroke:#b3b3b3;stroke-width:0.5px;stroke-dasharray:1"
+                     ry="2"
+                     rx="5"
+                     cy="21.5"
+                     cx="-45"
+                     class="nodecolortarget" />
+                  <title
+                     id="title843"
+                     class="undefined">dense_3_sample_weights</title>
+                </g>
+              </g>
+              <g
+                 id="g861"
+                 style="font-size:20px"
+                 class="annotation shortcut op"
+                 data-name="dense_3_target">
+                <path
+                   d="m -40,28.5 10,-2"
+                   style="font-size:20px;fill:none;stroke:#aaaaaa;stroke-width:0.75px;marker-end:url(#annotation-arrowhead)"
+                   class="annotation-edge"
+                   id="path849"
+                   inkscape:connector-curvature="0" />
+                <text
+                   id="text853"
+                   style="font-size:5px;text-anchor:end;white-space:nowrap;display:block"
+                   y="28.5"
+                   x="-52"
+                   dy="0.34999999em"
+                   class="annotation-label">dense_3_ta...<title
+   id="title851">dense_3_target</title>
+</text>
+                <g
+                   id="g859"
+                   style="font-size:20px"
+                   class="annotation-node">
+                  <ellipse
+                     id="ellipse855"
+                     style="font-size:20px;fill:#ffffff;stroke:#b3b3b3;stroke-width:0.5px;stroke-dasharray:1"
+                     ry="2"
+                     rx="5"
+                     cy="28.5"
+                     cx="-45"
+                     class="nodecolortarget" />
+                  <title
+                     id="title857"
+                     class="undefined">dense_3_target</title>
+                </g>
+              </g>
+              <g
+                 id="g873"
+                 style="font-size:20px"
+                 class="annotation shortcut meta"
+                 data-name="dense_3">
+                <path
+                   d="m -40,35.5 10,-2"
+                   style="font-size:20px;fill:none;stroke:#aaaaaa;stroke-width:0.75px;marker-start:url(#ref-annotation-arrowhead);marker-end:url(#annotation-arrowhead)"
+                   class="annotation-edge refline"
+                   id="path863"
+                   inkscape:connector-curvature="0" />
+                <text
+                   id="text865"
+                   style="font-size:5px;text-anchor:end;white-space:nowrap;display:block"
+                   y="35.5"
+                   x="-54"
+                   dy="0.34999999em"
+                   class="annotation-label">dense_3</text>
+                <g
+                   id="g871"
+                   style="font-size:20px"
+                   class="annotation-node">
+                  <rect
+                     id="rect867"
+                     height="4"
+                     width="12"
+                     y="33.5"
+                     x="-52"
+                     style="font-size:20px;fill:#eeeeee;stroke:#a7a7a7;stroke-width:0.5px;stroke-dasharray:1"
+                     ry="1"
+                     rx="1"
+                     class="nodecolortarget" />
+                  <title
+                     id="title869"
+                     class="undefined">dense_3</title>
+                </g>
+              </g>
+              <g
+                 id="g885"
+                 style="font-size:20px"
+                 class="annotation shortcut meta"
+                 data-name="dense_2">
+                <path
+                   d="m -40,42.5 10,-2"
+                   style="font-size:20px;fill:none;stroke:#aaaaaa;stroke-width:0.75px;marker-start:url(#ref-annotation-arrowhead);marker-end:url(#annotation-arrowhead)"
+                   class="annotation-edge refline"
+                   id="path875"
+                   inkscape:connector-curvature="0" />
+                <text
+                   id="text877"
+                   style="font-size:5px;text-anchor:end;white-space:nowrap;display:block"
+                   y="42.5"
+                   x="-54"
+                   dy="0.34999999em"
+                   class="annotation-label">dense_2</text>
+                <g
+                   id="g883"
+                   style="font-size:20px"
+                   class="annotation-node">
+                  <rect
+                     id="rect879"
+                     height="4"
+                     width="12"
+                     y="40.5"
+                     x="-52"
+                     style="font-size:20px;fill:#bddbdb;stroke:#849999;stroke-width:0.5px;stroke-dasharray:1"
+                     ry="1"
+                     rx="1"
+                     class="nodecolortarget" />
+                  <title
+                     id="title881"
+                     class="undefined">dense_2</title>
+                </g>
+              </g>
+              <g
+                 id="g891"
+                 style="font-size:20px"
+                 class="annotation ellipsis ellipsis"
+                 data-name="... 11 more">
+                <path
+                   d="m -40,47.5 h 10"
+                   style="font-size:20px;fill:none;stroke:#aaaaaa;stroke-width:0.75px;marker-end:url(#annotation-arrowhead)"
+                   class="annotation-edge"
+                   id="path887"
+                   inkscape:connector-curvature="0" />
+                <text
+                   id="text889"
+                   style="font-size:5px;text-anchor:end;white-space:nowrap;display:block"
+                   y="47.5"
+                   x="-42"
+                   dy="0.34999999em"
+                   class="annotation-label annotation-ellipsis">... 11 more</text>
+              </g>
+            </g>
+            <g
+               id="g921"
+               style="font-size:20px"
+               class="out-annotations">
+              <g
+                 id="g904"
+                 style="font-size:20px"
+                 class="annotation shortcut op extract"
+                 data-name="init">
+                <path
+                   d="m 30,24.5 10,2"
+                   style="font-size:20px;fill:none;stroke:#aaaaaa;stroke-width:0.75px;stroke-dasharray:1;marker-end:url(#annotation-arrowhead)"
+                   class="annotation-edge annotation-control-edge"
+                   id="path_training--init"
+                   inkscape:connector-curvature="0" />
+                <text
+                   id="text896"
+                   style="font-size:5px;text-anchor:start;white-space:nowrap;display:block"
+                   y="26.5"
+                   x="52"
+                   dy="0.34999999em"
+                   class="annotation-label">init</text>
+                <g
+                   id="g902"
+                   style="font-size:20px"
+                   class="annotation-node">
+                  <ellipse
+                     id="ellipse898"
+                     style="font-size:20px;fill:#ffffff;stroke:#b3b3b3;stroke-width:0.5px;stroke-dasharray:1"
+                     ry="2"
+                     rx="5"
+                     cy="26.5"
+                     cx="45"
+                     class="nodecolortarget" />
+                  <title
+                     id="title900"
+                     class="undefined">init</title>
+                </g>
+              </g>
+              <g
+                 id="g919"
+                 style="font-size:20px"
+                 class="annotation shortcut series extract"
+                 data-name="IsVariableInitialized[0-44]">
+                <path
+                   d="m 30,35.5 10,-2"
+                   style="font-size:20px;fill:none;stroke:#aaaaaa;stroke-width:0.75px;marker-end:url(#annotation-arrowhead)"
+                   class="annotation-edge"
+                   id="path_training--IsVariableInitialized[0-44]"
+                   inkscape:connector-curvature="0" />
+                <text
+                   id="text909"
+                   style="font-size:5px;text-anchor:start;white-space:nowrap;display:block"
+                   y="33.5"
+                   x="56"
+                   dy="0.34999999em"
+                   class="annotation-label">IsVariableI...<title
+   id="title907">IsVariableInitialized[0-44]</title>
+</text>
+                <g
+                   id="g917"
+                   style="font-size:20px"
+                   class="annotation-node">
+                  <use
+                     id="use911"
+                     height="4"
+                     width="14"
+                     y="31.5"
+                     x="40"
+                     style="font-size:20px;fill:#ffffff;stroke:#b3b3b3;stroke-width:0.5px;stroke-dasharray:1"
+                     xlink:href="#op-series-annotation-stamp"
+                     class="nodecolortarget" />
+                  <rect
+                     id="rect913"
+                     style="font-size:20px;display:none;stroke-width:0.5px;stroke-dasharray:1"
+                     height="4"
+                     width="14"
+                     y="31.5"
+                     x="40"
+                     class="nodecolortarget" />
+                  <title
+                     id="title915"
+                     class="undefined">IsVariableInitialized[0-44]</title>
+                </g>
+              </g>
+            </g>
+            <g
+               id="g933"
+               style="font-size:20px"
+               class="nodeshape">
+              <rect
+                 id="rect923"
+                 height="60"
+                 width="60"
+                 y="0"
+                 x="-30"
+                 style="font-size:20px;fill:#eeeeee;stroke:#a7a7a7"
+                 ry="5"
+                 rx="5"
+                 class="nodecolortarget" />
+              <g
+                 id="g931"
+                 style="font-size:20px;opacity:0.01000001"
+                 class="buttoncontainer">
+                <circle
+                   r="0"
+                   cy="0"
+                   cx="0"
+                   id="circle925"
+                   style="font-size:20px;fill:#e7811d"
+                   class="buttoncircle" />
+                <path
+                   id="path927"
+                   style="font-size:20px;stroke:#ffffff"
+                   transform="translate(24,6)"
+                   d="M 0,-2.2 V 2.2 M -2.2,0 h 4.4"
+                   class="expandbutton"
+                   inkscape:connector-curvature="0" />
+                <path
+                   id="path929"
+                   style="font-size:20px;display:none;stroke:#ffffff"
+                   transform="translate(24,6)"
+                   d="M -2.2,0 H 2.2"
+                   class="collapsebutton"
+                   inkscape:connector-curvature="0" />
+              </g>
+            </g>
+            <text
+               id="text935"
+               style="font-size:9px;text-anchor:middle;white-space:nowrap;display:block;fill:#444444"
+               y="30"
+               x="0"
+               pointer-events="none"
+               font-size="9px"
+               dy="0.34999999em"
+               class="nodelabel">training</text>
+          </g>
+          <g
+             id="g1025"
+             style="font-size:20px"
+             class="node series extract"
+             data-name="IsVariableInitialized[0-44]">
+            <g
+               id="g1005"
+               style="font-size:20px"
+               class="in-annotations">
+              <g
+                 id="g949"
+                 style="font-size:20px"
+                 class="annotation shortcut meta extract"
+                 data-name="training">
+                <path
+                   d="m -0.5,82 10,15.5"
+                   style="font-size:20px;fill:none;stroke:#aaaaaa;stroke-width:0.75px;marker-end:url(#annotation-arrowhead)"
+                   class="annotation-edge"
+                   id="path939"
+                   inkscape:connector-curvature="0" />
+                <text
+                   id="text941"
+                   style="font-size:5px;text-anchor:end;white-space:nowrap;display:block"
+                   y="82"
+                   x="-14.5"
+                   dy="0.34999999em"
+                   class="annotation-label">training</text>
+                <g
+                   id="g947"
+                   style="font-size:20px"
+                   class="annotation-node">
+                  <rect
+                     id="rect943"
+                     height="4"
+                     width="12"
+                     y="80"
+                     x="-12.5"
+                     style="font-size:20px;fill:#eeeeee;stroke:#a7a7a7;stroke-width:0.5px;stroke-dasharray:1"
+                     ry="1"
+                     rx="1"
+                     class="nodecolortarget" />
+                  <title
+                     id="title945"
+                     class="undefined">training</title>
+                </g>
+              </g>
+              <g
+                 id="g961"
+                 style="font-size:20px"
+                 class="annotation shortcut meta"
+                 data-name="conv2d_1">
+                <path
+                   d="m -0.5,89 10,8.5"
+                   style="font-size:20px;fill:none;stroke:#aaaaaa;stroke-width:0.75px;marker-end:url(#annotation-arrowhead)"
+                   class="annotation-edge"
+                   id="path951"
+                   inkscape:connector-curvature="0" />
+                <text
+                   id="text953"
+                   style="font-size:5px;text-anchor:end;white-space:nowrap;display:block"
+                   y="89"
+                   x="-14.5"
+                   dy="0.34999999em"
+                   class="annotation-label">conv2d_1</text>
+                <g
+                   id="g959"
+                   style="font-size:20px"
+                   class="annotation-node">
+                  <rect
+                     id="rect955"
+                     height="4"
+                     width="12"
+                     y="87"
+                     x="-12.5"
+                     style="font-size:20px;fill:#c5e2b6;stroke:#8a9e7f;stroke-width:0.5px;stroke-dasharray:1"
+                     ry="1"
+                     rx="1"
+                     class="nodecolortarget" />
+                  <title
+                     id="title957"
+                     class="undefined">conv2d_1</title>
+                </g>
+              </g>
+              <g
+                 id="g973"
+                 style="font-size:20px"
+                 class="annotation shortcut meta"
+                 data-name="conv2d_2">
+                <path
+                   d="m -0.5,96 10,1.5"
+                   style="font-size:20px;fill:none;stroke:#aaaaaa;stroke-width:0.75px;marker-end:url(#annotation-arrowhead)"
+                   class="annotation-edge"
+                   id="path963"
+                   inkscape:connector-curvature="0" />
+                <text
+                   id="text965"
+                   style="font-size:5px;text-anchor:end;white-space:nowrap;display:block"
+                   y="96"
+                   x="-14.5"
+                   dy="0.34999999em"
+                   class="annotation-label">conv2d_2</text>
+                <g
+                   id="g971"
+                   style="font-size:20px"
+                   class="annotation-node">
+                  <rect
+                     id="rect967"
+                     height="4"
+                     width="12"
+                     y="94"
+                     x="-12.5"
+                     style="font-size:20px;fill:#c5e2b6;stroke:#8a9e7f;stroke-width:0.5px;stroke-dasharray:1"
+                     ry="1"
+                     rx="1"
+                     class="nodecolortarget" />
+                  <title
+                     id="title969"
+                     class="undefined">conv2d_2</title>
+                </g>
+              </g>
+              <g
+                 id="g985"
+                 style="font-size:20px"
+                 class="annotation shortcut meta"
+                 data-name="dense_1">
+                <path
+                   d="m -0.5,103 10,-5.5"
+                   style="font-size:20px;fill:none;stroke:#aaaaaa;stroke-width:0.75px;marker-end:url(#annotation-arrowhead)"
+                   class="annotation-edge"
+                   id="path975"
+                   inkscape:connector-curvature="0" />
+                <text
+                   id="text977"
+                   style="font-size:5px;text-anchor:end;white-space:nowrap;display:block"
+                   y="103"
+                   x="-14.5"
+                   dy="0.34999999em"
+                   class="annotation-label">dense_1</text>
+                <g
+                   id="g983"
+                   style="font-size:20px"
+                   class="annotation-node">
+                  <rect
+                     id="rect979"
+                     height="4"
+                     width="12"
+                     y="101"
+                     x="-12.5"
+                     style="font-size:20px;fill:#bddbdb;stroke:#849999;stroke-width:0.5px;stroke-dasharray:1"
+                     ry="1"
+                     rx="1"
+                     class="nodecolortarget" />
+                  <title
+                     id="title981"
+                     class="undefined">dense_1</title>
+                </g>
+              </g>
+              <g
+                 id="g997"
+                 style="font-size:20px"
+                 class="annotation shortcut meta"
+                 data-name="dense_2">
+                <path
+                   d="M -0.5,110 9.5,97.5"
+                   style="font-size:20px;fill:none;stroke:#aaaaaa;stroke-width:0.75px;marker-end:url(#annotation-arrowhead)"
+                   class="annotation-edge"
+                   id="path987"
+                   inkscape:connector-curvature="0" />
+                <text
+                   id="text989"
+                   style="font-size:5px;text-anchor:end;white-space:nowrap;display:block"
+                   y="110"
+                   x="-14.5"
+                   dy="0.34999999em"
+                   class="annotation-label">dense_2</text>
+                <g
+                   id="g995"
+                   style="font-size:20px"
+                   class="annotation-node">
+                  <rect
+                     id="rect991"
+                     height="4"
+                     width="12"
+                     y="108"
+                     x="-12.5"
+                     style="font-size:20px;fill:#bddbdb;stroke:#849999;stroke-width:0.5px;stroke-dasharray:1"
+                     ry="1"
+                     rx="1"
+                     class="nodecolortarget" />
+                  <title
+                     id="title993"
+                     class="undefined">dense_2</title>
+                </g>
+              </g>
+              <g
+                 id="g1003"
+                 style="font-size:20px"
+                 class="annotation ellipsis ellipsis"
+                 data-name="... 2 more">
+                <path
+                   d="M -0.5,115 9.5,97.5"
+                   style="font-size:20px;fill:none;stroke:#aaaaaa;stroke-width:0.75px;marker-end:url(#annotation-arrowhead)"
+                   class="annotation-edge"
+                   id="path999"
+                   inkscape:connector-curvature="0" />
+                <text
+                   id="text1001"
+                   style="font-size:5px;text-anchor:end;white-space:nowrap;display:block"
+                   y="115"
+                   x="-2.5"
+                   dy="0.34999999em"
+                   class="annotation-label annotation-ellipsis">... 2 more</text>
+              </g>
+            </g>
+            <g
+               id="g1007"
+               style="font-size:20px"
+               class="out-annotations" />
+            <g
+               id="g1021"
+               style="font-size:20px"
+               class="nodeshape">
+              <use
+                 id="use1009"
+                 height="8"
+                 width="24"
+                 y="93.5"
+                 x="9.5"
+                 style="font-size:20px;fill:#ffffff;stroke:#b3b3b3"
+                 xlink:href="#op-series-horizontal-stamp"
+                 class="nodecolortarget" />
+              <rect
+                 y="0"
+                 x="0"
+                 height="0"
+                 width="0"
+                 id="rect1011"
+                 style="font-size:20px;fill:#b3b3b3;fill-opacity:0;stroke-dasharray:5;stroke-opacity:0"
+                 ry="10"
+                 rx="10"
+                 class="nodecolortarget" />
+              <g
+                 id="g1019"
+                 style="font-size:20px;opacity:0.01000001"
+                 class="buttoncontainer">
+                <circle
+                   r="0"
+                   cy="0"
+                   cx="0"
+                   id="circle1013"
+                   style="font-size:20px;fill:#e7811d"
+                   class="buttoncircle" />
+                <path
+                   id="path1015"
+                   style="font-size:20px;stroke:#ffffff"
+                   transform="translate(37.5,97.5)"
+                   d="M 0,-2.2 V 2.2 M -2.2,0 h 4.4"
+                   class="expandbutton"
+                   inkscape:connector-curvature="0" />
+                <path
+                   id="path1017"
+                   style="font-size:20px;display:none;stroke:#ffffff"
+                   transform="translate(37.5,97.5)"
+                   d="M -2.2,0 H 2.2"
+                   class="collapsebutton"
+                   inkscape:connector-curvature="0" />
+              </g>
+            </g>
+            <text
+               id="text1023"
+               style="font-size:8px;text-anchor:middle;white-space:nowrap;display:block;fill:#444444"
+               y="87.5"
+               x="21.5"
+               dy="0.34999999em"
+               class="nodelabel">IsVariableInitialized[0-44]</text>
+          </g>
+          <g
+             id="g1082"
+             style="font-size:20px"
+             class="node meta extract"
+             data-name="Adam">
+            <g
+               id="g1027"
+               style="font-size:20px"
+               class="in-annotations" />
+            <g
+               id="g1066"
+               style="font-size:20px"
+               class="out-annotations">
+              <g
+                 id="g1038"
+                 style="font-size:20px"
+                 class="annotation shortcut op extract"
+                 data-name="init">
+                <path
+                   d="m 5,140 10,-2.91709"
+                   style="font-size:20px;fill:none;stroke:#aaaaaa;stroke-width:0.75px;stroke-dasharray:1;marker-end:url(#annotation-arrowhead)"
+                   class="annotation-edge annotation-control-edge"
+                   id="path_Adam--init"
+                   inkscape:connector-curvature="0" />
+                <text
+                   id="text1030"
+                   style="font-size:5px;text-anchor:start;white-space:nowrap;display:block"
+                   y="137.08292"
+                   x="27"
+                   dy="0.34999999em"
+                   class="annotation-label">init</text>
+                <g
+                   id="g1036"
+                   style="font-size:20px"
+                   class="annotation-node">
+                  <ellipse
+                     id="ellipse1032"
+                     style="font-size:20px;fill:#ffffff;stroke:#b3b3b3;stroke-width:0.5px;stroke-dasharray:1"
+                     ry="2"
+                     rx="5"
+                     cy="137.08292"
+                     cx="20"
+                     class="nodecolortarget" />
+                  <title
+                     id="title1034"
+                     class="undefined">init</title>
+                </g>
+              </g>
+              <g
+                 id="g1049"
+                 style="font-size:20px"
+                 class="annotation shortcut meta extract"
+                 data-name="training">
+                <path
+                   d="M 5,144.08291 H 15"
+                   style="font-size:20px;fill:none;stroke:#aaaaaa;stroke-width:0.75px;marker-start:url(#ref-annotation-arrowhead);marker-end:url(#annotation-arrowhead)"
+                   class="annotation-edge refline"
+                   id="path_Adam--training"
+                   inkscape:connector-curvature="0" />
+                <text
+                   id="text1041"
+                   style="font-size:5px;text-anchor:start;white-space:nowrap;display:block"
+                   y="144.08292"
+                   x="29"
+                   dy="0.34999999em"
+                   class="annotation-label">training</text>
+                <g
+                   id="g1047"
+                   style="font-size:20px"
+                   class="annotation-node">
+                  <rect
+                     id="rect1043"
+                     height="4"
+                     width="12"
+                     y="142.08292"
+                     x="15"
+                     style="font-size:20px;fill:#eeeeee;stroke:#a7a7a7;stroke-width:0.5px;stroke-dasharray:1"
+                     ry="1"
+                     rx="1"
+                     class="nodecolortarget" />
+                  <title
+                     id="title1045"
+                     class="undefined">training</title>
+                </g>
+              </g>
+              <g
+                 id="g1064"
+                 style="font-size:20px"
+                 class="annotation shortcut series extract"
+                 data-name="IsVariableInitialized[0-44]">
+                <path
+                   d="m 5,148.16583 10,2.91708"
+                   style="font-size:20px;fill:none;stroke:#aaaaaa;stroke-width:0.75px;marker-end:url(#annotation-arrowhead)"
+                   class="annotation-edge"
+                   id="path_Adam--IsVariableInitialized[0-44]"
+                   inkscape:connector-curvature="0" />
+                <text
+                   id="text1054"
+                   style="font-size:5px;text-anchor:start;white-space:nowrap;display:block"
+                   y="151.08292"
+                   x="31"
+                   dy="0.34999999em"
+                   class="annotation-label">IsVariableI...<title
+   id="title1052">IsVariableInitialized[0-44]</title>
+</text>
+                <g
+                   id="g1062"
+                   style="font-size:20px"
+                   class="annotation-node">
+                  <use
+                     id="use1056"
+                     height="4"
+                     width="14"
+                     y="149.08292"
+                     x="15"
+                     style="font-size:20px;fill:#ffffff;stroke:#b3b3b3;stroke-width:0.5px;stroke-dasharray:1"
+                     xlink:href="#op-series-annotation-stamp"
+                     class="nodecolortarget" />
+                  <rect
+                     id="rect1058"
+                     style="font-size:20px;display:none;stroke-width:0.5px;stroke-dasharray:1"
+                     height="4"
+                     width="14"
+                     y="149.08292"
+                     x="15"
+                     class="nodecolortarget" />
+                  <title
+                     id="title1060"
+                     class="undefined">IsVariableInitialized[0-44]</title>
+                </g>
+              </g>
+            </g>
+            <g
+               id="g1078"
+               style="font-size:20px"
+               class="nodeshape">
+              <rect
+                 id="rect1068"
+                 height="18.165829"
+                 width="60"
+                 y="135"
+                 x="-55"
+                 style="font-size:20px;fill:#eeeeee;stroke:#a7a7a7"
+                 ry="5"
+                 rx="5"
+                 class="nodecolortarget" />
+              <g
+                 id="g1076"
+                 style="font-size:20px;opacity:0.01000001"
+                 class="buttoncontainer">
+                <circle
+                   r="0"
+                   cy="0"
+                   cx="0"
+                   id="circle1070"
+                   style="font-size:20px;fill:#e7811d"
+                   class="buttoncircle" />
+                <path
+                   id="path1072"
+                   style="font-size:20px;stroke:#ffffff"
+                   transform="translate(-1,141)"
+                   d="M 0,-2.2 V 2.2 M -2.2,0 h 4.4"
+                   class="expandbutton"
+                   inkscape:connector-curvature="0" />
+                <path
+                   id="path1074"
+                   style="font-size:20px;display:none;stroke:#ffffff"
+                   transform="translate(-1,141)"
+                   d="M -2.2,0 H 2.2"
+                   class="collapsebutton"
+                   inkscape:connector-curvature="0" />
+              </g>
+            </g>
+            <text
+               id="text1080"
+               style="font-size:9px;text-anchor:middle;white-space:nowrap;display:block;fill:#444444"
+               y="144.08292"
+               x="-25"
+               pointer-events="none"
+               font-size="9px"
+               dy="0.34999999em"
+               class="nodelabel">Adam</text>
+          </g>
+        </g>
+      </g>
+      <g
+         id="g1168"
+         style="font-size:20px"
+         transform="translate(482.25,20)"
+         class="out-extract">
+        <g
+           id="g1166"
+           style="font-size:20px"
+           class="nodes">
+          <g
+             id="g1164"
+             style="font-size:20px"
+             class="node op extract"
+             data-name="init">
+            <g
+               id="g1154"
+               style="font-size:20px"
+               class="in-annotations">
+              <g
+                 id="g1098"
+                 style="font-size:20px"
+                 class="annotation shortcut meta extract"
+                 data-name="Adam">
+                <path
+                   d="m 7.5,2 10,15.5"
+                   style="font-size:20px;fill:none;stroke:#aaaaaa;stroke-width:0.75px;stroke-dasharray:1;marker-end:url(#annotation-arrowhead)"
+                   class="annotation-edge annotation-control-edge"
+                   id="path1088"
+                   inkscape:connector-curvature="0" />
+                <text
+                   id="text1090"
+                   style="font-size:5px;text-anchor:end;white-space:nowrap;display:block"
+                   y="2"
+                   x="-6.5"
+                   dy="0.34999999em"
+                   class="annotation-label">Adam</text>
+                <g
+                   id="g1096"
+                   style="font-size:20px"
+                   class="annotation-node">
+                  <rect
+                     id="rect1092"
+                     height="4"
+                     width="12"
+                     y="0"
+                     x="-4.5"
+                     style="font-size:20px;fill:#eeeeee;stroke:#a7a7a7;stroke-width:0.5px;stroke-dasharray:1"
+                     ry="1"
+                     rx="1"
+                     class="nodecolortarget" />
+                  <title
+                     id="title1094"
+                     class="undefined">Adam</title>
+                </g>
+              </g>
+              <g
+                 id="g1110"
+                 style="font-size:20px"
+                 class="annotation shortcut meta"
+                 data-name="conv2d_1">
+                <path
+                   d="m 7.5,9 10,8.5"
+                   style="font-size:20px;fill:none;stroke:#aaaaaa;stroke-width:0.75px;stroke-dasharray:1;marker-end:url(#annotation-arrowhead)"
+                   class="annotation-edge annotation-control-edge"
+                   id="path1100"
+                   inkscape:connector-curvature="0" />
+                <text
+                   id="text1102"
+                   style="font-size:5px;text-anchor:end;white-space:nowrap;display:block"
+                   y="9"
+                   x="-6.5"
+                   dy="0.34999999em"
+                   class="annotation-label">conv2d_1</text>
+                <g
+                   id="g1108"
+                   style="font-size:20px"
+                   class="annotation-node">
+                  <rect
+                     id="rect1104"
+                     height="4"
+                     width="12"
+                     y="7"
+                     x="-4.5"
+                     style="font-size:20px;fill:#c5e2b6;stroke:#8a9e7f;stroke-width:0.5px;stroke-dasharray:1"
+                     ry="1"
+                     rx="1"
+                     class="nodecolortarget" />
+                  <title
+                     id="title1106"
+                     class="undefined">conv2d_1</title>
+                </g>
+              </g>
+              <g
+                 id="g1122"
+                 style="font-size:20px"
+                 class="annotation shortcut meta"
+                 data-name="conv2d_2">
+                <path
+                   d="m 7.5,16 10,1.5"
+                   style="font-size:20px;fill:none;stroke:#aaaaaa;stroke-width:0.75px;stroke-dasharray:1;marker-end:url(#annotation-arrowhead)"
+                   class="annotation-edge annotation-control-edge"
+                   id="path1112"
+                   inkscape:connector-curvature="0" />
+                <text
+                   id="text1114"
+                   style="font-size:5px;text-anchor:end;white-space:nowrap;display:block"
+                   y="16"
+                   x="-6.5"
+                   dy="0.34999999em"
+                   class="annotation-label">conv2d_2</text>
+                <g
+                   id="g1120"
+                   style="font-size:20px"
+                   class="annotation-node">
+                  <rect
+                     id="rect1116"
+                     height="4"
+                     width="12"
+                     y="14"
+                     x="-4.5"
+                     style="font-size:20px;fill:#c5e2b6;stroke:#8a9e7f;stroke-width:0.5px;stroke-dasharray:1"
+                     ry="1"
+                     rx="1"
+                     class="nodecolortarget" />
+                  <title
+                     id="title1118"
+                     class="undefined">conv2d_2</title>
+                </g>
+              </g>
+              <g
+                 id="g1134"
+                 style="font-size:20px"
+                 class="annotation shortcut meta"
+                 data-name="dense_1">
+                <path
+                   d="m 7.5,23 10,-5.5"
+                   style="font-size:20px;fill:none;stroke:#aaaaaa;stroke-width:0.75px;stroke-dasharray:1;marker-end:url(#annotation-arrowhead)"
+                   class="annotation-edge annotation-control-edge"
+                   id="path1124"
+                   inkscape:connector-curvature="0" />
+                <text
+                   id="text1126"
+                   style="font-size:5px;text-anchor:end;white-space:nowrap;display:block"
+                   y="23"
+                   x="-6.5"
+                   dy="0.34999999em"
+                   class="annotation-label">dense_1</text>
+                <g
+                   id="g1132"
+                   style="font-size:20px"
+                   class="annotation-node">
+                  <rect
+                     id="rect1128"
+                     height="4"
+                     width="12"
+                     y="21"
+                     x="-4.5"
+                     style="font-size:20px;fill:#bddbdb;stroke:#849999;stroke-width:0.5px;stroke-dasharray:1"
+                     ry="1"
+                     rx="1"
+                     class="nodecolortarget" />
+                  <title
+                     id="title1130"
+                     class="undefined">dense_1</title>
+                </g>
+              </g>
+              <g
+                 id="g1146"
+                 style="font-size:20px"
+                 class="annotation shortcut meta"
+                 data-name="dense_2">
+                <path
+                   d="m 7.5,30 10,-12.5"
+                   style="font-size:20px;fill:none;stroke:#aaaaaa;stroke-width:0.75px;stroke-dasharray:1;marker-end:url(#annotation-arrowhead)"
+                   class="annotation-edge annotation-control-edge"
+                   id="path1136"
+                   inkscape:connector-curvature="0" />
+                <text
+                   id="text1138"
+                   style="font-size:5px;text-anchor:end;white-space:nowrap;display:block"
+                   y="30"
+                   x="-6.5"
+                   dy="0.34999999em"
+                   class="annotation-label">dense_2</text>
+                <g
+                   id="g1144"
+                   style="font-size:20px"
+                   class="annotation-node">
+                  <rect
+                     id="rect1140"
+                     height="4"
+                     width="12"
+                     y="28"
+                     x="-4.5"
+                     style="font-size:20px;fill:#bddbdb;stroke:#849999;stroke-width:0.5px;stroke-dasharray:1"
+                     ry="1"
+                     rx="1"
+                     class="nodecolortarget" />
+                  <title
+                     id="title1142"
+                     class="undefined">dense_2</title>
+                </g>
+              </g>
+              <g
+                 id="g1152"
+                 style="font-size:20px"
+                 class="annotation ellipsis ellipsis"
+                 data-name="... 2 more">
+                <path
+                   d="m 7.5,35 10,-17.5"
+                   style="font-size:20px;fill:none;stroke:#aaaaaa;stroke-width:0.75px;marker-end:url(#annotation-arrowhead)"
+                   class="annotation-edge"
+                   id="path1148"
+                   inkscape:connector-curvature="0" />
+                <text
+                   id="text1150"
+                   style="font-size:5px;text-anchor:end;white-space:nowrap;display:block"
+                   y="35"
+                   x="5.5"
+                   dy="0.34999999em"
+                   class="annotation-label annotation-ellipsis">... 2 more</text>
+              </g>
+            </g>
+            <g
+               id="g1156"
+               style="font-size:20px"
+               class="out-annotations" />
+            <g
+               id="g1160"
+               style="font-size:20px"
+               class="nodeshape">
+              <ellipse
+                 id="ellipse1158"
+                 style="font-size:20px;fill:#ffffff;stroke:#b3b3b3"
+                 ry="3"
+                 rx="7.5"
+                 cy="17.5"
+                 cx="25"
+                 class="nodecolortarget" />
+            </g>
+            <text
+               id="text1162"
+               style="font-size:6px;text-anchor:middle;white-space:nowrap;display:block;fill:#444444"
+               y="9.5"
+               x="25"
+               dy="0.34999999em"
+               class="nodelabel">init</text>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
