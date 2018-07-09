@@ -42,18 +42,19 @@ form div p{
 
 
 form div#text_sentiment{
-  background-image: url("sentiment.png"), linear-gradient(to bottom right,whitesmoke,whitesmoke);
+  background-image: url("../img/sentiment.png"), linear-gradient(to bottom right,whitesmoke,whitesmoke);
   background-repeat: no-repeat, no-repeat;
   background-size: 100px, 100%;
   background-position: 10% 5px, 0% 0%;
 }
 
 form div#digits{
-  background-image: url("digits.png"), linear-gradient(to bottom right,whitesmoke,whitesmoke);
+  background-image: url('../img/digits.png'), linear-gradient(to bottom right,whitesmoke,whitesmoke);
   background-repeat: no-repeat, no-repeat;
   background-size: 100px, 100%;
   background-position: 10% 5px, 0% 0%;
 }
+
 
 
 .container{
