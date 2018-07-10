@@ -32,3 +32,8 @@ function hidePred(){
 }
 
 hidePred()
+
+function clearInput(){
+	var text_box = document.querySelector('#text_review');
+	text_box.value = "";
+}

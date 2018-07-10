@@ -96,19 +96,23 @@ input[name="again_btn"],
   border-radius: 7px;
 }
 
-.btn-secondary {
-  background: #ffffff;
+#clearButton {
+  background: whitesmoke;
   border: 1px solid #e6e6e6;
-  color: #3372df;
+  color: #d20707;
   font-family: 'Open Sans', sans-serif;
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.23px;
-  padding: 12px 32px;
+  padding: 8px 15px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  border-radius:7px;
+  margin-left:10px;
 }
+
+
 
 /*background color gradient*/
 body:nth-child(2) {
@@ -301,4 +305,22 @@ img#logo, nav a {
 @-webkit-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
+}
+
+
+/*buttons*/
+input[name = "submit_btn"],
+.submitButton{
+    box-shadow: 2px 4px #999;
+}
+
+input[name = 'submit_btn']:hover,
+.submitButton:hover {
+  background-color: #3a6ec3}
+ 
+input[name = 'submit_btn']:active,
+.submitButton:active {
+  background-color: #3a6ec3;
+  box-shadow:0 0;
+  transform: translateY(3px);
 }

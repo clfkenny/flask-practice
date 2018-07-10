@@ -29,4 +29,11 @@ img.graph {
 
 hr{
 	width:90%;
+	border-top: 1px double var(--main-accent-color);
+
+}
+
+h3{
+	font-size:30px;
+	color:maroon;
 }
