@@ -5,4 +5,5 @@ from wtforms.validators import DataRequired, Email, Length
 class ReviewForm(Form):
     text_review = TextAreaField('',
                                 [validators.DataRequired(),
-                                validators.length(min=15)])
+                                validators.length(min=15)],
+                                default = 'I think this app is really cool! :)')
