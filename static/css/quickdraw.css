@@ -39,16 +39,17 @@ h3{
 	font-style:italic;
 }
 
-div#interact{
+/*div#interact{
 	overflow:visible;
 }
 
 div#interact canvas, h3{
 	position:relative;
 	left:-30%;
-}
+}*/
 
 div#result{
-	position:absolute;
-	right:40px;
+	display: inline-block;
+max-width:100px;
+max-height: 100px;
 }
