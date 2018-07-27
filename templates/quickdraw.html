@@ -7,16 +7,18 @@
   <main class="hero-section">
   	<div>
   	<h2>Sketch Recognition</h2>
-    <div class="container" id = "interact">
 
-		<h3>Draw a sketch inside this box!</h3>
+
+    <div class="container" id = "interact">
+  		<h3>Draw a sketch inside this box!</h3>
 
 		<canvas id="canvas" width="280" height="280" style="border:3px solid; border-radius: 3px; cursor: crosshair;"></canvas>
 		<div id="controls">
 			
 <!-- 			<input type="color" id="colors">
 			 <input type="number" id="lineWidth" style="width:60px" value="0.2" step="0.1" min="0.1"> -->
-			 <a href="#" class="submitButton"><span> Predict </span></a>	
+
+			 <!-- <a href="#" class="submitButton"><span> Predict </span></a>	 -->
 			<input type="button" id="clearButton" value="Clear" >
 				
 		</div>
@@ -59,31 +61,10 @@
 				mousePress = false;
 			}
 
-	   // 		canvas.onmousemove = function(e){
-	   // 			if(!mousePress) return;
-
-				// if(mousePress){
-		  //  			var $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
-		  //  			var canvasObj = document.getElementById("canvas");
-		  //  			var img = canvasObj.toDataURL();
-		  //  			$.ajax({
-		  //  				type: "POST",
-		  //  				url: $SCRIPT_ROOT + "/predict_sketch",
-		  //  				data: img,
-
-		  //  				success: function(data){
-		  //  					$('#result').html( data );
-		  //  				}
-		  //  			});
-		   		
-		  //  			return false;
-		  //  		}
-
-		  //  	};	   	
 
 			var ctx = document.getElementById("myChart").getContext('2d');
-			ctx.canvas.width = 800;
-			ctx.canvas.height = 500;
+			// ctx.canvas.width = 800;
+			// ctx.canvas.height = 500;
 			Chart.defaults.global.defaultFontColor = '#000';
 			Chart.defaults.global.defaultFontSize = 14;
 			Chart.defaults.global.defaultFontFamily = "monospace";
@@ -114,7 +95,7 @@
 			        }]
 			    },
 			    options: {
-			    	responsive: false,
+			    	responsive: true,
 			    	maintainAspectRatio: true,
 			        scales: {
 			            yAxes: [{

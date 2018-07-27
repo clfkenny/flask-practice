@@ -39,17 +39,34 @@ h3{
 	font-style:italic;
 }
 
-/*div#interact{
-	overflow:visible;
+
+
+div#interact canvas{
+position:absolute;
+top:30%;
+left:10%;
 }
 
-div#interact canvas, h3{
-	position:relative;
-	left:-30%;
-}*/
+div#interact h3{
+	position:absolute;
+	top:20%;
+	left:10%;
+}
 
+div#interact #clearButton{
+	position:absolute;
+	top:65%;
+	left:10%;
+}
 div#result{
+	position:relative;
 	display: inline-block;
-max-width:100px;
-max-height: 100px;
+	width:70%;
+}
+
+div#result *{
+	position:absolute;
+	top:25%;
+	left:50%;
+
 }
