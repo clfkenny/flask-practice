@@ -5,7 +5,7 @@ from scipy.misc import imread, imresize,imshow
 import tensorflow as tf
 
 
-def init(): 
+def init_digits(): 
 	config = tf.ConfigProto()
 	config.gpu_options.per_process_gpu_memory_fraction = 0.3
 	sess = tf.Session(config=config)
@@ -26,3 +26,18 @@ def init():
 	graph = tf.get_default_graph()
 
 	return loaded_model,graph
+
+
+
+def init_sketch():
+	print('Loading sketch model...')
+	json_file = open('model/sketch_model.json','r')
+	loaded_model_json = json_file.read()
+	json_file.close()
+	sketch_model = model_from_json(loaded_model_json)
+	sketch_model.load_weights("model/sketch_weights.hdf5")
+	sketch_model.compile(loss='categorical_crossentropy', optimizer = 'adam')
+	print('Loaded sketch model.\n')
+	graph = tf.get_default_graph()
+
+	return sketch_model, graph

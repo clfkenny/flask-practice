@@ -1,12 +1,15 @@
 from flask import Flask, render_template, request, session, redirect, url_for
-
+from flask.json import jsonify
 from sentiment_form import ReviewForm
 from load_models import load_sentiment_model
 
 import numpy as np
 import sklearn
 
+import io
+from PIL import Image
 
+import pandas as pd
 ###
 from flask import Flask, render_template,request
 #scientific computing library for saving, reading, and resizing images
@@ -26,9 +29,9 @@ import os
 sys.path.append(os.path.abspath("model"))
 from load import * 
 
-global model, graph
+# global model, graph
 #initialize these variables
-model, graph = init()
+digits_model, digits_graph = init_digits()
 
 def convertImage(imgData1):
     imgstr = re.search(b'base64,(.*)',imgData1).group(1)
@@ -36,12 +39,8 @@ def convertImage(imgData1):
     with open('output.png','wb') as output:
         output.write(base64.b64decode(imgstr))
     
-###
-
 
 app = Flask(__name__)
-
-
 
 clf, vect = load_sentiment_model()
 
@@ -82,8 +81,8 @@ def results():
 def digit_classifiy():
     return render_template('digits.html')
 
-@app.route('/predict/',methods=['GET','POST'])
-def predict():
+@app.route('/predict_digit',methods=['GET','POST'])
+def predict_digit():
     #whenever the predict method is called, we're going
     #to input the user drawn character as an image into the model
     #perform inference, and return the classification
@@ -103,9 +102,9 @@ def predict():
     x = x.reshape(1,28,28,1)
     print ("debug2")
     #in our computation graph
-    with graph.as_default():
+    with digits_graph.as_default():
         #perform the prediction
-        out = model.predict(x)
+        out = digits_model.predict(x)
         print(out)
         print(np.argmax(out,axis=1))
         print("debug3")
@@ -113,6 +112,45 @@ def predict():
         response = np.array_str(np.argmax(out,axis=1))
         return response 
     
+
+
+sketch_model, sketch_graph = init_sketch()
+
+import pickle
+
+@app.route('/quickdraw')
+def quickdraw():
+    return render_template('quickdraw.html')
+
+@app.route('/predict_sketch', methods=['GET', 'POST'])
+def predict():
+    imgData = request.get_data()
+    imgstr = re.search(b'base64,(.*)',imgData).group(1)
+    img_bytes = io.BytesIO(base64.b64decode(imgstr))
+    img = Image.open(img_bytes)
+    x = np.array(img)[:,:,0]
+
+    x = np.invert(x)
+    x = imresize(x,(28,28))
+    x = x.reshape(1,28,28,1)/255
+
+
+    with open("class_ids.txt", 'rb') as fp:
+        class_idx = pickle.load(fp)
+
+    with sketch_graph.as_default():
+        pred = sketch_model.predict(x)
+        class_idx_df = pd.DataFrame({'category':list(class_idx.keys())}).reset_index()
+        sorted_probs = pd.DataFrame({'probabilities':pred.ravel()}).sort_values(by = 'probabilities', ascending=False).reset_index()
+
+        merged = pd.merge(class_idx_df, sorted_probs).sort_values('probabilities', ascending=False).reset_index(drop=True)
+        print(merged)
+
+
+        # response = top_results.to_html(classes = ["table-bordered", 'table-striped', 'table-hover'])
+        # return response
+        top_results = merged.loc[:,['category', 'probabilities']][:20]
+        return jsonify({'labels': top_results.category.tolist(), 'values': top_results.probabilities.tolist()}), 201
 
 if __name__ == "__main__":
     app.run(debug=True)

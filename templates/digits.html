@@ -4,11 +4,10 @@
     <link href="{{ url_for('static', filename='css/digits.css') }}" rel="stylesheet">
   <main class="hero-section">
   	<div>
-  	<h2>Handwritten Digit Recognition using <span>Convolutional Neural Networks</span></h2>
+  	<h2>Handwritten Digit Recognition</h2>
     <div class="container" id = "interact">
 
 		<h3>Draw a digit inside this box!</h3>
-		<br/>
 
 		<canvas id="canvas" width="280" height="280" style="border:6px solid; border-radius: 5px; cursor: crosshair;"></canvas>
 		<div id="controls">
@@ -37,7 +36,7 @@
 	   			var img = canvasObj.toDataURL();
 	   			$.ajax({
 	   				type: "POST",
-	   				url: $SCRIPT_ROOT + "/predict/",
+	   				url: $SCRIPT_ROOT + "/predict_digit",
 	   				data: img,
 	   				success: function(data){
 	   					$('#result').text(' Predicted Output: '+data);
@@ -52,7 +51,8 @@
 
 <hr>
 <div class = 'div_graph'>
-	<h2>Model Architecture </h2> <br>
+	<h2>Model Architecture </h2> 
+	<h3>Convolutional Neural Network</h3> <br>
 <img class = 'graph' src = "{{ url_for('static', filename='img/digits_cnn2.svg') }}"> </img>
 </div>
 <br>
