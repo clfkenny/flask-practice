@@ -3,7 +3,7 @@
 {% block content %}
 
     <link href="{{ url_for('static', filename='css/quickdraw.css') }}" rel="stylesheet">
-    <script src = 'static/Chart.min.js'></script>
+
   <main class="hero-section">
   	<div>
   	<h2>Sketch Recognition</h2>
@@ -11,7 +11,7 @@
 
 		<h3>Draw a sketch inside this box!</h3>
 
-		<canvas id="canvas" width="280" height="280" style="border:6px solid; border-radius: 5px; cursor: crosshair;"></canvas>
+		<canvas id="canvas" width="280" height="280" style="border:3px solid; border-radius: 3px; cursor: crosshair;"></canvas>
 		<div id="controls">
 			
 <!-- 			<input type="color" id="colors">
@@ -30,9 +30,8 @@
 
 		
   		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-	    <script src="static/js/digits.js"></script>
-	    
-
+	    <script src="static/js/quickdraw.js"></script>
+    	<script src = 'static/js/Chart.min.js'></script>	    
 
 	    <script type="text/javascript">
 	   		$(".submitButton").click(function(){
@@ -83,6 +82,11 @@
 		  //  	};	   	
 
 			var ctx = document.getElementById("myChart").getContext('2d');
+			ctx.canvas.width = 150;
+			ctx.canvas.height = 75;
+			Chart.defaults.global.defaultFontColor = '#000';
+			Chart.defaults.global.defaultFontSize = 14;
+			Chart.defaults.global.defaultFontFamily = "monospace";
 			var myChart = new Chart(ctx, {
 			    type: 'bar',
 			    data: {
@@ -91,12 +95,12 @@
 			            label: 'Prediction:',
 			            data: [],
 			            backgroundColor: [
-			                'rgba(255, 99, 132, 0.2)',
-			                'rgba(54, 162, 235, 0.2)',
-			                'rgba(255, 206, 86, 0.2)',
-			                'rgba(75, 192, 192, 0.2)',
-			                'rgba(153, 102, 255, 0.2)',
-			                'rgba(255, 159, 64, 0.2)'
+			                'rgba(255, 99, 132, 0.5)',
+			                'rgba(54, 162, 235, 0.5)',
+			                'rgba(255, 206, 86, 0.5)',
+			                'rgba(75, 192, 192, 0.5)',
+			                'rgba(153, 102, 255, 0.5)',
+			                'rgba(255, 159, 64, 0.5)'
 			            ],
 			            borderColor: [
 			                'rgba(255,99,132,1)',
@@ -110,11 +114,25 @@
 			        }]
 			    },
 			    options: {
-
+			    	responsive: true,
+			    	maintainAspectRatio: true,
 			        scales: {
 			            yAxes: [{
 			                ticks: {
-			                    beginAtZero:true
+			                    beginAtZero:true,              
+			                },
+			                scaleLabel:{
+			                	display:true,
+			                	labelString: 'Probability'
+			                }
+			            }],		
+			            xAxes: [{
+			                ticks: {
+			                    beginAtZero:true,              
+			                },
+			                scaleLabel:{
+			                	display:true,
+			                	labelString: 'Category'
 			                }
 			            }]
 			        }

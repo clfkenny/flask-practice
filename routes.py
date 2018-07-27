@@ -149,7 +149,7 @@ def predict():
 
         # response = top_results.to_html(classes = ["table-bordered", 'table-striped', 'table-hover'])
         # return response
-        top_results = merged.loc[:,['category', 'probabilities']][:20]
+        top_results = merged.loc[:,['category', 'probabilities']][:10]
         return jsonify({'labels': top_results.category.tolist(), 'values': top_results.probabilities.tolist()}), 201
 
 if __name__ == "__main__":
