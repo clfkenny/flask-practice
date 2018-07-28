@@ -8,7 +8,7 @@
   	<div>
   	<h2>Sketch Recognition</h2>
 
-  	<p>Click <span >here</span> for sample images !</p> 
+  	<p>Model is trained to recognize # types of sketches from Google's Quick Draw database. Click <span >here</span> for sample images of what the model can recognize!</p> 
 <div id = "slider">
   	<img class = 'collage' id = "collage" src = "{{ url_for('static', filename='img/collage_sketch.jpg') }}"> </img>
 </div>
@@ -49,6 +49,7 @@
 
 			canvas.onmouseup = function(e){
 				mousePress = false;
+				getPred();
 			}
 
 
@@ -112,31 +113,83 @@
 
 
 
+	   // 		document.getElementById("canvas").onmousemove = function(e){
+	   // 			if(!mousePress) return;
+
+				// if(mousePress){
+		  //  			var $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+		  //  			var canvasObj = document.getElementById("canvas");
+		  //  			var img = canvasObj.toDataURL();
+
+		  //  			$.ajax({
+		  //  				type: "POST",
+		  //  				url: $SCRIPT_ROOT + "/predict_sketch",
+		  //  				data: img,
+		  //  				success: function(data){
+
+		  //  					myChart.data.labels = data.labels;
+		  //  					myChart.data.datasets[0].data = data.values;
+		  //  					myChart.update();
+	
+		  //  				}
+		  //  			});
+		   		
+		  //  			return false;
+		  //  		}
+
+		  //  	};	 
+
+
+		  	function getPred(){
+	   			var $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+	   			var canvasObj = document.getElementById("canvas");
+	   			var img = canvasObj.toDataURL();
+
+	   			$.ajax({
+	   				type: "POST",
+	   				url: $SCRIPT_ROOT + "/predict_sketch",
+	   				data: img,
+	   				success: function(data){
+
+	   					myChart.data.labels = data.labels;
+	   					myChart.data.datasets[0].data = data.values;
+	   					myChart.update();
+
+	   				}
+	   			});		  		
+		  	}
+
+
+		  	var counter = 0;
+
+		  	function timer(){
+		  		if(counter < 3){
+			  		counter = counter + 1;
+			  		console.log("test");
+			  		console.log(counter);
+			  	}
+			  	else{
+			  		counter = 0
+			  	}
+		  	}
+
+		  	setInterval(timer, 100)
+
 	   		document.getElementById("canvas").onmousemove = function(e){
 	   			if(!mousePress) return;
 
-				if(mousePress){
-		   			var $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
-		   			var canvasObj = document.getElementById("canvas");
-		   			var img = canvasObj.toDataURL();
+				while(mousePress){
+		   			if(counter == 3){
+		   				getPred();
+		   			}
 
-		   			$.ajax({
-		   				type: "POST",
-		   				url: $SCRIPT_ROOT + "/predict_sketch",
-		   				data: img,
-		   				success: function(data){
 
-		   					myChart.data.labels = data.labels;
-		   					myChart.data.datasets[0].data = data.values;
-		   					myChart.update();
-	
-		   				}
-		   			});
-		   		
 		   			return false;
 		   		}
 
 		   	};	 
+
+
 
 
 
