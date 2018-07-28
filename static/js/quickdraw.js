@@ -85,3 +85,23 @@
 		});
 	}
 }());
+
+
+function hideCollage(){
+	$('#slider').hide();
+}
+
+$(function(){
+	hideCollage();
+});
+
+
+$("span").click(function(){
+	e = document.getElementById('slider')
+	if (e.style.display == 'none'){
+		$("#slider").slideDown(1000);
+}
+	else{
+		$("#slider").slideUp(1000);
+	}
+})

@@ -41,27 +41,35 @@ h3{
 
 
 
+
 h2{
 	position:absolute;
 	margin-top:25px;
 	margin-left:-50px;
 }
 
-div#interact canvas{
-	position:absolute;
-	margin-top:150px;
-	margin-left:-50px;
-}
 
-div#interact h3{
+p{	font-size:1.5em;
 	position:absolute;
 	margin-top:100px;
 	margin-left:-50px;
 }
 
+div#interact canvas{
+	position:absolute;
+	margin-top:200px;
+	margin-left:-50px;
+}
+
+div#interact h3{
+	position:absolute;
+	margin-top:150px;
+	margin-left:-50px;
+}
+
 div#interact #clearButton{
 	position:absolute;
-	margin-top:425px;
+	margin-top:475px;
 	margin-left:-50px;
 }
 
@@ -74,6 +82,29 @@ div#result{
 div#result *{
 	position:absolute;
 	left:50%;
-	padding:0% 10%;
+	padding:0% 20%;
+	margin-top:50px;
 
+}
+
+
+.collage{
+	width:90%;
+	float:right;
+}
+
+span{
+	color:green;
+	border: 1px solid green;
+	border-radius:6px;
+	cursor:help;
+	padding:2px;
+}
+
+#slider{
+	z-index:1;
+	position:absolute;
+	float:right;
+	right:50px;
+	max-width:50%;
 }

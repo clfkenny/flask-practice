@@ -8,7 +8,10 @@
   	<div>
   	<h2>Sketch Recognition</h2>
 
-
+  	<p>Click <span >here</span> for sample images !</p> 
+<div id = "slider">
+  	<img class = 'collage' id = "collage" src = "{{ url_for('static', filename='img/collage_sketch.jpg') }}"> </img>
+</div>
     <div class="container" id = "interact">
   		<h3>Draw a sketch inside this box!</h3>
 
@@ -36,20 +39,7 @@
     	<script src = 'static/js/Chart.min.js'></script>	    
 
 	    <script type="text/javascript">
-	   		$(".submitButton").click(function(){
-	   			var $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
-	   			var canvasObj = document.getElementById("canvas");
-	   			var img = canvasObj.toDataURL();
-	   			$.ajax({
-	   				type: "POST",
-	   				url: $SCRIPT_ROOT + "/predict_sketch",
-	   				data: img,
 
-	   				success: function(data){
-	   					$('#result').html(data);
-	   				}
-	   			});
-	   		});
 
 	   		var mousePress = false;
 
