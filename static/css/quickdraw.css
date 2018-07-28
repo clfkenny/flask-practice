@@ -45,32 +45,32 @@ h3{
 h2{
 	position:absolute;
 	margin-top:25px;
-	left: 100px;
+	left: 80px;
 }
 
 
 p{	font-size:1.5em;
 	position:absolute;
 	margin-top:100px;
-	left: 100px;
+	left: 80px;
 }
 
 div#interact canvas{
 	position:absolute;
 	margin-top:200px;
-	left: 100px;
+	left: 80px;
 }
 
 div#interact h3{
 	position:absolute;
 	margin-top:150px;
-	left: 100px;
+	left: 80px;
 }
 
 div#interact #clearButton{
 	position:absolute;
 	margin-top:475px;
-	left: 100px;
+	left: 80px;
 }
 
 div#result{
