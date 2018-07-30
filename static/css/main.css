@@ -12,21 +12,21 @@
 @font-face{
     font-family: 'ubuntu';
 
-    src: {{ url_for('static', filename='Ubuntu-Regular.ttf') }};
+    src: {{ url_for('static', filename='fonts/Ubuntu-Regular.ttf') }};
 /*    font-weight:normal;
     font-style:normal;*/
 }
 
 @font-face{
     font-family: 'ubuntu';
-    src: {{ url_for('static', filename='Ubuntu-Bold.ttf') }};
+    src: {{ url_for('static', filename='fonts/Ubuntu-Bold.ttf') }};
     font-weight:bold;
     /*font-style:normal;*/
 }
 
 @font-face{
     font-family: 'ubuntu';
-    src: {{ url_for('static', filename='Ubuntu-Italic.ttf') }};
+    src: {{ url_for('static', filename='fonts/Ubuntu-Italic.ttf') }};
     /*font-weight:normal;*/
     font-style:italic;
 }
