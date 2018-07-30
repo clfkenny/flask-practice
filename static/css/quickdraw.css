@@ -97,10 +97,11 @@ div#result *{
 
 span{
 	color:green;
-	border: 1px solid green;
+/* 	background:green; */
+	border:1px solid green;
 	border-radius:6px;
 	cursor:help;
-	padding:2px;
+	padding: 1px 6px 3px 6px;
 }
 
 #slider{
