@@ -59,7 +59,7 @@
 			// ctx.canvas.height = 400;
 			Chart.defaults.global.defaultFontColor = '#000';
 			Chart.defaults.global.defaultFontSize = 14;
-			Chart.defaults.global.defaultFontFamily = "monospace";
+			// Chart.defaults.global.defaultFontFamily = "monospace";
 			var myChart = new Chart(ctx, {
 			    type: 'horizontalBar',
 			    data: {
@@ -166,8 +166,6 @@
 		  	function timer(){
 		  		if(counter < 4){
 			  		counter = counter + 1;
-			  		console.log("test");
-			  		console.log(counter);
 			  	}
 			  	else{
 			  		counter = 0

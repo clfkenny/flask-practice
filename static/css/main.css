@@ -11,23 +11,24 @@
 
 @font-face{
     font-family: 'ubuntu';
-    src: url('/fonts/Ubuntu-Regular.ttf');
-    font-weight:normal;
-    font-style:normal;
+
+    src: {{ url_for('static', filename='Ubuntu-Regular.ttf') }};
+/*    font-weight:normal;
+    font-style:normal;*/
 }
 
 @font-face{
     font-family: 'ubuntu';
-    src: url('/fonts/Ubuntu-Bold.ttf');
+    src: {{ url_for('static', filename='Ubuntu-Bold.ttf') }};
     font-weight:bold;
-    font-style:normal;
+    /*font-style:normal;*/
 }
 
 @font-face{
     font-family: 'ubuntu';
-    src: url('/fonts/Ubuntu-Italic.ttf');
-    font-weight:bold;
-    font-style:normal;
+    src: {{ url_for('static', filename='Ubuntu-Italic.ttf') }};
+    /*font-weight:normal;*/
+    font-style:italic;
 }
 
 
