@@ -5,9 +5,9 @@ h2{
     -webkit-animation: move 1s;
 }
 
-form div::-webkit-scrollbar{
+/*form div::-webkit-scrollbar{
   display:none;
-}
+}*/
 
 form div{
   height:20px;
@@ -15,7 +15,7 @@ form div{
   box-shadow:2px 2px 5px grey;
   text-align:center;
   transition: all 0.3s ease-in-out;
-  overflow:auto;
+  overflow:hidden;
   border-radius:8px;
 }
 
@@ -25,21 +25,21 @@ form a{
 
 form div:hover{
   height: 105px;
-  box-shadow:2px 2px 20px var(--main-accent-color);
+  box-shadow:2px 2px 20px blue;
 }
 
 form div b{
-  color:black;
+  color:white;
   transition: all 0.3s ease-in-out;
   font-size:1.1em;
 }
 
 form div:hover b{
-  color: var(--main-accent-color);
+  color: #1a63f9;
 }
 
 form div p{
-  color:black;
+  color:white;
   font-size:1.05em;
 }
 
@@ -49,30 +49,39 @@ form div{
   background-position: 10% 5px, 0% 0%;
 }
 
+
+
+.container{
+  margin: 0 auto;
+  width:80%;
+}
+
+p{
+  margin-top:30px;
+  font-size:17px;
+}
+
+:root{
+  --color-gradient:var(--main-accent-color),#00c9ff;
+  --gradient-direction:to right;
+}
+
 form div#quickdraw{
-  background-image: url("../img/quick_draw.png"), linear-gradient(to bottom right,whitesmoke,whitesmoke);
+  background-size:140px, 100%;
+  background-position: 10% -5px, 0% 0%;
+  background-image: url("../img/quick_draw.png"), linear-gradient(var(--gradient-direction), var(--color-gradient));
   background-repeat: no-repeat, no-repeat;
 }
 
 form div#text_sentiment{
-  background-image: url("../img/sentiment.png"), linear-gradient(to bottom right,whitesmoke,whitesmoke);
+  background-image: url("../img/sentiment.png"), linear-gradient(var(--gradient-direction),var(--color-gradient));
   background-repeat: no-repeat, no-repeat;
 
 }
 
 form div#digits{
-  background-image: url('../img/digits.png'), linear-gradient(to bottom right,whitesmoke,whitesmoke);
+  background-image: url('../img/digits.png'), linear-gradient(var(--gradient-direction),var(--color-gradient));
   background-repeat: no-repeat, no-repeat;
 }
 
 
-
-.container{
-	margin: 0 auto;
-	width:80%;
-}
-
-p{
-	margin-top:30px;
-	font-size:17px;
-}

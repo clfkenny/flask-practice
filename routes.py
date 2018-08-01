@@ -125,6 +125,13 @@ def quickdraw():
 @app.route('/predict_sketch', methods=['GET', 'POST'])
 def predict():
     imgData = request.get_data()
+
+    imgstr = re.search(b'base64,(.*)',imgData).group(1)
+    #print(imgstr)
+    with open('sketch_output.png','wb') as output:
+        output.write(base64.b64decode(imgstr))
+
+
     imgstr = re.search(b'base64,(.*)',imgData).group(1)
     img_bytes = io.BytesIO(base64.b64decode(imgstr))
     img = Image.open(img_bytes)
@@ -139,9 +146,9 @@ def predict():
         class_idx = pickle.load(fp)
 
     with sketch_graph.as_default():
-        pred = sketch_model.predict(x)
+        pred = sketch_model.predict(x) 
         class_idx_df = pd.DataFrame({'category':list(class_idx.keys())}).reset_index()
-        sorted_probs = pd.DataFrame({'probabilities':pred.ravel()}).sort_values(by = 'probabilities', ascending=False).reset_index()
+        sorted_probs = pd.DataFrame({'probabilities':pred.ravel()}).sort_values(by = 'probabilities', ascending=False).reset_index() 
 
         merged = pd.merge(class_idx_df, sorted_probs).sort_values('probabilities', ascending=False).reset_index(drop=True)
         print(merged)
