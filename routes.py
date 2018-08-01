@@ -126,11 +126,10 @@ def quickdraw():
 def predict():
     imgData = request.get_data()
 
-    imgstr = re.search(b'base64,(.*)',imgData).group(1)
-    #print(imgstr)
-    with open('sketch_output.png','wb') as output:
-        output.write(base64.b64decode(imgstr))
-
+    # debug sketch line width
+    # imgstr = re.search(b'base64,(.*)',imgData).group(1)
+    # with open('sketch_output.png','wb') as output:
+    #     output.write(base64.b64decode(imgstr))
 
     imgstr = re.search(b'base64,(.*)',imgData).group(1)
     img_bytes = io.BytesIO(base64.b64decode(imgstr))
