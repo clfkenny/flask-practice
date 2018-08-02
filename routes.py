@@ -29,6 +29,7 @@ import os
 sys.path.append(os.path.abspath("model"))
 from load import * 
 
+import cv2
 # global model, graph
 #initialize these variables
 digits_model, digits_graph = init_digits()
@@ -157,6 +158,122 @@ def predict():
         # return response
         top_results = merged.loc[:,['category', 'probabilities']][:10]
         return jsonify({'labels': top_results.category.tolist(), 'values': top_results.probabilities.tolist()}), 201
+
+
+
+
+
+@app.route('/better_digits')
+def better_digits():
+    return render_template('better_digits.html')
+
+@app.route('/predict_better_digits', methods=['GET', 'POST'])
+def predict_better_digits():
+    imgData = request.get_data()
+
+    # debug sketch line width
+    # imgstr = re.search(b'base64,(.*)',imgData).group(1)
+    # with open('sketch_output.png','wb') as output:
+    #     output.write(base64.b64decode(imgstr))
+
+    imgstr = re.search(b'base64,(.*)',imgData).group(1)
+    img_bytes = io.BytesIO(base64.b64decode(imgstr))
+    img = Image.open(img_bytes)
+
+    im = np.array(img) 
+    r, g, b = im[:,:,0], im[:,:,1], im[:,:,2]
+    mask = (r==0) & (g == 255 ) & (b ==0)
+    im[:,:,:3][mask] = [255,255,255]
+
+    cv2.imwrite('debug1.png', im)
+
+    im_gray = cv2.cvtColor(im, cv2.COLOR_BGR2GRAY)
+    print('imgray shape', im_gray.shape)
+    print('im shape', im.shape)
+    ret, im_th = cv2.threshold(im_gray, 90, 255, cv2.THRESH_BINARY_INV)
+    _, ctrs, _ = cv2.findContours(im_th.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+
+
+    rects = [cv2.boundingRect(ctr) for ctr in ctrs]
+
+    print('Found {} objects'.format(len(rects)))
+
+    dim1_list = []
+    dim2_list = []
+    pred_list = []
+
+    with digits_graph.as_default():
+
+        # try:
+        for ind, rect in enumerate(rects):
+            print(rect[2],' ' ,rect[3])
+            # pred_list[ind] = 'blank'
+
+            dim1 = (rect[0], rect[1])
+            dim2 = (rect[0]+rect[2], rect[1] + rect[3])
+
+            dim1_list.append(dim1)
+            dim2_list.append(dim2)
+
+            top_leftx = rect[0]
+            top_lefty = rect[1]
+            width = rect[2]
+            height = rect[3]
+    
+
+            xdiff = 0
+            ydiff = 0 
+    
+            if width >= height: # if width > height, set height = width to make a square
+                xdiff = width-height
+                height = width
+    
+            else: 
+                ydiff = height-width
+                width = height        
+    
+    
+            farthest_left = rect[0]
+            farthest_right = rect[0] + rect[2]
+            farthest_top = rect[1]
+            farthest_bottom = rect[1]+rect[3]
+
+            xpadding = width//3
+            ypadding = height//3
+    
+            if xpadding + ydiff> top_leftx:
+                xpadding = top_leftx 
+                ydiff=0
+        
+            if ypadding + xdiff > top_lefty:
+                ypadding = top_lefty 
+                xdiff=0
+
+        
+    
+            roi = im_th[top_lefty - ypadding-xdiff:top_lefty + height + ypadding ,
+                top_leftx - xpadding-ydiff:top_leftx + width + xpadding ]
+
+
+            roi = cv2.resize(roi, (28, 28), interpolation = cv2.INTER_AREA)
+            roi = cv2.dilate(roi, (3,3))
+            # roi = np.invert(roi)
+
+            nbr = np.argmax(digits_model.predict(roi.reshape((1,28,28,1))))
+            pred_list.append(int(nbr))
+		       
+            cv2.putText(im, str(nbr), (rect[0], rect[1]), cv2.FONT_HERSHEY_DUPLEX, 3, (255, 255, 255), 5)
+
+
+
+
+    print(pred_list)
+    cv2.imwrite('debug2.png',im)
+
+    return jsonify({'dim1_list': dim1_list, 'dim2_list': dim2_list, 'predictions': pred_list}), 201
+
+
+
 
 if __name__ == "__main__":
     app.run(debug=True)

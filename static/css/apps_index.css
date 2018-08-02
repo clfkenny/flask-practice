@@ -79,6 +79,11 @@ form div#text_sentiment{
 
 }
 
+form div#better_digits{
+  background-image: url('../img/digits.png'), linear-gradient(var(--gradient-direction),var(--color-gradient));
+  background-repeat: no-repeat, no-repeat;
+}
+
 form div#digits{
   background-image: url('../img/digits.png'), linear-gradient(var(--gradient-direction),var(--color-gradient));
   background-repeat: no-repeat, no-repeat;
