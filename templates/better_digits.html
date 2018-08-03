@@ -91,6 +91,7 @@
 			canvas.onmouseup = function(e){
 				mousePress = false;
 				getPred();
+				getPred();
 			}
 
 
@@ -115,6 +116,11 @@
 
 	   			var canvasObj_pred = document.getElementById("canvas_preds");
 	   			ctx_pred = canvasObj_pred.getContext("2d");
+
+				ctx_pred.clearRect( 0, 0, 280, 280 );
+				ctx_pred.fillStyle="white";
+				ctx_pred.fillRect(0,0,canvas.width,canvas.height);
+	   			ctx_pred.drawImage(canvasObj, 0, 0);
 
 
 
@@ -141,8 +147,6 @@
 		   					ctx_pred.stroke();	   				
 	   					}
 
-
-
 	   					console.log(dim1);
 	   					console.log(dim2);
 
@@ -153,40 +157,40 @@
 	   			});		  		
 		  	}
 
-		  	// var counter = 0;
+		  	var counter = 0;
 
-		  	// function timer(){
-		  	// 	if(counter < 4){
-			  // 		counter = counter + 1;
-			  // 	}
-			  // 	else{
-			  // 		counter = 0
-			  // 	}
-		  	// }
+		  	function timer(){
+		  		if(counter < 4){
+			  		counter = counter + 1;
+			  	}
+			  	else{
+			  		counter = 0
+			  	}
+		  	}
 
-		  	// setInterval(timer, 100);
+		  	setInterval(timer, 100);
 
 
 
-	   // 		document.getElementById("canvas").onmousemove = function(e){
-	   // 			var canvasObj_pred = document.getElementById("canvas_preds");
-	   // 			ctx_pred = canvasObj_pred.getContext("2d");
+	   		document.getElementById("canvas").onmousemove = function(e){
+	   			var canvasObj_pred = document.getElementById("canvas_preds");
+	   			ctx_pred = canvasObj_pred.getContext("2d");
 	   			
-	   // 			if(!mousePress) return;
+	   			if(!mousePress) return;
 
-				// while(mousePress){
-		  //  			if(counter == 3){
+				while(mousePress){
+		   			if(counter == 3){
 
-				// 	// ctx_pred.clearRect( 0, 0, 280, 280 );
-				// 	// ctx_pred.fillStyle="white";
-				// 	// ctx_pred.fillRect(0,0,canvas.width,canvas.height);
-		  //  				getPred();
-		  //  			}
+					// ctx_pred.clearRect( 0, 0, 280, 280 );
+					// ctx_pred.fillStyle="white";
+					// ctx_pred.fillRect(0,0,canvas.width,canvas.height);
+		   				getPred();
+		   			}
 
 
-		  //  			return false;
-		  //  		}
-		  //  	};
+		   			return false;
+		   		}
+		   	};
 
 
 
