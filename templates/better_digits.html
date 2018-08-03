@@ -40,12 +40,13 @@
 	   		canvas.onmousedown = function(e){
 	   			mousePress = true;
 	   			getPred();
+	   			setTimeout(getPred, 5000); //to eliminate residual boxes
 				}
 
 			canvas.onmouseup = function(e){
 				mousePress = false;
 				getPred();
-				setTimeout(getPred, 500); //to eliminate residual boxes
+				setTimeout(getPred, 5000); //to eliminate residual boxes
 			}
 
 
@@ -123,7 +124,7 @@
 
 		  	var counter = 0;
 
-		  	var timeUpdate = 5 // in 100*ms
+		  	var timeUpdate = 15// in 100*ms
 
 		  	function timer(){
 		  		// if(counter == timeUpdate){
