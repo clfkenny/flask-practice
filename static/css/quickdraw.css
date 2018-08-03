@@ -50,6 +50,7 @@ h2{
 }
 
 
+
 p{	font-size:1em;
 	position:absolute;
 	margin-top:60px;
@@ -59,19 +60,19 @@ p{	font-size:1em;
 
 div#interact canvas{
 	position:absolute;
-	margin-top:200px;
+	margin-top:250px;
 	left: 100px;
 }
 
 div#interact h3{
 	position:absolute;
-	margin-top:150px;
+	margin-top:200px;
 	left: 100px;
 }
 
 div#interact #clearButton{
 	position:absolute;
-	margin-top:475px;
+	margin-top:525px;
 	left: 100px;
 }
 

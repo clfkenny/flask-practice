@@ -7,8 +7,8 @@
   	<h2>Handwritten Digit Recognition v2</h2>
     <div class="container" id = "interact">
 
-		<h3>Draw a digit inside this canvas!</h3>
-		<p>A new and improved handwritten digit recognizer, now with object detection so you can draw with more than one image at a time. The Convolutional Neural Network was trained on the MNIST dataset to achieve over 99% validation accuracy! Try to see how good this model really is. The color of the bounding box represents how confident the model is in its prediction. </p>
+		<h3>Draw as many digits as you can fit into this canvas!</h3>
+		<p>A new and improved handwritten digit recognizer, now with object detection so you can draw with more than one image at a time. The Convolutional Neural Network was trained on the MNIST dataset to achieve over 99% validation accuracy! Try to see how good this model really is. The color of the bounding box represents how confident the model is in its prediction. You will likely notice that the more confident the model is, the more likely it is to correctly predict your digits.</p>
 
 		<canvas id="canvas" width="1000" height="800" style="border:3px solid; border-radius: 3px; cursor: crosshair;z-index:1"></canvas>
 		<canvas id="canvas_preds" width="1000" height="800" style="border:3px solid; border-radius: 3px; cursor: crosshair; z-index: -1"></canvas>
@@ -40,7 +40,7 @@
 
 	   		canvas.onmousedown = function(e){
 	   			mousePress = true;
-	   			getPred();
+	   			// getPred();
 	   			// setTimeout(getPred, 2000); //to eliminate residual boxes
 				}
 
@@ -50,18 +50,6 @@
 				setTimeout(getPred, 1000); //to eliminate residual boxes
 			}
 
-
-			function removeColor(color){
-				var canvasData = ctx.getImageData(0,0,600,800),
-				pix = canvasData.data;
-
-				for(var i=0, n =pix.length; i<n; i+=4){
-					if(pix[i]===color[0] && pix[i+1]===color[1] && pix[i+2]===color[2]){
-						pix[i+3] = 0;
-					}
-				}
-				ctx.putImageData(canvasData, 0, 0);
-			}
 
 
 		  	function getPred(){
@@ -75,12 +63,12 @@
 
 	   			ctx_pred.strokeStyle = 'white'; // gets rid of residual boxes for some reason...?
 	   			ctx_pred.beginPath(); 
-	   			ctx_pred.moveTo(1550, 0);
-	   			ctx_pred.lineTo(1550, 50);
+	   			ctx_pred.moveTo(1050, 0);
+	   			ctx_pred.lineTo(1050, 50);
 	   			ctx_pred.stroke();
 
 
-				ctx_pred.clearRect( 0, 0, 1500, 1500 );
+				ctx_pred.clearRect( 0, 0, 1000, 1000 );
 				ctx_pred.fillStyle="white";
 				ctx_pred.fillRect(0,0,canvas.width,canvas.height);
 	   			ctx_pred.drawImage(canvasObj, 0, 0);
@@ -113,11 +101,11 @@
 		   					ctx_pred.rect(dim1[i][0], dim1[i][1], dim2[i][0]-dim1[i][0], dim2[i][1]-dim1[i][1]);
 
 		   					if(dim1[i][1] < 50){
-		   						ctx_pred.fillText(preds[i]+ ': '+ probas[i].toFixed(2)*100 + '%',
+		   						ctx_pred.fillText(preds[i]+ ': '+ (probas[i]*100).toFixed(2)+ '%',
 		   						 dim1[i][0], dim1[i][1] + dim2[i][1]) + 10;
 		   					}
 		   					else{
-		   						ctx_pred.fillText(preds[i] + ': '+ probas[i].toFixed(2)*100 + '%',
+		   						ctx_pred.fillText(preds[i] + ': '+ (probas[i]*100).toFixed(2) + '%',
 		   						 dim1[i][0], dim1[i][1] -10);
 		   					}
 
