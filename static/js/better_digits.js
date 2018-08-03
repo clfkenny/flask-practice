@@ -86,13 +86,6 @@
 
 
 
-
-
-
-
-
-
-
 	function debug()
 	{
 		/* CLEAR BUTTON */
@@ -101,11 +94,11 @@
 		clearButton.on( "click", function()
 		{
 			
-				context.clearRect( 0, 0, 280, 280 );
+				context.clearRect( 0, 0, 1500, 1500 );
 				context.fillStyle="white";
 				context.fillRect(0,0,canvas.width,canvas.height);
 
-				contextPred.clearRect( 0, 0, 280, 280 );
+				contextPred.clearRect( 0, 0, 1500, 1500 );
 				contextPred.fillStyle="white";
 				contextPred.fillRect(0,0,canvas.width,canvas.height);
 

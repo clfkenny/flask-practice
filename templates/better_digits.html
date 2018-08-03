@@ -45,7 +45,7 @@
 			canvas.onmouseup = function(e){
 				mousePress = false;
 				getPred();
-				// setTimeout(getPred, 1000); //to eliminate residual boxes
+				setTimeout(getPred, 100); //to eliminate residual boxes
 			}
 
 
@@ -71,9 +71,10 @@
 	   			var canvasObj_pred = document.getElementById("canvas_preds");
 	   			ctx_pred = canvasObj_pred.getContext("2d");
 
-				ctx_pred.clearRect( 0, 0, 280, 280 );
+				ctx_pred.clearRect( 0, 0, 1500, 1500 );
 				ctx_pred.fillStyle="white";
 				ctx_pred.fillRect(0,0,canvas.width,canvas.height);
+
 	   			ctx_pred.drawImage(canvasObj, 0, 0);
 
 
