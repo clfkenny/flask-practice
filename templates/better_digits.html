@@ -46,7 +46,7 @@
 			canvas.onmouseup = function(e){
 				mousePress = false;
 				getPred();
-				setTimeout(getPred, 2000); //to eliminate residual boxes
+				setTimeout(getPred, 1000); //to eliminate residual boxes
 			}
 
 
@@ -85,10 +85,6 @@
 	   			ctx_pred.drawImage(canvasObj, 0, 0);
 
 
-
-
-
-
 	   			$.ajax({
 	   				type: "POST",
 	   				url: $SCRIPT_ROOT + "/predict_better_digits",
@@ -107,7 +103,12 @@
 		   					ctx_pred.strokeStyle = "#4285f4";
 
 		   					ctx_pred.rect(dim1[i][0], dim1[i][1], dim2[i][0]-dim1[i][0], dim2[i][1]-dim1[i][1]);
-		   					ctx_pred.fillText(preds[i], dim1[i][0], dim1[i][1] )
+		   					if(dim1[i][1] < 50){
+		   						ctx_pred.fillText(preds[i], dim1[i][0], dim1[i][1] + dim2[i][1])
+		   					}
+		   					else{
+		   						ctx_pred.fillText(preds[i], dim1[i][0], dim1[i][1] )
+		   					}
 
 		   					ctx_pred.stroke();	   				
 	   					}
@@ -139,8 +140,6 @@
 		  	}
 
 		  	setInterval(timer, 100); 
-
-
 
 	   		document.getElementById("canvas").onmousemove = function(e){
 	   			var canvasObj_pred = document.getElementById("canvas_preds");
