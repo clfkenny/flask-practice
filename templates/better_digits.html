@@ -4,13 +4,14 @@
     <link href="{{ url_for('static', filename='css/better_digits.css') }}" rel="stylesheet">
   <main class="hero-section">
   	<div>
-  	<h2>Handwritten Digit Recognition</h2>
+  	<h2>Handwritten Digit Recognition v2</h2>
     <div class="container" id = "interact">
 
-		<h3>Draw a digit inside this box!</h3>
+		<h3>Draw a digit inside this canvas!</h3>
+		<p>A new and improved handwritten digit recognizer, now with object detection so you can draw with more than one image at a time. The Convolutional Neural Network was trained on the MNIST dataset to achieve over 99% validation accuracy! Try to see how good this model really is. The color of the bounding box represents how confident the model is in its prediction. </p>
 
-		<canvas id="canvas" width="1000" height="1000" style="border:3px solid; border-radius: 3px; cursor: crosshair;z-index:1"></canvas>
-		<canvas id="canvas_preds" width="1000" height="1000" style="border:3px solid; border-radius: 3px; cursor: crosshair; z-index: -1"></canvas>
+		<canvas id="canvas" width="1000" height="800" style="border:3px solid; border-radius: 3px; cursor: crosshair;z-index:1"></canvas>
+		<canvas id="canvas_preds" width="1000" height="800" style="border:3px solid; border-radius: 3px; cursor: crosshair; z-index: -1"></canvas>
 		<div id="controls">
 			
 <!-- 			<input type="color" id="colors">
@@ -93,28 +94,43 @@
 	   					var dim1 = data.dim1_list;
 	   					var dim2 = data.dim2_list;
 	   					var preds = data.predictions;
+	   					var probas = data.probas;
 
-	   					var i = 0;
-	   					for(; i < dim1.length; i ++){
+	   					for(i =0 ; i < dim1.length; i ++){
 
-		   					ctx_pred.font = "40px Arial";
-		   					ctx_pred.fillStyle = "#4285f4";
+	   						ctx_pred.beginPath();
+
+	   						var conf = 'black';
+	   						if(probas[i] <= 0.6) conf = 'red';
+	   						else if(probas[i] > 0.6 && probas[i] <= 0.9) conf = 'orange';
+	   						else conf = 'green';
+
+		   					ctx_pred.font = "25px Arial";
 		   					ctx_pred.lineWidth = 2;
-		   					ctx_pred.strokeStyle = "#4285f4";
+		   					ctx_pred.fillStyle = conf;
+		   					ctx_pred.strokeStyle = conf;
 
 		   					ctx_pred.rect(dim1[i][0], dim1[i][1], dim2[i][0]-dim1[i][0], dim2[i][1]-dim1[i][1]);
+
 		   					if(dim1[i][1] < 50){
-		   						ctx_pred.fillText(preds[i], dim1[i][0], dim1[i][1] + dim2[i][1])
+		   						ctx_pred.fillText(preds[i]+ ': '+ probas[i].toFixed(2)*100 + '%',
+		   						 dim1[i][0], dim1[i][1] + dim2[i][1]) + 10;
 		   					}
 		   					else{
-		   						ctx_pred.fillText(preds[i], dim1[i][0], dim1[i][1] )
+		   						ctx_pred.fillText(preds[i] + ': '+ probas[i].toFixed(2)*100 + '%',
+		   						 dim1[i][0], dim1[i][1] -10);
 		   					}
 
-		   					ctx_pred.stroke();	   				
+		   					ctx_pred.stroke();
+
+
+		   					console.log(dim1.length);  
+		   					console.log(probas[i]); 				
 	   					}
 
 	   					console.log(dim1);
 	   					console.log(dim2);
+
 
 
 	   					ctx.lineWidth = 15; //change width back to normal after the stroke

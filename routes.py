@@ -201,6 +201,7 @@ def predict_better_digits():
     dim1_list = []
     dim2_list = []
     pred_list = []
+    confidence_list = []
 
     with digits_graph.as_default():
 
@@ -261,16 +262,20 @@ def predict_better_digits():
 
             nbr = np.argmax(digits_model.predict(roi.reshape((1,28,28,1))))
             pred_list.append(int(nbr))
-		       
-            cv2.putText(im, str(nbr), (rect[0], rect[1]), cv2.FONT_HERSHEY_DUPLEX, 3, (255, 255, 255), 5)
+
+            model_conf = digits_model.predict(roi.reshape((1,28,28,1))).reshape((10, 1))[nbr]
+            confidence_list.append(float(model_conf))
+
+            # cv2.putText(im, str(nbr), (rect[0], rect[1]), cv2.FONT_HERSHEY_DUPLEX, 3, (255, 255, 255), 5)
 
 
 
 
     print(pred_list)
-    cv2.imwrite('debug2.png',im)
+    # cv2.imwrite('debug2.png',im)
 
-    return jsonify({'dim1_list': dim1_list, 'dim2_list': dim2_list, 'predictions': pred_list}), 201
+    return jsonify({'dim1_list': dim1_list, 'dim2_list': dim2_list,
+     'predictions': pred_list, 'probas': confidence_list}), 201
 
 
 

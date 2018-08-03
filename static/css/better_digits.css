@@ -39,13 +39,52 @@ h3{
 	font-style:italic;
 }
 
+
 div#interact canvas{
 	position:absolute;
 	top:400px;
-	left: 50px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:25px;
 }
 
 
 #canvas{
   opacity:0
 }
+
+p{
+	position:absolute;
+	margin-top:30px;
+	max-width:1000px;
+}
+
+h3{
+	position:absolute;
+	margin-top:-20px;
+}
+
+#clearButton{
+	position:absolute;
+	margin-top:100px;
+	margin-left:auto;
+	margin-right:auto;
+	width:1000px;
+	height:70px;
+	font-size:2em;
+	box-shadow: 0px 15px #999;
+
+}
+
+#clearButton:hover {
+  background-color: maroon;
+  color:lightgray;
+}
+
+#clearButton:active {
+  background-color: maroon;
+  color:lightgray;
+  box-shadow: 0 4px #666;
+  transform: translateY(10px);
+}
+

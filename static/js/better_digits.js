@@ -5,8 +5,8 @@
 	var context = canvas.getContext( "2d" );
 	var contextPred = canvasPred.getContext( "2d" );
 
-	canvas.width = 1600;
-	canvas.height = 1500;
+	canvas.width = 1000;
+	canvas.height = 1000;
 
 	var Mouse = { x: 0, y: 0 };
 	var lastMouse = { x: 0, y: 0 };
