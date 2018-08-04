@@ -101,11 +101,11 @@
 		   					ctx_pred.rect(dim1[i][0], dim1[i][1], dim2[i][0]-dim1[i][0], dim2[i][1]-dim1[i][1]);
 
 		   					if(dim1[i][1] < 50){
-		   						ctx_pred.fillText(preds[i]+ ': '+ (probas[i]*100).toFixed(2)+ '%',
-		   						 dim1[i][0], dim1[i][1] + dim2[i][1]) + 10;
+		   						ctx_pred.fillText(preds[i]+ ' ('+ (probas[i]*100).toFixed(2)+ '%)',
+		   						 dim1[i][0], dim1[i][1] + dim2[i][1]) + 25;
 		   					}
 		   					else{
-		   						ctx_pred.fillText(preds[i] + ': '+ (probas[i]*100).toFixed(2) + '%',
+		   						ctx_pred.fillText(preds[i] + ' ('+ (probas[i]*100).toFixed(2) + '%)',
 		   						 dim1[i][0], dim1[i][1] -10);
 		   					}
 
