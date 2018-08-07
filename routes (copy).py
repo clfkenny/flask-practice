@@ -45,19 +45,13 @@ app = Flask(__name__)
 
 clf, vect = load_sentiment_model()
 
-# def classify(document):
-#     label = {0: 'negative', 1: 'positive'}
-#     X = vect.transform([document])
-#     y = clf.predict(X)[0]
-#     proba = np.max(clf.predict_proba(X))
-#     return label[y], proba
-
 def classify(document):
     label = {0: 'negative', 1: 'positive'}
     X = vect.transform([document])
     y = clf.predict(X)[0]
-    proba = clf.predict_proba(X)
-    return proba
+    proba = np.max(clf.predict_proba(X))
+    return label[y], proba
+
 
 
 @app.route("/")
@@ -71,29 +65,17 @@ def text_sentiment():
     return render_template('text_sentiment.html', form = form)
 
 
-# @app.route('/results', methods=['POST'])
-# def results():
-#     form = ReviewForm(request.form)
-#     if request.method == 'POST' and form.validate():
-#         review = request.form['text_review']
-#         y, proba = classify(review)
-#         return render_template('text_sentiment.html',
-#                                 content=review,
-#                                 prediction=y,
-#                                 probability=round(proba*100, 2), form = form)
-#     return render_template('text_sentiment.html', form=form)
-
-
-@app.route('/predict_text_senti', methods=['GET','POST'])
-def predict_text_sentiment():
-    raw_data = request.get_data()
-    print(raw_data)
-    proba  = classify(raw_data)[0]
-    print(len(proba))
-
-    return jsonify({'probas': proba.tolist()}), 201
-
-
+@app.route('/results', methods=['POST'])
+def results():
+    form = ReviewForm(request.form)
+    if request.method == 'POST' and form.validate():
+        review = request.form['text_review']
+        y, proba = classify(review)
+        return render_template('text_sentiment.html',
+                                content=review,
+                                prediction=y,
+                                probability=round(proba*100, 2), form = form)
+    return render_template('text_sentiment.html', form=form)
 
 
 @app.route('/digits')

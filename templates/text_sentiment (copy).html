@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <link href="{{ url_for('static', filename='css/text_sentiment.css') }}" rel="stylesheet">
+  <main class="hero-section">
+    <div class="container">
+      
+      <div class="section-content">
+        <h2> Text Sentiment Analyzer</h2>
+        <h3> Please enter a sentence: </h3>
+
+        {% from "_formhelpers.html" import render_field %}
+        <form method=post action="/results">
+
+  <div>
+  {{ render_field(form.text_review, cols='60', rows='10') }}
+  </div>
+  <div>
+    <input type=submit value='Analyze' name='submit_btn' onclick = "showPred()">
+    <input type="button" id="clearButton" value="Clear" onclick = "clearInput()">
+  </div>
+</form>
+      </div>
+
+
+
+    <div class="container">
+  <h3>Your text submission:</h3>
+  <div class = "input_text">{{ content }}</div>
+
+  <h3>Prediction:</h3>
+  <div class = "pred_hide">This text submission is <strong>{{ prediction }}</strong>
+   (probability: {{ probability }}%).</div>
+
+
+      <script src="static/js/text_sentiment.js"></script>
+
+    </div>
+    <br> <br> <br>
+
+<!--       <div class="section-device">
+        <img src="static/img/device.png">
+      </div>
+       -->
+      <div class="clearfix"></div>
+
+    </div>
+  </main>
+{% endblock %}

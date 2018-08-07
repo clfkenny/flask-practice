@@ -1,3 +1,17 @@
 textarea{
 	border-width:2px;
 }
+
+div #result{
+	display:inline-block;
+	position:absolute;
+	right:-15%;
+	margin-top:80px;
+}
+
+
+div.section-content{
+	position:relative;
+	left:-10%;
+	overflow:visible;
+}
