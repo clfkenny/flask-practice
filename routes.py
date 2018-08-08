@@ -87,11 +87,10 @@ def text_sentiment():
 @app.route('/predict_text_senti', methods=['GET','POST'])
 def predict_text_sentiment():
     raw_data = request.get_data()
-    print(raw_data)
     proba  = classify(raw_data)[0]
-    print(len(proba))
+    proba = [round(num, 3) for num in proba]
 
-    return jsonify({'probas': proba.tolist()}), 201
+    return jsonify({'probas': proba}), 201
 
 
 

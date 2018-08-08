@@ -15,3 +15,40 @@ div.section-content{
 	left:-10%;
 	overflow:visible;
 }
+
+
+
+div.emoji{
+	positon: absolute;
+	margin-left:auto;
+	marign-right:auto;
+	width:50%;
+}
+
+div.emoji *{
+	positoin:absolute;
+margin-top:-2000px;
+}
+
+
+div.emoji #happy{
+	positon:relative;
+	width:30%;
+}
+
+div.emoji #mad{
+	positon:absolute;
+	top:20px;
+	margin-left:-154px;
+	width:30%;
+}
+
+div.emoji #neutral{
+	positon:absolute;
+	margin-left:-154px;
+	width:30%;
+}
+
+div.emoji *{
+margin-top:-100%;
+}
