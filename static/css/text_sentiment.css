@@ -18,16 +18,15 @@ div.section-content{
 
 
 
+
 div.emoji{
-	positon: absolute;
-	margin-left:auto;
-	marign-right:auto;
+	positon: relative;
 	width:50%;
 }
 
 div.emoji *{
-	positoin:absolute;
-margin-top:-2000px;
+	margin-top:50px;
+	margin-left:-100px;
 }
 
 
@@ -47,8 +46,4 @@ div.emoji #neutral{
 	positon:absolute;
 	margin-left:-154px;
 	width:30%;
-}
-
-div.emoji *{
-margin-top:-100%;
 }
