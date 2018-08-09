@@ -10,6 +10,7 @@ function clearInput(){
 	text_box.value = "";
 	myChart.data.datasets[0].data = [0.5, 0.5];
 	myChart.update();
+	showNeutral();
 }
 
 
